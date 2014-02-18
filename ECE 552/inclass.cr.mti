@@ -1,0 +1,33 @@
+{C:/Users/admin/Documents/ECE 552/inclass1.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/ECE 552/inclass1.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module inclass1
+-- Compiling module t_inclass1
+
+Top level modules:
+	t_inclass1
+
+} {} {}} {C:/Users/admin/Documents/ECE 552/inclass2.v} {1 {vlog -nostats -work work {C:\Users\admin\Documents\ECE 552\inclass2.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module fa_ic2
+-- Compiling module t_fa_ic2
+
+Top level modules:
+	fa_ic2
+	t_fa_ic2
+
+} {} {}} {C:/Users/admin/Documents/ECE 552/fa.v} {1 {vlog -nostats -work work {C:\Users\admin\Documents\ECE 552\fa.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module fa
+
+Top level modules:
+	fa
+
+} {} {}} {C:/Users/admin/Documents/ECE 552/16bit_RCA.v} {1 {vlog -nostats -work work {C:\Users\admin\Documents\ECE 552\16bit_RCA.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module RCA_16bit
+-- Compiling module t_RCA_16bit
+
+Top level modules:
+	t_RCA_16bit
+
+} {} {}}

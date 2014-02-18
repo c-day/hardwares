@@ -1,0 +1,47 @@
+module RCA_16bit(a, b, cin, sum, cout);
+	input [15:0] a, b;
+	input cin;
+	output [15:0] sum;
+	output cout;
+	wire [15:0] carrys;
+	
+	genvar i;
+	
+	fa fa0(a[0], b[0], cin, sum[0], carrys[0]);
+
+	assign cout = carrys[15];
+
+	generate
+		for(i = 1; i < 16; i = i + 1)
+			fa fa1(a[i], b[i], carrys[i-1], sum[i], carrys[i]);
+	endgenerate
+	
+endmodule
+
+
+module t_RCA_16bit();
+	wire [15:0] a, b, sum;
+	wire cin, cout;
+
+	integer i, j, k;
+
+	RCA_16bit DUT(a, b, cin, sum, cout);
+
+	assign a = i;
+	assign b = j;
+	assign cin = k;
+
+	initial begin
+
+	for(i = 0; i < 65536; i = i + 1) begin
+		$display("%d: %d + %d = %d", i, a, b, cin, {cout, sum});
+		for(j = 0; j < 65536; j = j + 1) begin
+			for(k = 0; k < 2; k = k + 1) begin
+				if({cout, sum} != (a+b+cin)) $display("ERROR: Expected %d, Computed %d", (a+b+cin), {cout, sum});
+			end
+		end
+	end
+	$stop;
+	end
+
+endmodule
