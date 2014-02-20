@@ -29,14 +29,14 @@ module ALU(dst, ov, zr, src0, src1, ctrl, shamt);
 
 	// Use parameters so that the opcodes can be specified by higher
 	// level modules.  
-	parameter addOp = 4'b0000;
-	parameter subOp = 4'b0001;
-	parameter andOp = 4'b0010;
-	parameter norOp = 4'b0011;
-	parameter sllOp = 4'b0100;
-	parameter srlOp = 4'b0101;
-	parameter sraOp = 4'b0110;
-	parameter lhbOp = 4'b0111;
+	parameter addOp = 3'b000;
+	parameter subOp = 3'b001;
+	parameter andOp = 3'b010;
+	parameter norOp = 3'b011;
+	parameter sllOp = 3'b100;
+	parameter srlOp = 3'b101;
+	parameter sraOp = 3'b110;
+	parameter lhbOp = 3'b111;
 
 	//signed wire to contain the right arithmatic shift value	
 	wire signed [15:0] sra;

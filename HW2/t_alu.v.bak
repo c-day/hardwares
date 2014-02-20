@@ -2,7 +2,7 @@ module t_alu();
   wire [15:0] dst;
   wire ov, zr;
   
-  reg [15:0] src0, src1;
+  reg signed [15:0] src0, src1;
   reg [3:0] ctrl, shamt;
   
   integer i;
