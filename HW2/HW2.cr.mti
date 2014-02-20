@@ -19,4 +19,12 @@ Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 
 Top level modules:
 	t_alu
 
+} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/HW2/alu.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/HW2/alu.v
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module SAT
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
 } {} {}}
