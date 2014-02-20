@@ -354,3 +354,7 @@ quit -sim
 # Compile of t_rf.v was successful.
 # Compile of rf_commented.v was successful.
 # 2 compiles, 0 failed with no errors. 
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# Compile of alu.v was successful.
+# 3 compiles, 0 failed with no errors. 

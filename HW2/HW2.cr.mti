@@ -1,1 +1,8 @@
+C:/Users/Craig/Documents/GitHub/hardwares/HW2/rf_commented.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/HW2/rf_commented.v
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module rf
 
+Top level modules:
+	rf
+
+} {} {}}

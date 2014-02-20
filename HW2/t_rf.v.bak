@@ -4,6 +4,7 @@
 * Authors:
 * Craig Day, Ethan Massey
 *******************************************************************************/
+
 module t_rf();
 	reg [3:0] dst_addr, p0_addr, p1_addr;
 	reg re0, re1, we, hlt, clk, clk2;

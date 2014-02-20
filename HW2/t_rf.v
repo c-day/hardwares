@@ -2,7 +2,7 @@
 * ECE 552
 * HW 2, Problem 3
 * Authors:
-* Craig Day, Ethan Massey
+* Craig Day
 *******************************************************************************/
 
 module t_rf();
