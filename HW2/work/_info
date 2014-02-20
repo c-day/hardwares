@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+cModel Technology
+Z0 dC:/Users/Craig/Documents/GitHub/hardwares/New folder
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+vrf
+Z1 !s110 1392864978
+!i10b 1
+!s100 6zHROM]^m6@CeH2;LWIJ11
+Ie]>F>VOzPMgJI^`fmlXiF0
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+Z3 dC:/Users/Craig/Documents/GitHub/hardwares/HW2
+w1392864968
+Z4 8C:/Users/Craig/Documents/GitHub/hardwares/HW2/rf_commented.v
+Z5 FC:/Users/Craig/Documents/GitHub/hardwares/HW2/rf_commented.v
+L0 8
+Z6 OP;L;10.2c;57
+r1
+!s85 0
+31
+!s108 1392864978.772000
+!s107 C:/Users/Craig/Documents/GitHub/hardwares/HW2/rf_commented.v|
+Z7 !s90 -reportprogress|300|-work|work|C:/Users/Craig/Documents/GitHub/hardwares/HW2/rf_commented.v|
+!s101 -O0
+Z8 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -O0
+vt_rf
+Z9 IoK_[;Ro3b9ZUKBzHUSj9Q3
+R2
+R3
+Z10 w1392864976
+Z11 8C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v
+Z12 FC:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v
+L0 8
+R6
+r1
+31
+Z13 !s90 -reportprogress|300|-work|work|C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v|
+R8
+R1
+!i10b 1
+Z14 !s100 7je`;Ze3]N;f6;S=1Bb<72
+!s85 0
+Z15 !s108 1392864978.719000
+Z16 !s107 C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v|
+!s101 -O0

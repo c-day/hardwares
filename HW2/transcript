@@ -1,0 +1,356 @@
+# Reading A:/Modeltech_pe_edu_10.2c/tcl/vsim/pref.tcl 
+# OpenFile C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v 
+# Loading project HW2
+# Compile of t_rf.v failed with 1 errors.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 1 failed with 1 error. 
+# Compile of t_rf.v failed with 1 errors.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 1 failed with 1 error. 
+# Compile of t_rf.v failed with 1 errors.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 1 failed with 1 error. 
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -gui work.t_rf
+# //  ModelSim PE Student Edition 10.2c Jul 18 2013 
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim -gui work.t_rf 
+# Loading work.t_rf
+# Loading work.rf
+add wave -position insertpoint  \
+sim:/t_rf/clk \
+sim:/t_rf/clk2
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Craig  Hostname: GLADOS  ProcessID: 7012
+# 
+#           Attempting to use alternate WLF file "./wlftmm5qfg".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftmm5qfg
+# 
+run
+restart
+run -all
+restart
+run
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+run
+# ERROR!  Expecting: 3524, P0: dead, P1: dead, i:           1
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 43
+add wave -position insertpoint  \
+sim:/t_rf/dst_addr \
+sim:/t_rf/p0_addr \
+sim:/t_rf/p1_addr \
+sim:/t_rf/re0 \
+sim:/t_rf/re1 \
+sim:/t_rf/we \
+sim:/t_rf/dst \
+sim:/t_rf/myRegs
+add wave -position insertpoint  \
+sim:/t_rf/DUT/mem
+restart
+run
+# ERROR!  Expecting: 3524, P0: dead, P1: dead, i:           1
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 43
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+run
+# ERROR!  Expecting: 3524, P0: dead, P1: dead, i:           1
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 43
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+run
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+run
+# ERROR!  Expecting: 3524, P0: dead, P1: dead, i:           1
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 55
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+run
+# ERROR!  Expecting: 3524, P0: dead, P1: dead, i:           1
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 54
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+run
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+run -all
+# ERROR!  Expecting: dada, P0: beef, P1: beef, i:           3
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 54
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+run -all
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 63
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+run -all
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 63
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+run -all
+# ERROR!  Expecting: 84cf, P0: 6270, P1: 6270, i:           3
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 54
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+run -all
+# ERROR!  Expecting: 84cf, P0: 6270, P1: 6270, i:           3
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 55
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+run -all
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 63
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+run -all
+# ERROR!  Expecting: 84cf, P0: 3524, P1: 3524, i:           2
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 55
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+run -all
+# ERROR!  Expecting: 6270, P0: 3524, P1: 3524, i:           2
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 54
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+run -all
+# ERROR!  Expecting: 6270, P0: 3524, P1: 3524, i:           2
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 54
+add wave -position insertpoint  \
+sim:/t_rf/rand
+restart
+run -all
+# ERROR!  Expecting: 6270, P0: 3524, P1: 3524, i:           2
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 54
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+run -all
+# ERROR!  Expecting: 84cf, P0: 3524, P1: 3524, i:           2
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 54
+add wave -position insertpoint  \
+sim:/t_rf/p0 \
+sim:/t_rf/p1
+restart
+run -all
+# ERROR!  Expecting: 84cf, P0: 3524, P1: 3524, i:           2
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 54
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+run -all
+# ERROR!  Expecting: 84cf, P0: 6270, P1: 6270, i:           3
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 54
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+run -all
+# ERROR!  Expecting: 84cf, P0: 3524, P1: 3524, i:           2
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 51
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+run -all
+# ERROR!  Expecting: 6270, P0: 0000, P1: 0000, i:           1
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 51
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+run -all
+# ERROR!  Expecting: 6270, P0: dead, P1: dead, i:           2
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 51
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+# ** Warning: (vsim-PLI-3691) C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v(24): Expected a system task, not a system function '$random'.
+# 
+#         Region: /t_rf
+run -all
+# ERROR!  Expecting: 3524, P0: 0000, P1: 0000, i:           1
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 52
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+# ** Warning: (vsim-PLI-3691) C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v(24): Expected a system task, not a system function '$random'.
+# 
+#         Region: /t_rf
+run -all
+# ERROR!  Expecting: dead, P0: 0000, P1: 0000, i:           1
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 62
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+# ** Warning: (vsim-PLI-3691) C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v(24): Expected a system task, not a system function '$random'.
+# 
+#         Region: /t_rf
+run
+# ERROR!  Expecting: dead, P0: 0000, P1: 0000, i:           1
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 62
+run
+# ERROR!  Expecting: beef, P0: 3524, P1: 3524, i:           2
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 62
+run
+# ERROR!  Expecting: dada, P0: 6270, P1: 6270, i:           3
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 62
+run
+# ERROR!  Expecting: b00b, P0: 84cf, P1: 84cf, i:           4
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 62
+run
+# ERROR!  Expecting: badd, P0: df17, P1: df17, i:           5
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 62
+run
+# ERROR!  Expecting: 1234, P0: d3d6, P1: d3d6, i:           6
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 62
+run
+# ERROR!  Expecting: 5678, P0: 83be, P1: 83be, i:           7
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 62
+run
+# ERROR!  Expecting: 0987, P0: 2715, P1: 2715, i:           8
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 62
+run
+# ERROR!  Expecting: 0000, P0: 5e52, P1: 5e52, i:           9
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 62
+run
+# ERROR!  Expecting: ffff, P0: b2c6, P1: b2c6, i:          10
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 62
+run
+# ERROR!  Expecting: ea70, P0: 3978, P1: 3978, i:          11
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 62
+run
+# ERROR!  Expecting: 1029, P0: 1e79, P1: 1e79, i:          12
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 62
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+# ** Warning: (vsim-PLI-3691) C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v(24): Expected a system task, not a system function '$random'.
+# 
+#         Region: /t_rf
+run
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 64
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+# ** Warning: (vsim-PLI-3691) C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v(24): Expected a system task, not a system function '$random'.
+# 
+#         Region: /t_rf
+run -all
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 64
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_rf
+# Loading work.rf
+# ** Warning: (vsim-PLI-3691) C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v(28): Expected a system task, not a system function '$random'.
+# 
+#         Region: /t_rf
+run -all
+# Break in Module t_rf at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v line 82
+quit -sim
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# 2 compiles, 0 failed with no errors. 
