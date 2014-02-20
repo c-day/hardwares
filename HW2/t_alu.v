@@ -1,3 +1,10 @@
+/*******************************************************************************
+* ECE 552
+* HW 2
+* ALU Test Bench
+* Author: Craig Day and Ethan Massey
+*******************************************************************************/
+
 module t_alu();
   wire [15:0] dst;
   wire ov, zr;
@@ -5,20 +12,21 @@ module t_alu();
   reg [15:0] src0, src1;
   reg [3:0] ctrl, shamt;
   
-  integer i;
+  integer i, file;
   
   ALU DUT(dst, ov, zr, src0, src1, ctrl, shamt);
   
   initial begin
-    //test 100 random additions
+    file = $fopen("./t_alu_results.txt", "wb");
+    //test 1000 random additions
     ctrl = 4'b0000;
-    for(i = 0; i < 100; i = i + 1) begin: add_loop
+    for(i = 0; i < 1000; i = i + 1) begin: add_loop
       src0 = $random();
       src1 = $random();
       #1;
-      $display("Testing %d + %d", src0, src1);
+      $fwrite(file, "Testing 0x%h + 0x%h\n", src0, src1);
       if({ov, dst} != (src0 + src1))
-        $display("ERROR: %d + %d = %d, Expected: %d", src0, src1, {ov, dst}, (src0 + src1));
+        $fwrite(file, "\nERROR: 0x%h + 0x%h = 0x%h, Expected: 0x%h\n\n", src0, src1, {ov, dst}, (src0 + src1));
     end
     
     //test the zero flag by doing 0 + 0
@@ -26,7 +34,7 @@ module t_alu();
     src1 = 16'd1;
     #1;
     if(zr != 0)
-      $display("ERROR: Zero flag not properly set.");
+      $fwrite(file, "\nERROR: Zero flag not properly set.\n\n");
       
     //test sll by 0 - 16 bits
     ctrl = 4'b0100;
@@ -34,12 +42,45 @@ module t_alu();
       src0 = 16'hABCD;
       shamt = i;
       #1;
-      $display("Testing %d << %d", src0, i);
+      $fwrite(file, "Testing 0x%h << 0x%h\n", src0, i);
       if(dst != (16'hABCD << i))
-        $display("ERROR: sll.  Received: %h, Expected: %h", dst, (16'hABCD << i));
+        $fwrite(file, "\nERROR: sll.  Received: 0x%h, Expected: 0x%h\n\n", dst, (16'hABCD << i));
         
     end
     
+    //test srl by 0 - 16 bits
+    ctrl = 4'b0101;
+    for(i = 0; i < 16; i = i + 1) begin: srl_loop
+      src0 = 16'hABCD;
+      shamt = i;
+      #1;
+      $fwrite(file, "Testing 0x%h >> 0x%h\n", src0, i);
+      if(dst != (16'hABCD >> i))
+        $fwrite(file, "\nERROR: sll.  Received: 0x%h, Expected: 0x%h\n\n", dst, (16'hABCD >> i));
+        
+    end
+    
+    //test 1000 random ANDs
+    ctrl = 4'b0010;
+    for(i = 0; i < 1000; i = i + 1) begin: and_loop
+      src0 = $random();
+      src1 = $random();
+      #1;
+      $fwrite(file, "Testing 0x%h & 0x%h\n", src0, src1);
+      if({ov, dst} != {1'b0, (src0 & src1)})
+        $fwrite(file, "\nERROR: AND. Received: 0x%h, Expected: 0x%h\n\n", src0, src1, {ov, dst}, {1'b0, (src0 & src1)});
+    end
+    
+    //test 1000 random NORs
+    ctrl = 4'b0011;
+    for(i = 0; i < 1000; i = i + 1) begin: nor_loop
+      src0 = $random();
+      src1 = $random();
+      #1;
+      $fwrite(file, "Testing 0x%h ~| 0x%h\n", src0, src1);
+      if({ov, dst} != {1'b0, ~(src0 | src1)})
+        $fwrite(file, "\nERROR: NOR. Received: 0x%h, Expected: 0x%h\n\n", src0, src1, {ov, dst}, {1'b0, ~(src0 | src1)});
+    end
     
     $stop;
   end

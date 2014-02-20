@@ -655,3 +655,1616 @@ run -all
 # Testing 43981 <<          14
 # Testing 43981 <<          15
 # Break in Module t_alu at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_alu.v line 44
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# Compile of alu.v was successful.
+# Compile of t_alu.v failed with 1 errors.
+# 4 compiles, 1 failed with 1 error. 
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# Compile of alu.v was successful.
+# Compile of t_alu.v failed with 1 errors.
+# 4 compiles, 1 failed with 1 error. 
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# Compile of alu.v was successful.
+# Compile of t_alu.v was successful.
+# 4 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_alu
+# Loading work.ALU
+run -all
+# Testing 13604 + 24193
+# Testing 54793 + 22115
+# Testing 31501 + 39309
+# Testing 33893 + 21010
+# Testing 58113 + 52493
+# Testing 61814 + 52541
+# Testing 22509 + 63372
+# Testing 59897 +  9414
+# Testing 33989 + 53930
+# Testing 63461 + 29303
+# Testing 54802 + 56207
+# Testing 27122 + 38606
+# Testing 31464 + 20165
+# Testing 18780 + 10429
+# Testing 22573 +  9829
+# Testing 25187 + 34570
+# Testing  8832 +  8480
+# Testing 17834 + 52381
+# Testing 16022 + 47123
+# Testing 14349 + 54867
+# Testing 56683 + 10965
+# Testing 18946 + 16046
+# Testing 59677 + 29391
+# Testing 18723 + 25866
+# Testing  2762 + 19516
+# Testing 48626 + 24970
+# Testing 45889 + 13528
+# Testing 62328 +  4745
+# Testing  3563 + 26038
+# Testing 63942 +  5038
+# Testing   700 + 56618
+# Testing 39435 + 48753
+# Testing 16773 + 21839
+# Testing 24635 + 13114
+# Testing 12926 + 19221
+# Testing 39921 + 19417
+# Testing  1890 + 64332
+# Testing 21919 + 41359
+# Testing 43512 + 24759
+# Testing 22175 + 37980
+# Testing 49243 + 14217
+# Testing 12873 + 16080
+# Testing 49367 + 64593
+# Testing 12182 + 32524
+# Testing 52930 + 60872
+# Testing 23159 + 60733
+# Testing 56082 +   126
+# Testing 33133 + 59193
+# Testing 36639 + 63187
+# Testing 12165 + 34936
+# Testing 22875 + 19273
+# Testing 44607 + 44842
+# Testing 25432 + 14470
+# Testing  3214 + 62108
+# Testing 39418 + 48166
+# Testing  6003 + 46243
+# Testing 43055 + 37555
+# Testing 22111 +  3396
+# Testing 65015 + 14027
+# Testing  6886 + 56154
+# Testing 49449 + 58093
+# Testing 27866 + 46693
+# Testing 58037 + 38111
+# Testing  6521 + 65348
+# Testing  3280 +  2858
+# Testing 44459 + 53006
+# Testing 44508 + 48282
+# Testing 29437 +   707
+# Testing 60758 + 59726
+# Testing 30311 + 13322
+# Testing 47542 + 35384
+# Testing 34681 + 50360
+# Testing 49044 + 23955
+# Testing 11268 + 51801
+# Testing 27099 + 56909
+# Testing 47065 +  9837
+# Testing 57974 + 18890
+# Testing 11702 + 29077
+# Testing  6726 + 39684
+# Testing 25079 +  1897
+# Testing 47796 + 36232
+# Testing 55592 +  1069
+# Testing 12487 + 39982
+# Testing 58376 + 17692
+# Testing 42749 +  1833
+# Testing 36892 + 26502
+# Testing  2266 + 50749
+# Testing 42854 + 50288
+# Testing  1139 + 39354
+# Testing 45918 + 31226
+# Testing  1493 + 63002
+# Testing   185 + 24887
+# Testing 14230 +  8640
+# Testing 40742 +  6838
+# Testing 33661 +  4060
+# Testing 22406 + 65400
+# Testing 39806 + 32987
+# Testing 46799 + 11129
+# Testing 58618 + 61025
+# Testing  2327 + 30881
+# Testing 43981 <<           0
+# Testing 43981 <<           1
+# Testing 43981 <<           2
+# Testing 43981 <<           3
+# Testing 43981 <<           4
+# Testing 43981 <<           5
+# Testing 43981 <<           6
+# Testing 43981 <<           7
+# Testing 43981 <<           8
+# Testing 43981 <<           9
+# Testing 43981 <<          10
+# Testing 43981 <<          11
+# Testing 43981 <<          12
+# Testing 43981 <<          13
+# Testing 43981 <<          14
+# Testing 43981 <<          15
+# Testing 43981 >>           0
+# Testing 43981 >>           1
+# Testing 43981 >>           2
+# Testing 43981 >>           3
+# Testing 43981 >>           4
+# Testing 43981 >>           5
+# Testing 43981 >>           6
+# Testing 43981 >>           7
+# Testing 43981 >>           8
+# Testing 43981 >>           9
+# Testing 43981 >>          10
+# Testing 43981 >>          11
+# Testing 43981 >>          12
+# Testing 43981 >>          13
+# Testing 43981 >>          14
+# Testing 43981 >>          15
+# Testing 37254 & 38480
+# Testing 23029 & 34869
+# Testing 35369 & 30145
+# Testing 29893 & 46232
+# Testing 31563 & 17011
+# Testing 59116 &  5770
+# Testing 53582 & 32936
+# Testing 64937 & 36001
+# Testing 47374 & 26342
+# Testing 49311 & 46378
+# Testing  7466 & 62605
+# Testing 65438 & 58936
+# Testing 43129 & 58312
+# Testing 17866 & 16659
+# Testing 51563 & 44743
+# Testing 56758 & 40378
+# Testing 43972 & 38329
+# Testing 54162 & 39604
+# Testing 15231 & 36998
+# Testing 62970 & 38130
+# Testing  8498 & 24253
+# Testing 52612 & 42212
+# Testing 53194 & 31145
+# Testing 43169 & 43406
+# Testing 27387 &  7691
+# Testing 37103 & 15817
+# Testing 58678 & 18549
+# Testing 22159 & 49003
+# Testing 59272 & 46254
+# Testing 33179 & 17810
+# Testing 57128 & 57389
+# Testing 24395 & 45250
+# Testing 63006 &  1293
+# Testing 65004 & 40216
+# Testing  7121 &  7302
+# Testing  9281 & 25659
+# Testing 63960 & 59731
+# Testing 25174 &  8795
+# Testing 64226 & 57860
+# Testing   883 & 46296
+# Testing 19730 & 17592
+# Testing  4665 & 46821
+# Testing 56481 &  3883
+# Testing 23937 & 34248
+# Testing 21799 & 63905
+# Testing 28191 & 14852
+# Testing  9048 & 32918
+# Testing 37652 & 46098
+# Testing 28822 & 58033
+# Testing 54613 & 36589
+# Testing 11051 &  7157
+# Testing   941 &  8743
+# Testing 65412 & 58535
+# Testing 42727 & 37049
+# Testing 22089 & 48091
+# Testing  4041 & 45393
+# Testing 24225 & 56618
+# Testing 17914 &  8261
+# Testing  1411 & 17020
+# Testing  5234 & 15614
+# Testing 62056 & 43631
+# Testing  3462 &  8688
+# Testing 38712 & 37184
+# Testing 30248 & 43510
+# Testing  6853 & 12736
+# Testing 24436 & 28985
+# Testing 27312 & 34620
+# Testing 37674 & 54114
+# Testing 13589 & 20193
+# Testing 40215 & 60995
+# Testing 58313 &  1158
+# Testing 52005 & 40385
+# Testing 41613 & 57946
+# Testing  9991 & 31532
+# Testing 23820 & 58993
+# Testing 31803 & 58806
+# Testing 49911 & 52894
+# Testing 22620 & 63317
+# Testing 14880 &  4768
+# Testing  2418 & 36020
+# Testing 62941 & 61453
+# Testing 39243 & 17017
+# Testing 55966 & 25853
+# Testing 53883 & 29583
+# Testing 39427 & 10723
+# Testing 17181 & 15793
+# Testing 40772 & 48277
+# Testing 13536 & 30957
+# Testing  5458 & 23544
+# Testing 46989 & 50258
+# Testing 59268 & 64838
+# Testing 37516 & 32144
+# Testing 49431 & 24938
+# Testing 22404 & 48298
+# Testing  3964 &   608
+# Testing 19898 & 24715
+# Testing 65190 &  7717
+# Testing 33586 &  1186
+# Testing 31817 & 45076
+# Testing 49213 &   843
+# Testing 12380 ~| 30023
+# ERROR: 12380 + 30023 =  35488, Expected: 35488
+# Testing 38790 ~| 31289
+# ERROR: 38790 + 31289 =     64, Expected:    64
+# Testing 35508 ~| 58832
+# ERROR: 35508 + 58832 =   4107, Expected:  4107
+# Testing 20524 ~| 17804
+# ERROR: 20524 + 17804 =  43603, Expected: 43603
+# Testing 46855 ~| 16490
+# ERROR: 46855 + 16490 =   2192, Expected:  2192
+# Testing 63761 ~| 65512
+# ERROR: 63761 + 65512 =      6, Expected:     6
+# Testing 40523 ~| 33139
+# ERROR: 40523 + 33139 =  24708, Expected: 24708
+# Testing 23532 ~|  1315
+# ERROR: 23532 +  1315 =  40976, Expected: 40976
+# Testing 61348 ~| 26057
+# ERROR: 61348 + 26057 =   4114, Expected:  4114
+# Testing  1081 ~| 29407
+# ERROR:  1081 + 29407 =  35072, Expected: 35072
+# Testing  5332 ~| 25959
+# ERROR:  5332 + 25959 =  35336, Expected: 35336
+# Testing 16797 ~|  9648
+# ERROR: 16797 +  9648 =  39490, Expected: 39490
+# Testing 14722 ~| 48969
+# ERROR: 14722 + 48969 =  16436, Expected: 16436
+# Testing  6873 ~| 46880
+# ERROR:  6873 + 46880 =  16390, Expected: 16390
+# Testing 19484 ~| 28563
+# ERROR: 19484 + 28563 =  36960, Expected: 36960
+# Testing 25059 ~| 33322
+# ERROR: 25059 + 33322 =   7188, Expected:  7188
+# Testing 63688 ~| 11869
+# ERROR: 63688 + 11869 =    290, Expected:   290
+# Testing 40250 ~| 43396
+# ERROR: 40250 + 43396 =  16961, Expected: 16961
+# Testing 43051 ~| 32569
+# ERROR: 43051 + 32569 =    196, Expected:   196
+# Testing  7186 ~|    82
+# ERROR:  7186 +    82 =  58285, Expected: 58285
+# Testing 35161 ~| 38608
+# ERROR: 35161 + 38608 =  24614, Expected: 24614
+# Testing 60014 ~| 10647
+# ERROR: 60014 + 10647 =   5120, Expected:  5120
+# Testing 34779 ~| 30630
+# ERROR: 34779 + 30630 =   2048, Expected:  2048
+# Testing 54203 ~| 31744
+# ERROR: 54203 + 31744 =     68, Expected:    68
+# Testing 19471 ~| 54889
+# ERROR: 19471 + 54889 =   8592, Expected:  8592
+# Testing 25100 ~|  6489
+# ERROR: 25100 +  6489 =  33954, Expected: 33954
+# Testing 18885 ~| 13775
+# ERROR: 18885 + 13775 =  33328, Expected: 33328
+# Testing 58768 ~| 55377
+# ERROR: 58768 + 55377 =    558, Expected:   558
+# Testing 42089 ~| 52599
+# ERROR: 42089 + 52599 =   4736, Expected:  4736
+# Testing 25930 ~| 22744
+# ERROR: 25930 + 22744 =  33317, Expected: 33317
+# Testing 19867 ~| 39620
+# ERROR: 19867 + 39620 =   8224, Expected:  8224
+# Testing 45496 ~| 62135
+# ERROR: 45496 + 62135 =   3136, Expected:  3136
+# Testing 61062 ~| 23088
+# ERROR: 61062 + 23088 =    329, Expected:   329
+# Testing 21367 ~| 51125
+# ERROR: 21367 + 51125 =  10248, Expected: 10248
+# Testing 62932 ~| 34567
+# ERROR: 62932 + 34567 =   2088, Expected:  2088
+# Testing 38774 ~| 44521
+# ERROR: 38774 + 44521 =  16384, Expected: 16384
+# Testing 35723 ~| 24321
+# ERROR: 35723 + 24321 =   8308, Expected:  8308
+# Testing 35803 ~| 17024
+# ERROR: 35803 + 17024 =  13348, Expected: 13348
+# Testing 40898 ~| 56005
+# ERROR: 40898 + 56005 =   8248, Expected:  8248
+# Testing 64048 ~| 58543
+# ERROR: 64048 + 58543 =    320, Expected:   320
+# Testing 55910 ~| 47535
+# ERROR: 55910 + 47535 =   1040, Expected:  1040
+# Testing 28393 ~| 45048
+# ERROR: 28393 + 45048 =   4102, Expected:  4102
+# Testing 44038 ~| 30447
+# ERROR: 44038 + 30447 =    272, Expected:   272
+# Testing 14305 ~| 31893
+# ERROR: 14305 + 31893 =  32778, Expected: 32778
+# Testing 16110 ~| 19808
+# ERROR: 16110 + 19808 =  32785, Expected: 32785
+# Testing 24293 ~| 59944
+# ERROR: 24293 + 59944 =    274, Expected:   274
+# Testing 32100 ~| 14121
+# ERROR: 32100 + 14121 =  32914, Expected: 32914
+# Testing 44769 ~| 21111
+# ERROR: 44769 + 21111 =    264, Expected:   264
+# Testing  5486 ~| 62849
+# ERROR:  5486 + 62849 =   2576, Expected:  2576
+# Testing 47573 ~| 54632
+# ERROR: 47573 + 54632 =    514, Expected:   514
+# Testing 29168 ~|   170
+# ERROR: 29168 +   170 =  36357, Expected: 36357
+# Testing 49935 ~| 18673
+# ERROR: 49935 + 18673 =  13312, Expected: 13312
+# Testing 48253 ~| 38286
+# ERROR: 48253 + 38286 =  16896, Expected: 16896
+# Testing 56546 ~| 19772
+# ERROR: 56546 + 19772 =   8705, Expected:  8705
+# Testing 59049 ~| 45551
+# ERROR: 59049 + 45551 =   2064, Expected:  2064
+# Testing 53339 ~| 15535
+# ERROR: 53339 + 15535 =    768, Expected:   768
+# Testing 39754 ~|  3513
+# ERROR: 39754 +  3513 =  24580, Expected: 24580
+# Testing 11539 ~| 13587
+# ERROR: 11539 + 13587 =  49900, Expected: 49900
+# Testing 16741 ~| 10065
+# ERROR: 16741 + 10065 =  39050, Expected: 39050
+# Testing 15031 ~|  4249
+# ERROR: 15031 +  4249 =  50496, Expected: 50496
+# Testing  2106 ~| 14961
+# ERROR:  2106 + 14961 =  50564, Expected: 50564
+# Testing  1890 ~| 27364
+# ERROR:  1890 + 27364 =  36889, Expected: 36889
+# Testing 56618 ~| 17533
+# ERROR: 56618 + 17533 =   8832, Expected:  8832
+# Testing 24409 ~| 41957
+# ERROR: 24409 + 41957 =      2, Expected:     2
+# Testing 27629 ~|   201
+# ERROR: 27629 +   201 =  37906, Expected: 37906
+# Testing 52289 ~| 53679
+# ERROR: 52289 + 53679 =   8720, Expected:  8720
+# Testing  7387 ~| 59597
+# ERROR:  7387 + 59597 =    800, Expected:   800
+# Testing 40816 ~| 54278
+# ERROR: 40816 + 54278 =   8329, Expected:  8329
+# Testing  8354 ~| 15805
+# ERROR:  8354 + 15805 =  49728, Expected: 49728
+# Testing 56938 ~| 18396
+# ERROR: 56938 + 18396 =   8193, Expected:  8193
+# Testing 24144 ~| 62587
+# ERROR: 24144 + 62587 =    388, Expected:   388
+# Testing 22565 ~| 33912
+# ERROR: 22565 + 33912 =   9090, Expected:  9090
+# Testing 35318 ~| 52828
+# ERROR: 35318 + 52828 =  12289, Expected: 12289
+# Testing 39715 ~| 43897
+# ERROR: 39715 + 43897 =  17540, Expected: 17540
+# Testing  1480 ~| 18107
+# ERROR:  1480 + 18107 =  47108, Expected: 47108
+# Testing 60942 ~| 38003
+# ERROR: 60942 + 38003 =    384, Expected:   384
+# Testing   780 ~| 39118
+# ERROR:   780 + 39118 =  25649, Expected: 25649
+# Testing 25044 ~| 56409
+# ERROR: 25044 + 56409 =    546, Expected:   546
+# Testing 28601 ~| 49331
+# ERROR: 28601 + 49331 =   4164, Expected:  4164
+# Testing 49140 ~| 57973
+# ERROR: 49140 + 57973 =     10, Expected:    10
+# Testing 61708 ~| 31289
+# ERROR: 61708 + 31289 =   1218, Expected:  1218
+# Testing 37634 ~| 48661
+# ERROR: 37634 + 48661 =  16616, Expected: 16616
+# Testing 63749 ~| 17230
+# ERROR: 63749 + 17230 =   1200, Expected:  1200
+# Testing 10498 ~| 20920
+# ERROR: 10498 + 20920 =  34373, Expected: 34373
+# Testing 45576 ~| 21389
+# ERROR: 45576 + 21389 =   3186, Expected:  3186
+# Testing 36527 ~| 12776
+# ERROR: 36527 + 12776 =  16400, Expected: 16400
+# Testing  2448 ~| 44021
+# ERROR:  2448 + 44021 =  21514, Expected: 21514
+# Testing 36940 ~| 48507
+# ERROR: 36940 + 48507 =  17024, Expected: 17024
+# Testing 42560 ~|   805
+# ERROR: 42560 +   805 =  22682, Expected: 22682
+# Testing 46605 ~|  4208
+# ERROR: 46605 +  4208 =  18818, Expected: 18818
+# Testing 63789 ~| 55337
+# ERROR: 63789 + 55337 =   1746, Expected:  1746
+# Testing 20924 ~|  2096
+# ERROR: 20924 +  2096 =  42563, Expected: 42563
+# Testing 11712 ~| 26960
+# ERROR: 11712 + 26960 =  37423, Expected: 37423
+# Testing 27297 ~| 16205
+# ERROR: 27297 + 16205 =  32786, Expected: 32786
+# Testing 12021 ~| 45045
+# ERROR: 12021 + 45045 =  20490, Expected: 20490
+# Testing 52317 ~|  4756
+# ERROR: 52317 +  4756 =   8482, Expected:  8482
+# Testing 42602 ~| 26044
+# ERROR: 42602 + 26044 =   6145, Expected:  6145
+# Testing  2232 ~| 40094
+# ERROR:  2232 + 40094 =  25409, Expected: 25409
+# Testing  1786 ~|  2886
+# ERROR:  1786 +  2886 =  61441, Expected: 61441
+# Testing 25607 ~| 48275
+# ERROR: 25607 + 48275 =    872, Expected:   872
+# Break in Module t_alu at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_alu.v line 77
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# Compile of alu.v was successful.
+# Compile of t_alu.v was successful.
+# 4 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_alu
+# Loading work.ALU
+run -all
+# Testing 13604 + 24193
+# Testing 54793 + 22115
+# Testing 31501 + 39309
+# Testing 33893 + 21010
+# Testing 58113 + 52493
+# Testing 61814 + 52541
+# Testing 22509 + 63372
+# Testing 59897 +  9414
+# Testing 33989 + 53930
+# Testing 63461 + 29303
+# Testing 54802 + 56207
+# Testing 27122 + 38606
+# Testing 31464 + 20165
+# Testing 18780 + 10429
+# Testing 22573 +  9829
+# Testing 25187 + 34570
+# Testing  8832 +  8480
+# Testing 17834 + 52381
+# Testing 16022 + 47123
+# Testing 14349 + 54867
+# Testing 56683 + 10965
+# Testing 18946 + 16046
+# Testing 59677 + 29391
+# Testing 18723 + 25866
+# Testing  2762 + 19516
+# Testing 48626 + 24970
+# Testing 45889 + 13528
+# Testing 62328 +  4745
+# Testing  3563 + 26038
+# Testing 63942 +  5038
+# Testing   700 + 56618
+# Testing 39435 + 48753
+# Testing 16773 + 21839
+# Testing 24635 + 13114
+# Testing 12926 + 19221
+# Testing 39921 + 19417
+# Testing  1890 + 64332
+# Testing 21919 + 41359
+# Testing 43512 + 24759
+# Testing 22175 + 37980
+# Testing 49243 + 14217
+# Testing 12873 + 16080
+# Testing 49367 + 64593
+# Testing 12182 + 32524
+# Testing 52930 + 60872
+# Testing 23159 + 60733
+# Testing 56082 +   126
+# Testing 33133 + 59193
+# Testing 36639 + 63187
+# Testing 12165 + 34936
+# Testing 22875 + 19273
+# Testing 44607 + 44842
+# Testing 25432 + 14470
+# Testing  3214 + 62108
+# Testing 39418 + 48166
+# Testing  6003 + 46243
+# Testing 43055 + 37555
+# Testing 22111 +  3396
+# Testing 65015 + 14027
+# Testing  6886 + 56154
+# Testing 49449 + 58093
+# Testing 27866 + 46693
+# Testing 58037 + 38111
+# Testing  6521 + 65348
+# Testing  3280 +  2858
+# Testing 44459 + 53006
+# Testing 44508 + 48282
+# Testing 29437 +   707
+# Testing 60758 + 59726
+# Testing 30311 + 13322
+# Testing 47542 + 35384
+# Testing 34681 + 50360
+# Testing 49044 + 23955
+# Testing 11268 + 51801
+# Testing 27099 + 56909
+# Testing 47065 +  9837
+# Testing 57974 + 18890
+# Testing 11702 + 29077
+# Testing  6726 + 39684
+# Testing 25079 +  1897
+# Testing 47796 + 36232
+# Testing 55592 +  1069
+# Testing 12487 + 39982
+# Testing 58376 + 17692
+# Testing 42749 +  1833
+# Testing 36892 + 26502
+# Testing  2266 + 50749
+# Testing 42854 + 50288
+# Testing  1139 + 39354
+# Testing 45918 + 31226
+# Testing  1493 + 63002
+# Testing   185 + 24887
+# Testing 14230 +  8640
+# Testing 40742 +  6838
+# Testing 33661 +  4060
+# Testing 22406 + 65400
+# Testing 39806 + 32987
+# Testing 46799 + 11129
+# Testing 58618 + 61025
+# Testing  2327 + 30881
+# Testing 43981 <<           0
+# Testing 43981 <<           1
+# Testing 43981 <<           2
+# Testing 43981 <<           3
+# Testing 43981 <<           4
+# Testing 43981 <<           5
+# Testing 43981 <<           6
+# Testing 43981 <<           7
+# Testing 43981 <<           8
+# Testing 43981 <<           9
+# Testing 43981 <<          10
+# Testing 43981 <<          11
+# Testing 43981 <<          12
+# Testing 43981 <<          13
+# Testing 43981 <<          14
+# Testing 43981 <<          15
+# Testing 43981 >>           0
+# Testing 43981 >>           1
+# Testing 43981 >>           2
+# Testing 43981 >>           3
+# Testing 43981 >>           4
+# Testing 43981 >>           5
+# Testing 43981 >>           6
+# Testing 43981 >>           7
+# Testing 43981 >>           8
+# Testing 43981 >>           9
+# Testing 43981 >>          10
+# Testing 43981 >>          11
+# Testing 43981 >>          12
+# Testing 43981 >>          13
+# Testing 43981 >>          14
+# Testing 43981 >>          15
+# Testing 37254 & 38480
+# Testing 23029 & 34869
+# Testing 35369 & 30145
+# Testing 29893 & 46232
+# Testing 31563 & 17011
+# Testing 59116 &  5770
+# Testing 53582 & 32936
+# Testing 64937 & 36001
+# Testing 47374 & 26342
+# Testing 49311 & 46378
+# Testing  7466 & 62605
+# Testing 65438 & 58936
+# Testing 43129 & 58312
+# Testing 17866 & 16659
+# Testing 51563 & 44743
+# Testing 56758 & 40378
+# Testing 43972 & 38329
+# Testing 54162 & 39604
+# Testing 15231 & 36998
+# Testing 62970 & 38130
+# Testing  8498 & 24253
+# Testing 52612 & 42212
+# Testing 53194 & 31145
+# Testing 43169 & 43406
+# Testing 27387 &  7691
+# Testing 37103 & 15817
+# Testing 58678 & 18549
+# Testing 22159 & 49003
+# Testing 59272 & 46254
+# Testing 33179 & 17810
+# Testing 57128 & 57389
+# Testing 24395 & 45250
+# Testing 63006 &  1293
+# Testing 65004 & 40216
+# Testing  7121 &  7302
+# Testing  9281 & 25659
+# Testing 63960 & 59731
+# Testing 25174 &  8795
+# Testing 64226 & 57860
+# Testing   883 & 46296
+# Testing 19730 & 17592
+# Testing  4665 & 46821
+# Testing 56481 &  3883
+# Testing 23937 & 34248
+# Testing 21799 & 63905
+# Testing 28191 & 14852
+# Testing  9048 & 32918
+# Testing 37652 & 46098
+# Testing 28822 & 58033
+# Testing 54613 & 36589
+# Testing 11051 &  7157
+# Testing   941 &  8743
+# Testing 65412 & 58535
+# Testing 42727 & 37049
+# Testing 22089 & 48091
+# Testing  4041 & 45393
+# Testing 24225 & 56618
+# Testing 17914 &  8261
+# Testing  1411 & 17020
+# Testing  5234 & 15614
+# Testing 62056 & 43631
+# Testing  3462 &  8688
+# Testing 38712 & 37184
+# Testing 30248 & 43510
+# Testing  6853 & 12736
+# Testing 24436 & 28985
+# Testing 27312 & 34620
+# Testing 37674 & 54114
+# Testing 13589 & 20193
+# Testing 40215 & 60995
+# Testing 58313 &  1158
+# Testing 52005 & 40385
+# Testing 41613 & 57946
+# Testing  9991 & 31532
+# Testing 23820 & 58993
+# Testing 31803 & 58806
+# Testing 49911 & 52894
+# Testing 22620 & 63317
+# Testing 14880 &  4768
+# Testing  2418 & 36020
+# Testing 62941 & 61453
+# Testing 39243 & 17017
+# Testing 55966 & 25853
+# Testing 53883 & 29583
+# Testing 39427 & 10723
+# Testing 17181 & 15793
+# Testing 40772 & 48277
+# Testing 13536 & 30957
+# Testing  5458 & 23544
+# Testing 46989 & 50258
+# Testing 59268 & 64838
+# Testing 37516 & 32144
+# Testing 49431 & 24938
+# Testing 22404 & 48298
+# Testing  3964 &   608
+# Testing 19898 & 24715
+# Testing 65190 &  7717
+# Testing 33586 &  1186
+# Testing 31817 & 45076
+# Testing 49213 &   843
+# Testing 12380 ~| 30023
+# ERROR: NOR. Received: 305c, Expected: 7547 3548835488
+# Testing 38790 ~| 31289
+# ERROR: NOR. Received: 9786, Expected: 7a39    64   64
+# Testing 35508 ~| 58832
+# ERROR: NOR. Received: 8ab4, Expected: e5d0  4107 4107
+# Testing 20524 ~| 17804
+# ERROR: NOR. Received: 502c, Expected: 458c 4360343603
+# Testing 46855 ~| 16490
+# ERROR: NOR. Received: b707, Expected: 406a  2192 2192
+# Testing 63761 ~| 65512
+# ERROR: NOR. Received: f911, Expected: ffe8     6    6
+# Testing 40523 ~| 33139
+# ERROR: NOR. Received: 9e4b, Expected: 8173 2470824708
+# Testing 23532 ~|  1315
+# ERROR: NOR. Received: 5bec, Expected: 0523 4097640976
+# Testing 61348 ~| 26057
+# ERROR: NOR. Received: efa4, Expected: 65c9  4114 4114
+# Testing  1081 ~| 29407
+# ERROR: NOR. Received: 0439, Expected: 72df 3507235072
+# Testing  5332 ~| 25959
+# ERROR: NOR. Received: 14d4, Expected: 6567 3533635336
+# Testing 16797 ~|  9648
+# ERROR: NOR. Received: 419d, Expected: 25b0 3949039490
+# Testing 14722 ~| 48969
+# ERROR: NOR. Received: 3982, Expected: bf49 1643616436
+# Testing  6873 ~| 46880
+# ERROR: NOR. Received: 1ad9, Expected: b720 1639016390
+# Testing 19484 ~| 28563
+# ERROR: NOR. Received: 4c1c, Expected: 6f93 3696036960
+# Testing 25059 ~| 33322
+# ERROR: NOR. Received: 61e3, Expected: 822a  7188 7188
+# Testing 63688 ~| 11869
+# ERROR: NOR. Received: f8c8, Expected: 2e5d   290  290
+# Testing 40250 ~| 43396
+# ERROR: NOR. Received: 9d3a, Expected: a984 1696116961
+# Testing 43051 ~| 32569
+# ERROR: NOR. Received: a82b, Expected: 7f39   196  196
+# Testing  7186 ~|    82
+# ERROR: NOR. Received: 1c12, Expected: 0052 5828558285
+# Testing 35161 ~| 38608
+# ERROR: NOR. Received: 8959, Expected: 96d0 2461424614
+# Testing 60014 ~| 10647
+# ERROR: NOR. Received: ea6e, Expected: 2997  5120 5120
+# Testing 34779 ~| 30630
+# ERROR: NOR. Received: 87db, Expected: 77a6  2048 2048
+# Testing 54203 ~| 31744
+# ERROR: NOR. Received: d3bb, Expected: 7c00    68   68
+# Testing 19471 ~| 54889
+# ERROR: NOR. Received: 4c0f, Expected: d669  8592 8592
+# Testing 25100 ~|  6489
+# ERROR: NOR. Received: 620c, Expected: 1959 3395433954
+# Testing 18885 ~| 13775
+# ERROR: NOR. Received: 49c5, Expected: 35cf 3332833328
+# Testing 58768 ~| 55377
+# ERROR: NOR. Received: e590, Expected: d851   558  558
+# Testing 42089 ~| 52599
+# ERROR: NOR. Received: a469, Expected: cd77  4736 4736
+# Testing 25930 ~| 22744
+# ERROR: NOR. Received: 654a, Expected: 58d8 3331733317
+# Testing 19867 ~| 39620
+# ERROR: NOR. Received: 4d9b, Expected: 9ac4  8224 8224
+# Testing 45496 ~| 62135
+# ERROR: NOR. Received: b1b8, Expected: f2b7  3136 3136
+# Testing 61062 ~| 23088
+# ERROR: NOR. Received: ee86, Expected: 5a30   329  329
+# Testing 21367 ~| 51125
+# ERROR: NOR. Received: 5377, Expected: c7b5 1024810248
+# Testing 62932 ~| 34567
+# ERROR: NOR. Received: f5d4, Expected: 8707  2088 2088
+# Testing 38774 ~| 44521
+# ERROR: NOR. Received: 9776, Expected: ade9 1638416384
+# Testing 35723 ~| 24321
+# ERROR: NOR. Received: 8b8b, Expected: 5f01  8308 8308
+# Testing 35803 ~| 17024
+# ERROR: NOR. Received: 8bdb, Expected: 4280 1334813348
+# Testing 40898 ~| 56005
+# ERROR: NOR. Received: 9fc2, Expected: dac5  8248 8248
+# Testing 64048 ~| 58543
+# ERROR: NOR. Received: fa30, Expected: e4af   320  320
+# Testing 55910 ~| 47535
+# ERROR: NOR. Received: da66, Expected: b9af  1040 1040
+# Testing 28393 ~| 45048
+# ERROR: NOR. Received: 6ee9, Expected: aff8  4102 4102
+# Testing 44038 ~| 30447
+# ERROR: NOR. Received: ac06, Expected: 76ef   272  272
+# Testing 14305 ~| 31893
+# ERROR: NOR. Received: 37e1, Expected: 7c95 3277832778
+# Testing 16110 ~| 19808
+# ERROR: NOR. Received: 3eee, Expected: 4d60 3278532785
+# Testing 24293 ~| 59944
+# ERROR: NOR. Received: 5ee5, Expected: ea28   274  274
+# Testing 32100 ~| 14121
+# ERROR: NOR. Received: 7d64, Expected: 3729 3291432914
+# Testing 44769 ~| 21111
+# ERROR: NOR. Received: aee1, Expected: 5277   264  264
+# Testing  5486 ~| 62849
+# ERROR: NOR. Received: 156e, Expected: f581  2576 2576
+# Testing 47573 ~| 54632
+# ERROR: NOR. Received: b9d5, Expected: d568   514  514
+# Testing 29168 ~|   170
+# ERROR: NOR. Received: 71f0, Expected: 00aa 3635736357
+# Testing 49935 ~| 18673
+# ERROR: NOR. Received: c30f, Expected: 48f1 1331213312
+# Testing 48253 ~| 38286
+# ERROR: NOR. Received: bc7d, Expected: 958e 1689616896
+# Testing 56546 ~| 19772
+# ERROR: NOR. Received: dce2, Expected: 4d3c  8705 8705
+# Testing 59049 ~| 45551
+# ERROR: NOR. Received: e6a9, Expected: b1ef  2064 2064
+# Testing 53339 ~| 15535
+# ERROR: NOR. Received: d05b, Expected: 3caf   768  768
+# Testing 39754 ~|  3513
+# ERROR: NOR. Received: 9b4a, Expected: 0db9 2458024580
+# Testing 11539 ~| 13587
+# ERROR: NOR. Received: 2d13, Expected: 3513 4990049900
+# Testing 16741 ~| 10065
+# ERROR: NOR. Received: 4165, Expected: 2751 3905039050
+# Testing 15031 ~|  4249
+# ERROR: NOR. Received: 3ab7, Expected: 1099 5049650496
+# Testing  2106 ~| 14961
+# ERROR: NOR. Received: 083a, Expected: 3a71 5056450564
+# Testing  1890 ~| 27364
+# ERROR: NOR. Received: 0762, Expected: 6ae4 3688936889
+# Testing 56618 ~| 17533
+# ERROR: NOR. Received: dd2a, Expected: 447d  8832 8832
+# Testing 24409 ~| 41957
+# ERROR: NOR. Received: 5f59, Expected: a3e5     2    2
+# Testing 27629 ~|   201
+# ERROR: NOR. Received: 6bed, Expected: 00c9 3790637906
+# Testing 52289 ~| 53679
+# ERROR: NOR. Received: cc41, Expected: d1af  8720 8720
+# Testing  7387 ~| 59597
+# ERROR: NOR. Received: 1cdb, Expected: e8cd   800  800
+# Testing 40816 ~| 54278
+# ERROR: NOR. Received: 9f70, Expected: d406  8329 8329
+# Testing  8354 ~| 15805
+# ERROR: NOR. Received: 20a2, Expected: 3dbd 4972849728
+# Testing 56938 ~| 18396
+# ERROR: NOR. Received: de6a, Expected: 47dc  8193 8193
+# Testing 24144 ~| 62587
+# ERROR: NOR. Received: 5e50, Expected: f47b   388  388
+# Testing 22565 ~| 33912
+# ERROR: NOR. Received: 5825, Expected: 8478  9090 9090
+# Testing 35318 ~| 52828
+# ERROR: NOR. Received: 89f6, Expected: ce5c 1228912289
+# Testing 39715 ~| 43897
+# ERROR: NOR. Received: 9b23, Expected: ab79 1754017540
+# Testing  1480 ~| 18107
+# ERROR: NOR. Received: 05c8, Expected: 46bb 4710847108
+# Testing 60942 ~| 38003
+# ERROR: NOR. Received: ee0e, Expected: 9473   384  384
+# Testing   780 ~| 39118
+# ERROR: NOR. Received: 030c, Expected: 98ce 2564925649
+# Testing 25044 ~| 56409
+# ERROR: NOR. Received: 61d4, Expected: dc59   546  546
+# Testing 28601 ~| 49331
+# ERROR: NOR. Received: 6fb9, Expected: c0b3  4164 4164
+# Testing 49140 ~| 57973
+# ERROR: NOR. Received: bff4, Expected: e275    10   10
+# Testing 61708 ~| 31289
+# ERROR: NOR. Received: f10c, Expected: 7a39  1218 1218
+# Testing 37634 ~| 48661
+# ERROR: NOR. Received: 9302, Expected: be15 1661616616
+# Testing 63749 ~| 17230
+# ERROR: NOR. Received: f905, Expected: 434e  1200 1200
+# Testing 10498 ~| 20920
+# ERROR: NOR. Received: 2902, Expected: 51b8 3437334373
+# Testing 45576 ~| 21389
+# ERROR: NOR. Received: b208, Expected: 538d  3186 3186
+# Testing 36527 ~| 12776
+# ERROR: NOR. Received: 8eaf, Expected: 31e8 1640016400
+# Testing  2448 ~| 44021
+# ERROR: NOR. Received: 0990, Expected: abf5 2151421514
+# Testing 36940 ~| 48507
+# ERROR: NOR. Received: 904c, Expected: bd7b 1702417024
+# Testing 42560 ~|   805
+# ERROR: NOR. Received: a640, Expected: 0325 2268222682
+# Testing 46605 ~|  4208
+# ERROR: NOR. Received: b60d, Expected: 1070 1881818818
+# Testing 63789 ~| 55337
+# ERROR: NOR. Received: f92d, Expected: d829  1746 1746
+# Testing 20924 ~|  2096
+# ERROR: NOR. Received: 51bc, Expected: 0830 4256342563
+# Testing 11712 ~| 26960
+# ERROR: NOR. Received: 2dc0, Expected: 6950 3742337423
+# Testing 27297 ~| 16205
+# ERROR: NOR. Received: 6aa1, Expected: 3f4d 3278632786
+# Testing 12021 ~| 45045
+# ERROR: NOR. Received: 2ef5, Expected: aff5 2049020490
+# Testing 52317 ~|  4756
+# ERROR: NOR. Received: cc5d, Expected: 1294  8482 8482
+# Testing 42602 ~| 26044
+# ERROR: NOR. Received: a66a, Expected: 65bc  6145 6145
+# Testing  2232 ~| 40094
+# ERROR: NOR. Received: 08b8, Expected: 9c9e 2540925409
+# Testing  1786 ~|  2886
+# ERROR: NOR. Received: 06fa, Expected: 0b46 6144161441
+# Testing 25607 ~| 48275
+# ERROR: NOR. Received: 6407, Expected: bc93   872  872
+# Break in Module t_alu at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_alu.v line 77
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# Compile of alu.v was successful.
+# Compile of t_alu.v was successful.
+# 4 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_alu
+# Loading work.ALU
+run -all
+# Testing 13604 + 24193
+# Testing 54793 + 22115
+# Testing 31501 + 39309
+# Testing 33893 + 21010
+# Testing 58113 + 52493
+# Testing 61814 + 52541
+# Testing 22509 + 63372
+# Testing 59897 +  9414
+# Testing 33989 + 53930
+# Testing 63461 + 29303
+# Testing 54802 + 56207
+# Testing 27122 + 38606
+# Testing 31464 + 20165
+# Testing 18780 + 10429
+# Testing 22573 +  9829
+# Testing 25187 + 34570
+# Testing  8832 +  8480
+# Testing 17834 + 52381
+# Testing 16022 + 47123
+# Testing 14349 + 54867
+# Testing 56683 + 10965
+# Testing 18946 + 16046
+# Testing 59677 + 29391
+# Testing 18723 + 25866
+# Testing  2762 + 19516
+# Testing 48626 + 24970
+# Testing 45889 + 13528
+# Testing 62328 +  4745
+# Testing  3563 + 26038
+# Testing 63942 +  5038
+# Testing   700 + 56618
+# Testing 39435 + 48753
+# Testing 16773 + 21839
+# Testing 24635 + 13114
+# Testing 12926 + 19221
+# Testing 39921 + 19417
+# Testing  1890 + 64332
+# Testing 21919 + 41359
+# Testing 43512 + 24759
+# Testing 22175 + 37980
+# Testing 49243 + 14217
+# Testing 12873 + 16080
+# Testing 49367 + 64593
+# Testing 12182 + 32524
+# Testing 52930 + 60872
+# Testing 23159 + 60733
+# Testing 56082 +   126
+# Testing 33133 + 59193
+# Testing 36639 + 63187
+# Testing 12165 + 34936
+# Testing 22875 + 19273
+# Testing 44607 + 44842
+# Testing 25432 + 14470
+# Testing  3214 + 62108
+# Testing 39418 + 48166
+# Testing  6003 + 46243
+# Testing 43055 + 37555
+# Testing 22111 +  3396
+# Testing 65015 + 14027
+# Testing  6886 + 56154
+# Testing 49449 + 58093
+# Testing 27866 + 46693
+# Testing 58037 + 38111
+# Testing  6521 + 65348
+# Testing  3280 +  2858
+# Testing 44459 + 53006
+# Testing 44508 + 48282
+# Testing 29437 +   707
+# Testing 60758 + 59726
+# Testing 30311 + 13322
+# Testing 47542 + 35384
+# Testing 34681 + 50360
+# Testing 49044 + 23955
+# Testing 11268 + 51801
+# Testing 27099 + 56909
+# Testing 47065 +  9837
+# Testing 57974 + 18890
+# Testing 11702 + 29077
+# Testing  6726 + 39684
+# Testing 25079 +  1897
+# Testing 47796 + 36232
+# Testing 55592 +  1069
+# Testing 12487 + 39982
+# Testing 58376 + 17692
+# Testing 42749 +  1833
+# Testing 36892 + 26502
+# Testing  2266 + 50749
+# Testing 42854 + 50288
+# Testing  1139 + 39354
+# Testing 45918 + 31226
+# Testing  1493 + 63002
+# Testing   185 + 24887
+# Testing 14230 +  8640
+# Testing 40742 +  6838
+# Testing 33661 +  4060
+# Testing 22406 + 65400
+# Testing 39806 + 32987
+# Testing 46799 + 11129
+# Testing 58618 + 61025
+# Testing  2327 + 30881
+# Testing 43981 <<           0
+# Testing 43981 <<           1
+# Testing 43981 <<           2
+# Testing 43981 <<           3
+# Testing 43981 <<           4
+# Testing 43981 <<           5
+# Testing 43981 <<           6
+# Testing 43981 <<           7
+# Testing 43981 <<           8
+# Testing 43981 <<           9
+# Testing 43981 <<          10
+# Testing 43981 <<          11
+# Testing 43981 <<          12
+# Testing 43981 <<          13
+# Testing 43981 <<          14
+# Testing 43981 <<          15
+# Testing 43981 >>           0
+# Testing 43981 >>           1
+# Testing 43981 >>           2
+# Testing 43981 >>           3
+# Testing 43981 >>           4
+# Testing 43981 >>           5
+# Testing 43981 >>           6
+# Testing 43981 >>           7
+# Testing 43981 >>           8
+# Testing 43981 >>           9
+# Testing 43981 >>          10
+# Testing 43981 >>          11
+# Testing 43981 >>          12
+# Testing 43981 >>          13
+# Testing 43981 >>          14
+# Testing 43981 >>          15
+# Testing 37254 & 38480
+# Testing 23029 & 34869
+# Testing 35369 & 30145
+# Testing 29893 & 46232
+# Testing 31563 & 17011
+# Testing 59116 &  5770
+# Testing 53582 & 32936
+# Testing 64937 & 36001
+# Testing 47374 & 26342
+# Testing 49311 & 46378
+# Testing  7466 & 62605
+# Testing 65438 & 58936
+# Testing 43129 & 58312
+# Testing 17866 & 16659
+# Testing 51563 & 44743
+# Testing 56758 & 40378
+# Testing 43972 & 38329
+# Testing 54162 & 39604
+# Testing 15231 & 36998
+# Testing 62970 & 38130
+# Testing  8498 & 24253
+# Testing 52612 & 42212
+# Testing 53194 & 31145
+# Testing 43169 & 43406
+# Testing 27387 &  7691
+# Testing 37103 & 15817
+# Testing 58678 & 18549
+# Testing 22159 & 49003
+# Testing 59272 & 46254
+# Testing 33179 & 17810
+# Testing 57128 & 57389
+# Testing 24395 & 45250
+# Testing 63006 &  1293
+# Testing 65004 & 40216
+# Testing  7121 &  7302
+# Testing  9281 & 25659
+# Testing 63960 & 59731
+# Testing 25174 &  8795
+# Testing 64226 & 57860
+# Testing   883 & 46296
+# Testing 19730 & 17592
+# Testing  4665 & 46821
+# Testing 56481 &  3883
+# Testing 23937 & 34248
+# Testing 21799 & 63905
+# Testing 28191 & 14852
+# Testing  9048 & 32918
+# Testing 37652 & 46098
+# Testing 28822 & 58033
+# Testing 54613 & 36589
+# Testing 11051 &  7157
+# Testing   941 &  8743
+# Testing 65412 & 58535
+# Testing 42727 & 37049
+# Testing 22089 & 48091
+# Testing  4041 & 45393
+# Testing 24225 & 56618
+# Testing 17914 &  8261
+# Testing  1411 & 17020
+# Testing  5234 & 15614
+# Testing 62056 & 43631
+# Testing  3462 &  8688
+# Testing 38712 & 37184
+# Testing 30248 & 43510
+# Testing  6853 & 12736
+# Testing 24436 & 28985
+# Testing 27312 & 34620
+# Testing 37674 & 54114
+# Testing 13589 & 20193
+# Testing 40215 & 60995
+# Testing 58313 &  1158
+# Testing 52005 & 40385
+# Testing 41613 & 57946
+# Testing  9991 & 31532
+# Testing 23820 & 58993
+# Testing 31803 & 58806
+# Testing 49911 & 52894
+# Testing 22620 & 63317
+# Testing 14880 &  4768
+# Testing  2418 & 36020
+# Testing 62941 & 61453
+# Testing 39243 & 17017
+# Testing 55966 & 25853
+# Testing 53883 & 29583
+# Testing 39427 & 10723
+# Testing 17181 & 15793
+# Testing 40772 & 48277
+# Testing 13536 & 30957
+# Testing  5458 & 23544
+# Testing 46989 & 50258
+# Testing 59268 & 64838
+# Testing 37516 & 32144
+# Testing 49431 & 24938
+# Testing 22404 & 48298
+# Testing  3964 &   608
+# Testing 19898 & 24715
+# Testing 65190 &  7717
+# Testing 33586 &  1186
+# Testing 31817 & 45076
+# Testing 49213 &   843
+# Testing 12380 ~| 30023
+# Testing 38790 ~| 31289
+# Testing 35508 ~| 58832
+# Testing 20524 ~| 17804
+# Testing 46855 ~| 16490
+# Testing 63761 ~| 65512
+# Testing 40523 ~| 33139
+# Testing 23532 ~|  1315
+# Testing 61348 ~| 26057
+# Testing  1081 ~| 29407
+# Testing  5332 ~| 25959
+# Testing 16797 ~|  9648
+# Testing 14722 ~| 48969
+# Testing  6873 ~| 46880
+# Testing 19484 ~| 28563
+# Testing 25059 ~| 33322
+# Testing 63688 ~| 11869
+# Testing 40250 ~| 43396
+# Testing 43051 ~| 32569
+# Testing  7186 ~|    82
+# Testing 35161 ~| 38608
+# Testing 60014 ~| 10647
+# Testing 34779 ~| 30630
+# Testing 54203 ~| 31744
+# Testing 19471 ~| 54889
+# Testing 25100 ~|  6489
+# Testing 18885 ~| 13775
+# Testing 58768 ~| 55377
+# Testing 42089 ~| 52599
+# Testing 25930 ~| 22744
+# Testing 19867 ~| 39620
+# Testing 45496 ~| 62135
+# Testing 61062 ~| 23088
+# Testing 21367 ~| 51125
+# Testing 62932 ~| 34567
+# Testing 38774 ~| 44521
+# Testing 35723 ~| 24321
+# Testing 35803 ~| 17024
+# Testing 40898 ~| 56005
+# Testing 64048 ~| 58543
+# Testing 55910 ~| 47535
+# Testing 28393 ~| 45048
+# Testing 44038 ~| 30447
+# Testing 14305 ~| 31893
+# Testing 16110 ~| 19808
+# Testing 24293 ~| 59944
+# Testing 32100 ~| 14121
+# Testing 44769 ~| 21111
+# Testing  5486 ~| 62849
+# Testing 47573 ~| 54632
+# Testing 29168 ~|   170
+# Testing 49935 ~| 18673
+# Testing 48253 ~| 38286
+# Testing 56546 ~| 19772
+# Testing 59049 ~| 45551
+# Testing 53339 ~| 15535
+# Testing 39754 ~|  3513
+# Testing 11539 ~| 13587
+# Testing 16741 ~| 10065
+# Testing 15031 ~|  4249
+# Testing  2106 ~| 14961
+# Testing  1890 ~| 27364
+# Testing 56618 ~| 17533
+# Testing 24409 ~| 41957
+# Testing 27629 ~|   201
+# Testing 52289 ~| 53679
+# Testing  7387 ~| 59597
+# Testing 40816 ~| 54278
+# Testing  8354 ~| 15805
+# Testing 56938 ~| 18396
+# Testing 24144 ~| 62587
+# Testing 22565 ~| 33912
+# Testing 35318 ~| 52828
+# Testing 39715 ~| 43897
+# Testing  1480 ~| 18107
+# Testing 60942 ~| 38003
+# Testing   780 ~| 39118
+# Testing 25044 ~| 56409
+# Testing 28601 ~| 49331
+# Testing 49140 ~| 57973
+# Testing 61708 ~| 31289
+# Testing 37634 ~| 48661
+# Testing 63749 ~| 17230
+# Testing 10498 ~| 20920
+# Testing 45576 ~| 21389
+# Testing 36527 ~| 12776
+# Testing  2448 ~| 44021
+# Testing 36940 ~| 48507
+# Testing 42560 ~|   805
+# Testing 46605 ~|  4208
+# Testing 63789 ~| 55337
+# Testing 20924 ~|  2096
+# Testing 11712 ~| 26960
+# Testing 27297 ~| 16205
+# Testing 12021 ~| 45045
+# Testing 52317 ~|  4756
+# Testing 42602 ~| 26044
+# Testing  2232 ~| 40094
+# Testing  1786 ~|  2886
+# Testing 25607 ~| 48275
+# Break in Module t_alu at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_alu.v line 77
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# Compile of alu.v was successful.
+# Compile of t_alu.v was successful.
+# 4 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_alu
+# Loading work.ALU
+run -all
+# -2147483645Testing 13604 + 24193
+# -2147483645Testing 54793 + 22115
+# -2147483645Testing 31501 + 39309
+# -2147483645Testing 33893 + 21010
+# -2147483645Testing 58113 + 52493
+# -2147483645Testing 61814 + 52541
+# -2147483645Testing 22509 + 63372
+# -2147483645Testing 59897 +  9414
+# -2147483645Testing 33989 + 53930
+# -2147483645Testing 63461 + 29303
+# -2147483645Testing 54802 + 56207
+# -2147483645Testing 27122 + 38606
+# -2147483645Testing 31464 + 20165
+# -2147483645Testing 18780 + 10429
+# -2147483645Testing 22573 +  9829
+# -2147483645Testing 25187 + 34570
+# -2147483645Testing  8832 +  8480
+# -2147483645Testing 17834 + 52381
+# -2147483645Testing 16022 + 47123
+# -2147483645Testing 14349 + 54867
+# -2147483645Testing 56683 + 10965
+# -2147483645Testing 18946 + 16046
+# -2147483645Testing 59677 + 29391
+# -2147483645Testing 18723 + 25866
+# -2147483645Testing  2762 + 19516
+# -2147483645Testing 48626 + 24970
+# -2147483645Testing 45889 + 13528
+# -2147483645Testing 62328 +  4745
+# -2147483645Testing  3563 + 26038
+# -2147483645Testing 63942 +  5038
+# -2147483645Testing   700 + 56618
+# -2147483645Testing 39435 + 48753
+# -2147483645Testing 16773 + 21839
+# -2147483645Testing 24635 + 13114
+# -2147483645Testing 12926 + 19221
+# -2147483645Testing 39921 + 19417
+# -2147483645Testing  1890 + 64332
+# -2147483645Testing 21919 + 41359
+# -2147483645Testing 43512 + 24759
+# -2147483645Testing 22175 + 37980
+# -2147483645Testing 49243 + 14217
+# -2147483645Testing 12873 + 16080
+# -2147483645Testing 49367 + 64593
+# -2147483645Testing 12182 + 32524
+# -2147483645Testing 52930 + 60872
+# -2147483645Testing 23159 + 60733
+# -2147483645Testing 56082 +   126
+# -2147483645Testing 33133 + 59193
+# -2147483645Testing 36639 + 63187
+# -2147483645Testing 12165 + 34936
+# -2147483645Testing 22875 + 19273
+# -2147483645Testing 44607 + 44842
+# -2147483645Testing 25432 + 14470
+# -2147483645Testing  3214 + 62108
+# -2147483645Testing 39418 + 48166
+# -2147483645Testing  6003 + 46243
+# -2147483645Testing 43055 + 37555
+# -2147483645Testing 22111 +  3396
+# -2147483645Testing 65015 + 14027
+# -2147483645Testing  6886 + 56154
+# -2147483645Testing 49449 + 58093
+# -2147483645Testing 27866 + 46693
+# -2147483645Testing 58037 + 38111
+# -2147483645Testing  6521 + 65348
+# -2147483645Testing  3280 +  2858
+# -2147483645Testing 44459 + 53006
+# -2147483645Testing 44508 + 48282
+# -2147483645Testing 29437 +   707
+# -2147483645Testing 60758 + 59726
+# -2147483645Testing 30311 + 13322
+# -2147483645Testing 47542 + 35384
+# -2147483645Testing 34681 + 50360
+# -2147483645Testing 49044 + 23955
+# -2147483645Testing 11268 + 51801
+# -2147483645Testing 27099 + 56909
+# -2147483645Testing 47065 +  9837
+# -2147483645Testing 57974 + 18890
+# -2147483645Testing 11702 + 29077
+# -2147483645Testing  6726 + 39684
+# -2147483645Testing 25079 +  1897
+# -2147483645Testing 47796 + 36232
+# -2147483645Testing 55592 +  1069
+# -2147483645Testing 12487 + 39982
+# -2147483645Testing 58376 + 17692
+# -2147483645Testing 42749 +  1833
+# -2147483645Testing 36892 + 26502
+# -2147483645Testing  2266 + 50749
+# -2147483645Testing 42854 + 50288
+# -2147483645Testing  1139 + 39354
+# -2147483645Testing 45918 + 31226
+# -2147483645Testing  1493 + 63002
+# -2147483645Testing   185 + 24887
+# -2147483645Testing 14230 +  8640
+# -2147483645Testing 40742 +  6838
+# -2147483645Testing 33661 +  4060
+# -2147483645Testing 22406 + 65400
+# -2147483645Testing 39806 + 32987
+# -2147483645Testing 46799 + 11129
+# -2147483645Testing 58618 + 61025
+# -2147483645Testing  2327 + 30881
+# -2147483645Testing 43981 <<           0
+# -2147483645Testing 43981 <<           1
+# -2147483645Testing 43981 <<           2
+# -2147483645Testing 43981 <<           3
+# -2147483645Testing 43981 <<           4
+# -2147483645Testing 43981 <<           5
+# -2147483645Testing 43981 <<           6
+# -2147483645Testing 43981 <<           7
+# -2147483645Testing 43981 <<           8
+# -2147483645Testing 43981 <<           9
+# -2147483645Testing 43981 <<          10
+# -2147483645Testing 43981 <<          11
+# -2147483645Testing 43981 <<          12
+# -2147483645Testing 43981 <<          13
+# -2147483645Testing 43981 <<          14
+# -2147483645Testing 43981 <<          15
+# -2147483645Testing 43981 >>           0
+# -2147483645Testing 43981 >>           1
+# -2147483645Testing 43981 >>           2
+# -2147483645Testing 43981 >>           3
+# -2147483645Testing 43981 >>           4
+# -2147483645Testing 43981 >>           5
+# -2147483645Testing 43981 >>           6
+# -2147483645Testing 43981 >>           7
+# -2147483645Testing 43981 >>           8
+# -2147483645Testing 43981 >>           9
+# -2147483645Testing 43981 >>          10
+# -2147483645Testing 43981 >>          11
+# -2147483645Testing 43981 >>          12
+# -2147483645Testing 43981 >>          13
+# -2147483645Testing 43981 >>          14
+# -2147483645Testing 43981 >>          15
+# -2147483645Testing 37254 & 38480
+# -2147483645Testing 23029 & 34869
+# -2147483645Testing 35369 & 30145
+# -2147483645Testing 29893 & 46232
+# -2147483645Testing 31563 & 17011
+# -2147483645Testing 59116 &  5770
+# -2147483645Testing 53582 & 32936
+# -2147483645Testing 64937 & 36001
+# -2147483645Testing 47374 & 26342
+# -2147483645Testing 49311 & 46378
+# -2147483645Testing  7466 & 62605
+# -2147483645Testing 65438 & 58936
+# -2147483645Testing 43129 & 58312
+# -2147483645Testing 17866 & 16659
+# -2147483645Testing 51563 & 44743
+# -2147483645Testing 56758 & 40378
+# -2147483645Testing 43972 & 38329
+# -2147483645Testing 54162 & 39604
+# -2147483645Testing 15231 & 36998
+# -2147483645Testing 62970 & 38130
+# -2147483645Testing  8498 & 24253
+# -2147483645Testing 52612 & 42212
+# -2147483645Testing 53194 & 31145
+# -2147483645Testing 43169 & 43406
+# -2147483645Testing 27387 &  7691
+# -2147483645Testing 37103 & 15817
+# -2147483645Testing 58678 & 18549
+# -2147483645Testing 22159 & 49003
+# -2147483645Testing 59272 & 46254
+# -2147483645Testing 33179 & 17810
+# -2147483645Testing 57128 & 57389
+# -2147483645Testing 24395 & 45250
+# -2147483645Testing 63006 &  1293
+# -2147483645Testing 65004 & 40216
+# -2147483645Testing  7121 &  7302
+# -2147483645Testing  9281 & 25659
+# -2147483645Testing 63960 & 59731
+# -2147483645Testing 25174 &  8795
+# -2147483645Testing 64226 & 57860
+# -2147483645Testing   883 & 46296
+# -2147483645Testing 19730 & 17592
+# -2147483645Testing  4665 & 46821
+# -2147483645Testing 56481 &  3883
+# -2147483645Testing 23937 & 34248
+# -2147483645Testing 21799 & 63905
+# -2147483645Testing 28191 & 14852
+# -2147483645Testing  9048 & 32918
+# -2147483645Testing 37652 & 46098
+# -2147483645Testing 28822 & 58033
+# -2147483645Testing 54613 & 36589
+# -2147483645Testing 11051 &  7157
+# -2147483645Testing   941 &  8743
+# -2147483645Testing 65412 & 58535
+# -2147483645Testing 42727 & 37049
+# -2147483645Testing 22089 & 48091
+# -2147483645Testing  4041 & 45393
+# -2147483645Testing 24225 & 56618
+# -2147483645Testing 17914 &  8261
+# -2147483645Testing  1411 & 17020
+# -2147483645Testing  5234 & 15614
+# -2147483645Testing 62056 & 43631
+# -2147483645Testing  3462 &  8688
+# -2147483645Testing 38712 & 37184
+# -2147483645Testing 30248 & 43510
+# -2147483645Testing  6853 & 12736
+# -2147483645Testing 24436 & 28985
+# -2147483645Testing 27312 & 34620
+# -2147483645Testing 37674 & 54114
+# -2147483645Testing 13589 & 20193
+# -2147483645Testing 40215 & 60995
+# -2147483645Testing 58313 &  1158
+# -2147483645Testing 52005 & 40385
+# -2147483645Testing 41613 & 57946
+# -2147483645Testing  9991 & 31532
+# -2147483645Testing 23820 & 58993
+# -2147483645Testing 31803 & 58806
+# -2147483645Testing 49911 & 52894
+# -2147483645Testing 22620 & 63317
+# -2147483645Testing 14880 &  4768
+# -2147483645Testing  2418 & 36020
+# -2147483645Testing 62941 & 61453
+# -2147483645Testing 39243 & 17017
+# -2147483645Testing 55966 & 25853
+# -2147483645Testing 53883 & 29583
+# -2147483645Testing 39427 & 10723
+# -2147483645Testing 17181 & 15793
+# -2147483645Testing 40772 & 48277
+# -2147483645Testing 13536 & 30957
+# -2147483645Testing  5458 & 23544
+# -2147483645Testing 46989 & 50258
+# -2147483645Testing 59268 & 64838
+# -2147483645Testing 37516 & 32144
+# -2147483645Testing 49431 & 24938
+# -2147483645Testing 22404 & 48298
+# -2147483645Testing  3964 &   608
+# -2147483645Testing 19898 & 24715
+# -2147483645Testing 65190 &  7717
+# -2147483645Testing 33586 &  1186
+# -2147483645Testing 31817 & 45076
+# -2147483645Testing 49213 &   843
+# -2147483645Testing 12380 ~| 30023
+# -2147483645Testing 38790 ~| 31289
+# -2147483645Testing 35508 ~| 58832
+# -2147483645Testing 20524 ~| 17804
+# -2147483645Testing 46855 ~| 16490
+# -2147483645Testing 63761 ~| 65512
+# -2147483645Testing 40523 ~| 33139
+# -2147483645Testing 23532 ~|  1315
+# -2147483645Testing 61348 ~| 26057
+# -2147483645Testing  1081 ~| 29407
+# -2147483645Testing  5332 ~| 25959
+# -2147483645Testing 16797 ~|  9648
+# -2147483645Testing 14722 ~| 48969
+# -2147483645Testing  6873 ~| 46880
+# -2147483645Testing 19484 ~| 28563
+# -2147483645Testing 25059 ~| 33322
+# -2147483645Testing 63688 ~| 11869
+# -2147483645Testing 40250 ~| 43396
+# -2147483645Testing 43051 ~| 32569
+# -2147483645Testing  7186 ~|    82
+# -2147483645Testing 35161 ~| 38608
+# -2147483645Testing 60014 ~| 10647
+# -2147483645Testing 34779 ~| 30630
+# -2147483645Testing 54203 ~| 31744
+# -2147483645Testing 19471 ~| 54889
+# -2147483645Testing 25100 ~|  6489
+# -2147483645Testing 18885 ~| 13775
+# -2147483645Testing 58768 ~| 55377
+# -2147483645Testing 42089 ~| 52599
+# -2147483645Testing 25930 ~| 22744
+# -2147483645Testing 19867 ~| 39620
+# -2147483645Testing 45496 ~| 62135
+# -2147483645Testing 61062 ~| 23088
+# -2147483645Testing 21367 ~| 51125
+# -2147483645Testing 62932 ~| 34567
+# -2147483645Testing 38774 ~| 44521
+# -2147483645Testing 35723 ~| 24321
+# -2147483645Testing 35803 ~| 17024
+# -2147483645Testing 40898 ~| 56005
+# -2147483645Testing 64048 ~| 58543
+# -2147483645Testing 55910 ~| 47535
+# -2147483645Testing 28393 ~| 45048
+# -2147483645Testing 44038 ~| 30447
+# -2147483645Testing 14305 ~| 31893
+# -2147483645Testing 16110 ~| 19808
+# -2147483645Testing 24293 ~| 59944
+# -2147483645Testing 32100 ~| 14121
+# -2147483645Testing 44769 ~| 21111
+# -2147483645Testing  5486 ~| 62849
+# -2147483645Testing 47573 ~| 54632
+# -2147483645Testing 29168 ~|   170
+# -2147483645Testing 49935 ~| 18673
+# -2147483645Testing 48253 ~| 38286
+# -2147483645Testing 56546 ~| 19772
+# -2147483645Testing 59049 ~| 45551
+# -2147483645Testing 53339 ~| 15535
+# -2147483645Testing 39754 ~|  3513
+# -2147483645Testing 11539 ~| 13587
+# -2147483645Testing 16741 ~| 10065
+# -2147483645Testing 15031 ~|  4249
+# -2147483645Testing  2106 ~| 14961
+# -2147483645Testing  1890 ~| 27364
+# -2147483645Testing 56618 ~| 17533
+# -2147483645Testing 24409 ~| 41957
+# -2147483645Testing 27629 ~|   201
+# -2147483645Testing 52289 ~| 53679
+# -2147483645Testing  7387 ~| 59597
+# -2147483645Testing 40816 ~| 54278
+# -2147483645Testing  8354 ~| 15805
+# -2147483645Testing 56938 ~| 18396
+# -2147483645Testing 24144 ~| 62587
+# -2147483645Testing 22565 ~| 33912
+# -2147483645Testing 35318 ~| 52828
+# -2147483645Testing 39715 ~| 43897
+# -2147483645Testing  1480 ~| 18107
+# -2147483645Testing 60942 ~| 38003
+# -2147483645Testing   780 ~| 39118
+# -2147483645Testing 25044 ~| 56409
+# -2147483645Testing 28601 ~| 49331
+# -2147483645Testing 49140 ~| 57973
+# -2147483645Testing 61708 ~| 31289
+# -2147483645Testing 37634 ~| 48661
+# -2147483645Testing 63749 ~| 17230
+# -2147483645Testing 10498 ~| 20920
+# -2147483645Testing 45576 ~| 21389
+# -2147483645Testing 36527 ~| 12776
+# -2147483645Testing  2448 ~| 44021
+# -2147483645Testing 36940 ~| 48507
+# -2147483645Testing 42560 ~|   805
+# -2147483645Testing 46605 ~|  4208
+# -2147483645Testing 63789 ~| 55337
+# -2147483645Testing 20924 ~|  2096
+# -2147483645Testing 11712 ~| 26960
+# -2147483645Testing 27297 ~| 16205
+# -2147483645Testing 12021 ~| 45045
+# -2147483645Testing 52317 ~|  4756
+# -2147483645Testing 42602 ~| 26044
+# -2147483645Testing  2232 ~| 40094
+# -2147483645Testing  1786 ~|  2886
+# -2147483645Testing 25607 ~| 48275
+# Break in Module t_alu at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_alu.v line 78
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# Compile of alu.v was successful.
+# Compile of t_alu.v was successful.
+# 4 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_alu
+# Loading work.ALU
+run -all
+# Break in Module t_alu at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_alu.v line 78
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# Compile of alu.v was successful.
+# Compile of t_alu.v was successful.
+# 4 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_alu
+# Loading work.ALU
+run -all
+# Break in Module t_alu at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_alu.v line 78
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# Compile of alu.v was successful.
+# Compile of t_alu.v was successful.
+# 4 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_alu
+# Loading work.ALU
+run -all
+# Break in Module t_alu at C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_alu.v line 78
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# Compile of alu.v was successful.
+# Compile of t_alu.v was successful.
+# 4 compiles, 0 failed with no errors. 
