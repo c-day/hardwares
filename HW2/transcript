@@ -2273,3 +2273,14 @@ run -all
 # Compile of alu.v was successful.
 # Compile of t_alu.v was successful.
 # 4 compiles, 0 failed with no errors. 
+quit -sim
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# Compile of alu.v failed with 1 errors.
+# Compile of t_alu.v was successful.
+# 4 compiles, 1 failed with 1 error. 
+# Compile of t_rf.v was successful.
+# Compile of rf_commented.v was successful.
+# Compile of alu.v was successful.
+# Compile of t_alu.v was successful.
+# 4 compiles, 0 failed with no errors. 

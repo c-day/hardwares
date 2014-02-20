@@ -20,8 +20,6 @@
 * zr - contains 1 if result is 0, 0 otherwise
 *******************************************************************************/
 
-<<<<<<< HEAD
-=======
 //preforms addition and checks for overflow
 module SAT(sum, ov, src0, src1);
   input [15:0] src0, src1;
@@ -29,7 +27,7 @@ module SAT(sum, ov, src0, src1);
   output [15:0] sum;
   
   //intermediate sum used to check for overflow
-  wire sumTemp[15:0];
+  wire [15:0] sumTemp;
   
   assign sumTemp = src0 + src1;
   
@@ -49,24 +47,29 @@ module SAT(sum, ov, src0, src1);
               15'hFFFF;                                 //shouldnt happen
 endmodule
 
->>>>>>> origin/ethan
 module ALU(dst, ov, zr, src0, src1, ctrl, shamt);
 	input [15:0] src0, src1;
 	input [3:0] ctrl;
 	input [3:0] shamt;
 	output [15:0] dst;
 	output ov, zr;
+	
+	wire [15:0] added, subed;
+	wire aov, sov;
 
 	// Use parameters so that the opcodes can be specified by higher
 	// level modules.  
-	parameter addOp = 3'b000;
-	parameter subOp = 3'b001;
-	parameter andOp = 3'b010;
-	parameter norOp = 3'b011;
-	parameter sllOp = 3'b100;
-	parameter srlOp = 3'b101;
-	parameter sraOp = 3'b110;
-	parameter lhbOp = 3'b111;
+	parameter addOp = 4'b0000;
+	parameter subOp = 4'b0001;
+	parameter andOp = 4'b0010;
+	parameter norOp = 4'b0011;
+	parameter sllOp = 4'b0100;
+	parameter srlOp = 4'b0101;
+	parameter sraOp = 4'b0110;
+	parameter lhbOp = 4'b0111;
+	
+	SAT saturate(added, aov, src0, src1);
+	SAT saturate(subed, sov, src0, (~src1 + 1));
 
 	//signed wire to contain the right arithmatic shift value	
 	wire signed [15:0] sra;
@@ -76,8 +79,8 @@ module ALU(dst, ov, zr, src0, src1, ctrl, shamt);
 	assign sra = src0 >>> shamt;
 	
 	//parallel_case
-	assign 	{ov, dst} = (ctrl == addOp) ? src0 + src1 :
-											(ctrl == subOp) ? src0 - src1 :
+	assign 	{ov, dst} = (ctrl == addOp) ? {aov, added} :
+											(ctrl == subOp) ? {sov, subed} :
 											(ctrl == andOp) ? {1'b0, src0 & src1} :
 											(ctrl == norOp) ? {1'b0, ~(src0 | src1)} :
 											(ctrl == sllOp) ? {1'b0, src0 << shamt} :

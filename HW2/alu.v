@@ -53,6 +53,9 @@ module ALU(dst, ov, zr, src0, src1, ctrl, shamt);
 	input [3:0] shamt;
 	output [15:0] dst;
 	output ov, zr;
+	
+	wire [15:0] added, subed;
+	wire aov, sov;
 
 	// Use parameters so that the opcodes can be specified by higher
 	// level modules.  
@@ -64,6 +67,9 @@ module ALU(dst, ov, zr, src0, src1, ctrl, shamt);
 	parameter srlOp = 4'b0101;
 	parameter sraOp = 4'b0110;
 	parameter lhbOp = 4'b0111;
+	
+	SAT saturate1(added, aov, src0, src1);
+	SAT saturate2(subed, sov, src0, (~src1 + 1));
 
 	//signed wire to contain the right arithmatic shift value	
 	wire signed [15:0] sra;
@@ -73,8 +79,8 @@ module ALU(dst, ov, zr, src0, src1, ctrl, shamt);
 	assign sra = src0 >>> shamt;
 	
 	//parallel_case
-	assign 	{ov, dst} = (ctrl == addOp) ? src0 + src1 :
-											(ctrl == subOp) ? src0 - src1 :
+	assign 	{ov, dst} = (ctrl == addOp) ? {aov, added} :
+											(ctrl == subOp) ? {sov, subed} :
 											(ctrl == andOp) ? {1'b0, src0 & src1} :
 											(ctrl == norOp) ? {1'b0, ~(src0 | src1)} :
 											(ctrl == sllOp) ? {1'b0, src0 << shamt} :

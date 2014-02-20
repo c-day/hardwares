@@ -9,24 +9,24 @@ Z0 dC:/Users/Craig/Documents/GitHub/hardwares/New folder
 !i10e 25
 !i10f 100
 vALU
-Z1 !s110 1392873011
-Z2 ILVN>UiJ>cYc;7SJf@Gk@P2
+Z1 !s110 1392873379
+Z2 IgD4QcV8YO6L5Xaz?mWgSV2
 Z3 V`JN@9S9cnhjKRR_L]QIcM3
 Z4 dC:/Users/Craig/Documents/GitHub/hardwares/HW2
-Z5 w1392872944
+Z5 w1392873377
 Z6 8C:/Users/Craig/Documents/GitHub/hardwares/HW2/alu.v
 Z7 FC:/Users/Craig/Documents/GitHub/hardwares/HW2/alu.v
 L0 50
 Z8 OP;L;10.2c;57
 r1
 31
-Z9 !s108 1392873011.691000
+Z9 !s108 1392873379.211000
 Z10 !s107 C:/Users/Craig/Documents/GitHub/hardwares/HW2/alu.v|
 Z11 !s90 -reportprogress|300|-work|work|C:/Users/Craig/Documents/GitHub/hardwares/HW2/alu.v|
 Z12 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -O0
 Z13 n@a@l@u
 !i10b 1
-Z14 !s100 iDY5YFo]fRmc4Kzo9e6VW1
+Z14 !s100 Hkz]h<T0VPhhI:Pk6:>4U2
 !s85 0
 !s101 -O0
 vrf
@@ -44,14 +44,15 @@ r1
 31
 Z20 !s90 -reportprogress|300|-work|work|C:/Users/Craig/Documents/GitHub/hardwares/HW2/rf_commented.v|
 R12
-Z21 !s108 1392873011.639000
+Z21 !s108 1392873379.163000
 Z22 !s107 C:/Users/Craig/Documents/GitHub/hardwares/HW2/rf_commented.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vSAT
 R1
-Z23 IFU[ghl0VUbQR7:TSjiQ0X0
+Z23 !s100 91<kP3WFb_jo5Uao5f_;80
+Z24 IFU[ghl0VUbQR7:TSjiQ0X0
 R3
 R4
 R5
@@ -65,9 +66,8 @@ R9
 R10
 R11
 R12
-Z24 n@s@a@t
+Z25 n@s@a@t
 !i10b 1
-Z25 !s100 91<kP3WFb_jo5Uao5f_;80
 !s85 0
 !s101 -O0
 vt_alu
@@ -85,7 +85,7 @@ R8
 r1
 !s85 0
 31
-!s108 1392873011.746000
+!s108 1392873379.267000
 !s107 C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_alu.v|
 Z31 !s90 -reportprogress|300|-work|work|C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_alu.v|
 !s101 -O0
@@ -105,7 +105,7 @@ r1
 Z37 !s90 -reportprogress|300|-work|work|C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v|
 R12
 R1
-Z38 !s108 1392873011.585000
+Z38 !s108 1392873379.116000
 Z39 !s107 C:/Users/Craig/Documents/GitHub/hardwares/HW2/t_rf.v|
 !i10b 1
 !s85 0
