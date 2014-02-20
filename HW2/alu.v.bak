@@ -27,7 +27,7 @@ module SAT(sum, ov, src0, src1);
   output [15:0] sum;
   
   //intermediate sum used to check for overflow
-  wire [15:0] sumTemp;
+  wire sumTemp[15:0];
   
   assign sumTemp = src0 + src1;
   
