@@ -20,6 +20,36 @@
 * zr - contains 1 if result is 0, 0 otherwise
 *******************************************************************************/
 
+<<<<<<< HEAD
+=======
+//preforms addition and checks for overflow
+module SAT(sum, ov, src0, src1);
+  input [15:0] src0, src1;
+  output ov;
+  output [15:0] sum;
+  
+  //intermediate sum used to check for overflow
+  wire sumTemp[15:0];
+  
+  assign sumTemp = src0 + src1;
+  
+  //check for positive or negative overflow
+  assign negOV = ~src0[15] & ~src1[15] & sumTemp[15];
+  assign posOV = src0[15] & src1[15] & ~sumTemp[15];
+  
+  //make a type of mux here with assigns
+  assign sum = ({posOV, negOV} == 2'b00) ? sumTemp :    //no overflow
+                ({posOV, negOV} == 2'b01) ? 16'h8000 :  //neg overflow
+                ({posOV, negOV} == 2'b10) ? 16'h7FFF :  //pos overflow
+                16'hFFFF;                               //shouldn't happen
+      
+  assign ov = ({posOV, negOV} == 2'b00) ? 1'b0 :        //no overflow
+              ({posOV, negOV} == 2'b01) ? 1'b1 :        //neg overflow
+              ({posOV, negOV} == 2'b10) ? 1'b1 :        //pos overflow
+              15'hFFFF;                                 //shouldnt happen
+endmodule
+
+>>>>>>> origin/ethan
 module ALU(dst, ov, zr, src0, src1, ctrl, shamt);
 	input [15:0] src0, src1;
 	input [3:0] ctrl;
