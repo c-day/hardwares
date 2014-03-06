@@ -1,7 +1,7 @@
 
 module ID(p0, p1, shAmt, aluOp, src1sel, hlt, instr, zr, dst, clk);
-  input instr, zr, clk;
-  input [15:0] dst;
+  input zr, clk;
+  input [15:0] dst, instr;
   output [15:0] p0, p1;
   output [3:0] shAmt;
   output [2:0] aluOp;

@@ -1,7 +1,7 @@
 `include "defines.v"
 module ALU(dst, ov, zr, src0, src1, aluOp, shAmt);
   input [15:0] src0, src1;
-	input [3:0] aluOp;
+	input [2:0] aluOp;
 	input [3:0] shAmt;
 	output [15:0] dst;
 	output ov, zr;

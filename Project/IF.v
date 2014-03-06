@@ -7,7 +7,7 @@ module IF(instr, hlt, clk, rst_n);
 
   PC PC(pc, hlt, clk, rst_n);
 
-  IM IM(clk, addr, 1'b1, pc);
+  IM IM(clk, pc, 1'b1, instr);
 
   
   
