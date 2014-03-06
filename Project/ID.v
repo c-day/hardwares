@@ -10,8 +10,8 @@ module ID(p0, p1, shAmt, aluOp, src1sel, hlt, instr, zr, dst, clk);
   wire [3:0] p0_addr, p1_addr, dst_addr;
   wire re0, re1, we;
   
-  decoder instr_dec(p0_addr, p1_addr, dst_addr, re0, re1, we, aluOp, shAmt, src1sel, hlt, instr, zr);
+  instr_dec instr_dec(p0_addr, p1_addr, dst_addr, re0, re1, we, aluOp, shAmt, src1sel, hlt, instr, zr);
   
-  regFile RF(clk, p0_addr, p1_addr, p0, p1, re0, re1, dst_addr, dst, we, hlt);
+  RF RF(clk, p0_addr, p1_addr, p0, p1, re0, re1, dst_addr, dst, we, hlt);
   
 endmodule

@@ -12,7 +12,7 @@ module EX(dst, zr, p0, p1, shAmt, aluOp, imm);
   
   srcMux SRC_MUX(src1, p1, imm, sel);
   
-  alu ALU(sum, ov, zr, .src0(p0), src1, aluOp, shAmt);
+  alu ALU(sum, ov, zr, p0, src1, aluOp, shAmt);
   
   
   
