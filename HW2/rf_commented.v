@@ -2,7 +2,7 @@
 * ECE 552
 * HW 2, Problem 3
 * Authors:
-* Craig Day, Ethan Massey
+* Ethan Massey
 *******************************************************************************/
 
 module rf(clk,p0_addr,p1_addr,p0,p1,re0,re1,dst_addr,dst,we,hlt);
