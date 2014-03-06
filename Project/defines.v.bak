@@ -1,3 +1,6 @@
+`ifndef _defines_v_
+`define _defines_v_
+
 //Define the opcodes used in our instruction decoder
 `define ADD  4'b0000
 `define ADDZ 4'b0001
@@ -26,3 +29,4 @@
 `define ALU_SRA 3'b110
 `define ALU_LHB 3'b111
 
+`endif

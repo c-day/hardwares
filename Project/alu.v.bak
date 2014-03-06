@@ -18,7 +18,7 @@ module ALU(dst, ov, zr, src0, src1, aluOp, shAmt);
 								 (aluOp == `ALU_SRL) ? src0 >> shAmt :
 								 (aluOp == `ALU_SRA) ? $signed(src0 >>> shAmt) :	
 								 (aluOp == `ALU_LHB) ? {src1[7:0], src0[7:0]} :
-								 16'd0;
+								 17'd0;
 								 
 	//set the zero flag if all bits are zero
   assign zr = ~|dst;

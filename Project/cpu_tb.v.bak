@@ -15,7 +15,6 @@ module t_cpu();
     #2 rst_n = 1'b1;
   end
   
-  always @(hlt)
+  always
     if(hlt) $stop;
-      
 endmodule

@@ -5,13 +5,6 @@ Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 
 Top level modules:
 	SRC_MUX
 
-} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/alu.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/alu.v
-Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
--- Compiling module ALU
-
-Top level modules:
-	ALU
-
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/instr_decode.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/instr_decode.v
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
 -- Compiling module instr_dec
@@ -28,13 +21,6 @@ Top level modules:
 
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/defines.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/defines.v
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
-
-} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v
-Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
--- Compiling module cpu
-
-Top level modules:
-	cpu
 
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/pc.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/pc.v
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
@@ -71,18 +57,18 @@ Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 
 Top level modules:
 	IF
 
-} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/dff.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/dff.v
-Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
--- Compiling module dff
-
-Top level modules:
-	dff
-
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/rf_single_cycle.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/rf_single_cycle.v
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
 -- Compiling module RF
 
 Top level modules:
 	RF
+
+} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/dff.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/dff.v
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module dff
+
+Top level modules:
+	dff
 
 } {} {}}
