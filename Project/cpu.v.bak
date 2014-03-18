@@ -1,7 +1,7 @@
-
-module cpu(hlt, clk, rst_n);
+module cpu(hlt, pc clk, rst_n);
   input clk, rst_n;
   output hlt;
+  output [15:0] pc;
   
   //connections between the IF and ID stages
   wire [15:0] instr_IF_ID;
@@ -17,7 +17,7 @@ module cpu(hlt, clk, rst_n);
   wire zr_EX_MEM;
   
   //instruction fetch stage
-  IF IF(.instr(instr_IF_ID), .hlt(hlt), .clk(clk), .rst_n(rst_n));
+  IF IF(.instr(instr_IF_ID), .pc(pc), .hlt(hlt), .clk(clk), .rst_n(rst_n));
   
   //instruction decode stage
   ID ID(.p0(p0_IF_EX), .p1(p1_IF_EX), .shAmt(shAmt_IF_EX), .aluOp(aluOp_IF_EX), .src1sel(src1sel), .hlt(hlt), .instr(instr_IF_ID), .zr(zr_EX_MEM), .dst(dst_EX_MEM), .clk(clk));

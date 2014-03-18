@@ -1,5 +1,5 @@
 # Reading A:/Modeltech_pe_edu_10.2c/tcl/vsim/pref.tcl 
-# OpenFile C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v 
+# OpenFile C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v 
 # Loading project wisc
 # Compile of src_mux.v was successful.
 # Compile of defines.v was successful.
@@ -15,69 +15,20 @@
 # Compile of cpu.v was successful.
 # Compile of cpu_tb.v was successful.
 # 13 compiles, 0 failed with no errors. 
-vsim -gui work.t_cpu
-# //  ModelSim PE Student Edition 10.2c Jul 18 2013 
-# //
-# //  Copyright 1991-2013 Mentor Graphics Corporation
-# //  All Rights Reserved.
-# //
-# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
-# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
-# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
-# //
-# // NOT FOR CORPORATE OR PRODUCTION USE.
-# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
-# // FOR HIGHER EDUCATION PURPOSES ONLY
-# //
-# vsim -gui work.t_cpu 
-# Loading work.t_cpu
-# Loading work.cpu
-# Loading work.IF
-# Loading work.PC
-# Loading work.IM
-# Loading work.ID
-# Loading work.instr_dec
-# Loading work.RF
-# Loading work.EX
-# Loading work.SRC_MUX
-# Loading work.ALU
-run -all
-add wave -position insertpoint  \
-sim:/t_cpu/hlt \
-sim:/t_cpu/clk \
-sim:/t_cpu/rst_n
-add wave -position insertpoint  \
-sim:/t_cpu/CPU/IF/PC/pc
-add wave -position insertpoint  \
-sim:/t_cpu/CPU/IF/IM/instr
-add wave -position insertpoint  \
-sim:/t_cpu/CPU/ID/instr_dec/instr \
-sim:/t_cpu/CPU/ID/instr_dec/zr \
-sim:/t_cpu/CPU/ID/instr_dec/aluOp \
-sim:/t_cpu/CPU/ID/instr_dec/shAmt \
-sim:/t_cpu/CPU/ID/instr_dec/src1sel \
-sim:/t_cpu/CPU/ID/instr_dec/hlt \
-sim:/t_cpu/CPU/ID/instr_dec/p0_addr \
-sim:/t_cpu/CPU/ID/instr_dec/p1_addr \
-sim:/t_cpu/CPU/ID/instr_dec/dst_addr \
-sim:/t_cpu/CPU/ID/instr_dec/re0 \
-sim:/t_cpu/CPU/ID/instr_dec/re1 \
-sim:/t_cpu/CPU/ID/instr_dec/we
-add wave -position insertpoint  \
-sim:/t_cpu/CPU/EX/SRC_MUX/p1 \
-sim:/t_cpu/CPU/EX/SRC_MUX/imm \
-sim:/t_cpu/CPU/EX/SRC_MUX/sel \
-sim:/t_cpu/CPU/EX/SRC_MUX/src1
-add wave -position insertpoint  \
-sim:/t_cpu/CPU/EX/ALU/src0 \
-sim:/t_cpu/CPU/EX/ALU/src1 \
-sim:/t_cpu/CPU/EX/ALU/aluOp \
-sim:/t_cpu/CPU/EX/ALU/shAmt \
-sim:/t_cpu/CPU/EX/ALU/dst \
-sim:/t_cpu/CPU/EX/ALU/ov \
-sim:/t_cpu/CPU/EX/ALU/zr
-restart
-run
+# Compile of src_mux.v was successful.
+# Compile of defines.v was successful.
+# Compile of dff.v was successful.
+# Compile of instr_decode.v was successful.
+# Compile of instr_mem.v was successful.
+# Compile of pc.v was successful.
+# Compile of rf_single_cycle.v was successful.
+# Compile of IF.v was successful.
+# Compile of ID.v was successful.
+# Compile of EX.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v failed with 1 errors.
+# Compile of cpu_tb.v was successful.
+# 13 compiles, 1 failed with 1 error. 
 # Compile of src_mux.v was successful.
 # Compile of defines.v was successful.
 # Compile of dff.v was successful.
@@ -92,90 +43,20 @@ run
 # Compile of cpu.v was successful.
 # Compile of cpu_tb.v was successful.
 # 13 compiles, 0 failed with no errors. 
-restart
-# Loading work.t_cpu
-# Loading work.cpu
-# Loading work.IF
-# Loading work.PC
-# Loading work.IM
-# Loading work.ID
-# Loading work.instr_dec
-# Loading work.RF
-# Loading work.EX
-# Loading work.SRC_MUX
-# Loading work.ALU
-run
-# R1 = ff81
-# R2 = 0044
-# R3 = ffc5
-# R4 = ff3d
-# R5 = aaaa
-# R6 = 6666
-# R7 = 7777
-# R8 = 8888
-# R9 = 9999
-# Ra = aaaa
-# Rb = bbbb
-# Rc = cccc
-# Rd = dddd
-# Re = eeee
-# Rf = ffff
-# Break in Module t_cpu at C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v line 19
-run -all
-restart
-run -all
-# R1 = ff81
-# R2 = 0044
-# R3 = ffc5
-# R4 = ff3d
-# R5 = aaaa
-# R6 = 6666
-# R7 = 7777
-# R8 = 8888
-# R9 = 9999
-# Ra = aaaa
-# Rb = bbbb
-# Rc = cccc
-# Rd = dddd
-# Re = eeee
-# Rf = ffff
-# Break in Module t_cpu at C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v line 19
-restart
-run -all
-# R1 = ff81
-# R2 = 0044
-# R3 = ffc5
-# R4 = ff3d
-# R5 = aaaa
-# R6 = 7f77
-# R7 = 0005
-# R8 = 8000
-# R9 = 0005
-# Ra = 7ffb
-# Rb = 0000
-# Rc = ffbb
-# Rd = dddd
-# Re = eeee
-# Rf = ffff
-# Break in Module t_cpu at C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v line 19
-restart
-run -all
-# R1 = ff81
-# R2 = 0044
-# R3 = ffc5
-# R4 = ff3d
-# R5 = dedd
-# R6 = 7f77
-# R7 = 0005
-# R8 = 8000
-# R9 = 0005
-# Ra = 7ffb
-# Rb = 0000
-# Rc = ffbb
-# Rd = dddd
-# Re = eeee
-# Rf = ffff
-# Break in Module t_cpu at C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v line 19
+# Compile of src_mux.v was successful.
+# Compile of defines.v was successful.
+# Compile of dff.v was successful.
+# Compile of instr_decode.v was successful.
+# Compile of instr_mem.v was successful.
+# Compile of pc.v failed with 4 errors.
+# Compile of rf_single_cycle.v was successful.
+# Compile of IF.v was successful.
+# Compile of ID.v was successful.
+# Compile of EX.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of cpu_tb.v was successful.
+# 13 compiles, 1 failed with 4 errors. 
 # Compile of src_mux.v was successful.
 # Compile of defines.v was successful.
 # Compile of dff.v was successful.
@@ -190,35 +71,6 @@ run -all
 # Compile of cpu.v was successful.
 # Compile of cpu_tb.v was successful.
 # 13 compiles, 0 failed with no errors. 
-restart
-# Loading work.t_cpu
-# Loading work.cpu
-# Loading work.IF
-# Loading work.PC
-# Loading work.IM
-# Loading work.ID
-# Loading work.instr_dec
-# Loading work.RF
-# Loading work.EX
-# Loading work.SRC_MUX
-# Loading work.ALU
-run -all
-# R1 = ff81
-# R2 = 0044
-# R3 = ffc5
-# R4 = ff3d
-# R5 = dedd
-# R6 = 7f77
-# R7 = 0005
-# R8 = 8000
-# R9 = 0005
-# Ra = 7ffb
-# Rb = 0000
-# Rc = ffbb
-# Rd = dddd
-# Re = eeee
-# Rf = ffff
-# Break in Module t_cpu at C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v line 19
 # Compile of src_mux.v was successful.
 # Compile of defines.v was successful.
 # Compile of dff.v was successful.
@@ -232,276 +84,5 @@ run -all
 # Compile of alu.v was successful.
 # Compile of cpu.v was successful.
 # Compile of cpu_tb.v was successful.
-# 13 compiles, 0 failed with no errors. 
-restart
-# Loading work.t_cpu
-# Loading work.cpu
-# Loading work.IF
-# Loading work.PC
-# Loading work.IM
-# Loading work.ID
-# Loading work.instr_dec
-# Loading work.RF
-# Loading work.EX
-# Loading work.SRC_MUX
-# Loading work.ALU
-run -all
-# R1 = ff81
-# R2 = 0044
-# R3 = ffc5
-# R4 = ff3d
-# R5 = eedd
-# R6 = ff77
-# R7 = 0005
-# R8 = 0000
-# R9 = 0005
-# Ra = 8000
-# Rb = 0000
-# Rc = ffbb
-# Rd = dddd
-# Re = eeee
-# Rf = ffff
-# Break in Module t_cpu at C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v line 19
-# Compile of src_mux.v was successful.
-# Compile of defines.v was successful.
-# Compile of dff.v was successful.
-# Compile of instr_decode.v was successful.
-# Compile of instr_mem.v was successful.
-# Compile of pc.v was successful.
-# Compile of rf_single_cycle.v was successful.
-# Compile of IF.v was successful.
-# Compile of ID.v was successful.
-# Compile of EX.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v was successful.
-# Compile of cpu_tb.v was successful.
-# 13 compiles, 0 failed with no errors. 
-restart
-# Loading work.t_cpu
-# Loading work.cpu
-# Loading work.IF
-# Loading work.PC
-# Loading work.IM
-# Loading work.ID
-# Loading work.instr_dec
-# Loading work.RF
-# Loading work.EX
-# Loading work.SRC_MUX
-# Loading work.ALU
-run -all
-# R1 = ff81
-# R2 = 0044
-# R3 = ffc5
-# R4 = ff3d
-# R5 = dedd
-# R6 = 7f77
-# R7 = 0005
-# R8 = 8000
-# R9 = 0005
-# Ra = 7ffb
-# Rb = 0000
-# Rc = ffbb
-# Rd = dddd
-# Re = eeee
-# Rf = ffff
-# Break in Module t_cpu at C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v line 19
-add wave -position insertpoint  \
-sim:/t_cpu/CPU/ID/RF/clk \
-sim:/t_cpu/CPU/ID/RF/p0_addr \
-sim:/t_cpu/CPU/ID/RF/p1_addr \
-sim:/t_cpu/CPU/ID/RF/re0 \
-sim:/t_cpu/CPU/ID/RF/re1 \
-sim:/t_cpu/CPU/ID/RF/dst_addr \
-sim:/t_cpu/CPU/ID/RF/dst \
-sim:/t_cpu/CPU/ID/RF/we \
-sim:/t_cpu/CPU/ID/RF/hlt \
-sim:/t_cpu/CPU/ID/RF/p0 \
-sim:/t_cpu/CPU/ID/RF/p1
-restart
-# Compile of src_mux.v was successful.
-# Compile of defines.v was successful.
-# Compile of dff.v was successful.
-# Compile of instr_decode.v was successful.
-# Compile of instr_mem.v was successful.
-# Compile of pc.v was successful.
-# Compile of rf_single_cycle.v was successful.
-# Compile of IF.v was successful.
-# Compile of ID.v was successful.
-# Compile of EX.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v was successful.
-# Compile of cpu_tb.v was successful.
-# 13 compiles, 0 failed with no errors. 
-restart
-# Loading work.t_cpu
-# Loading work.cpu
-# Loading work.IF
-# Loading work.PC
-# Loading work.IM
-# Loading work.ID
-# Loading work.instr_dec
-# Loading work.RF
-# Loading work.EX
-# Loading work.SRC_MUX
-# Loading work.ALU
-run -all
-# R1 = ff81
-# R2 = 0044
-# R3 = ffc5
-# R4 = ff3d
-# R5 = dedd
-# R6 = 7f77
-# R7 = 0005
-# R8 = 8000
-# R9 = 0005
-# Ra = 7ffb
-# Rb = 0000
-# Rc = ffbb
-# Rd = dddd
-# Re = eeee
-# Rf = ffff
-# Break in Module t_cpu at C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v line 19
-# Compile of src_mux.v was successful.
-# Compile of defines.v was successful.
-# Compile of dff.v was successful.
-# Compile of instr_decode.v was successful.
-# Compile of instr_mem.v was successful.
-# Compile of pc.v was successful.
-# Compile of rf_single_cycle.v was successful.
-# Compile of IF.v was successful.
-# Compile of ID.v was successful.
-# Compile of EX.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v was successful.
-# Compile of cpu_tb.v was successful.
-# 13 compiles, 0 failed with no errors. 
-restart
-# Loading work.t_cpu
-# Loading work.cpu
-# Loading work.IF
-# Loading work.PC
-# Loading work.IM
-# Loading work.ID
-# Loading work.instr_dec
-# Loading work.RF
-# Loading work.EX
-# Loading work.SRC_MUX
-# Loading work.ALU
-run -all
-# R1 = ff81
-# R2 = 0044
-# R3 = ffc5
-# R4 = ff3d
-# R5 = dead
-# R6 = 7fff
-# R7 = 0005
-# R8 = 8000
-# R9 = 0005
-# Ra = 7ffb
-# Rb = 0000
-# Rc = ffbb
-# Rd = dddd
-# Re = eeee
-# Rf = ffff
-# Break in Module t_cpu at C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v line 19
-# Compile of src_mux.v was successful.
-# Compile of defines.v was successful.
-# Compile of dff.v was successful.
-# Compile of instr_decode.v was successful.
-# Compile of instr_mem.v was successful.
-# Compile of pc.v was successful.
-# Compile of rf_single_cycle.v was successful.
-# Compile of IF.v was successful.
-# Compile of ID.v was successful.
-# Compile of EX.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v was successful.
-# Compile of cpu_tb.v was successful.
-# 13 compiles, 0 failed with no errors. 
-restart
-# Loading work.t_cpu
-# Loading work.cpu
-# Loading work.IF
-# Loading work.PC
-# Loading work.IM
-# Loading work.ID
-# Loading work.instr_dec
-# Loading work.RF
-# Loading work.EX
-# Loading work.SRC_MUX
-# Loading work.ALU
-run -all
-# R1 = ff81
-# R2 = 0044
-# R3 = ffc5
-# R4 = ff3d
-# R5 = dead
-# R6 = 7fff
-# R7 = 0005
-# R8 = 8000
-# R9 = 0005
-# Ra = 7ffb
-# Rb = 0000
-# Rc = ffbb
-# Rd = dddd
-# Re = eeee
-# Rf = ffff
-# Break in Module t_cpu at C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v line 19
-restart
-run -all
-# R1 = ff81
-# R2 = 0044
-# R3 = ffc5
-# R4 = ff3d
-# R5 = dead
-# R6 = 7fff
-# R7 = 0005
-# R8 = 7fff
-# R9 = 8000
-# Ra = 0005
-# Rb = ffff
-# Rc = 0000
-# Rd = ffbb
-# Re = eeee
-# Rf = ffff
-# Break in Module t_cpu at C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v line 19
-add wave -position insertpoint  \
-sim:/t_cpu/CPU/EX/ALU/posOV \
-sim:/t_cpu/CPU/EX/ALU/negOV
-restart
-run -all
-# R1 = ff81
-# R2 = 0044
-# R3 = ffc5
-# R4 = ff3d
-# R5 = dead
-# R6 = 7fff
-# R7 = 0005
-# R8 = 7fff
-# R9 = 8000
-# Ra = 0005
-# Rb = ffff
-# Rc = 0000
-# Rd = ffbb
-# Re = eeee
-# Rf = ffff
-# Break in Module t_cpu at C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v line 19
-restart
-run -all
-# R1 = ff81
-# R2 = 0044
-# R3 = ffc5
-# R4 = ff3d
-# R5 = dead
-# R6 = 7fff
-# R7 = 0005
-# R8 = a0ff
-# R9 = 8000
-# Ra = 0005
-# Rb = 8000
-# Rc = 0000
-# Rd = ffc5
-# Re = ffbb
-# Rf = ffff
-# Break in Module t_cpu at C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v line 19
-quit -sim
+# Compile of branchAddress.v was successful.
+# 14 compiles, 0 failed with no errors. 

@@ -5,6 +5,13 @@ Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 
 Top level modules:
 	SRC_MUX
 
+} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/alu.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/alu.v
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/instr_decode.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/instr_decode.v
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
 -- Compiling module instr_dec
@@ -22,12 +29,26 @@ Top level modules:
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/defines.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/defines.v
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
 
+} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module cpu
+
+Top level modules:
+	cpu
+
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/pc.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/pc.v
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
 -- Compiling module PC
 
 Top level modules:
 	PC
+
+} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/branchAddress.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/branchAddress.v
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module branchAddress
+
+Top level modules:
+	branchAddress
 
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/EX.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/EX.v
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013

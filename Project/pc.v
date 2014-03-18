@@ -1,14 +1,18 @@
 /*******************************************************************************
 * ECE 552
 * WISC architecture
-* Simple program counter with synchronous reset and increment by 1
+* Simple program counter with asynchronous reset and increment by 1
 *
 * Craig Day
 *******************************************************************************/
-module PC(pc, hlt, clk, rst_n);
-  input rst_n, hlt, clk;
+module PC(pc, hlt, clk, rst_n, PCSrc, target);
+  input rst_n, hlt, clk, PCSrc;
+  input [15:0] target;
   output reg [15:0] pc;
-  wire temp;
+  wire [15:0] nextPC;
+  
+  //pc source mux, used for branching
+  assign nextPC = (PCSrc) ? target : pc + 1;
   
   //at the posedge of clk, reset the pc if rst_n is low, otherwise
   //grab the next value from the hlt mux
@@ -17,7 +21,7 @@ module PC(pc, hlt, clk, rst_n);
       pc <= 16'd0;
     end else begin
       if(hlt) pc <= pc;
-      else pc <= pc + 1;
+      else pc <= nextPC;
     end
   end
   
