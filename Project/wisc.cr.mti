@@ -29,12 +29,26 @@ Top level modules:
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/defines.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/defines.v
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
 
+} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/MEM.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/MEM.v
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module MEM
+
+Top level modules:
+	MEM
+
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
 -- Compiling module cpu
 
 Top level modules:
 	cpu
+
+} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/WB.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/WB.v
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module WB
+
+Top level modules:
+	WB
 
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/sext8_16.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/sext8_16.v
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
@@ -49,6 +63,13 @@ Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 
 
 Top level modules:
 	PC
+
+} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/branchLogic.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/branchLogic.v
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module branchLogic
+
+Top level modules:
+	branchLogic
 
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/branchAddress.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/branchAddress.v
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
