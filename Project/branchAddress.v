@@ -1,7 +1,7 @@
 
 module branchAddress(addResult, pc, toShift);
   input [15:0] pc;
-  input [31:0] toShift;
+  input [15:0] toShift;
   output [15:0] addResult;
 
   assign addResult = pc + (toShift << 2);

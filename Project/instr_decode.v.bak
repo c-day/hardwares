@@ -7,9 +7,11 @@
 *
 * Craig Day
 *******************************************************************************/
-module instr_dec(p0_addr, p1_addr, dst_addr, re0, re1, we, aluOp, shAmt, src1sel, hlt, instr, zr);
+module instr_dec(p0_addr, p1_addr, dst_addr, re0, re1, we, sawBranch, branchOp, aluOp, shAmt, src1sel, hlt, instr, zr);
   input [15:0] instr;
   input zr;
+  output sawBranch;
+  output [3:0] branchOp;
   output [2:0] aluOp;
   output [3:0] shAmt;
   output src1sel, hlt;
@@ -25,6 +27,12 @@ module instr_dec(p0_addr, p1_addr, dst_addr, re0, re1, we, aluOp, shAmt, src1sel
   assign hbyte1 = instr[7:4];
   assign hbyte0 = instr[3:0];
   assign imm = instr[7:0];
+  
+  // note if this is a branch instruction
+  assign sawBranch = (opCode == `B) ? 1'b1 : 1'b0;
+  
+  // pass along the type of branch we are doing
+  assign branchOp = instr[11:9];
   
 
   /////////////////////////////////////////////////////////////
@@ -77,7 +85,9 @@ module instr_dec(p0_addr, p1_addr, dst_addr, re0, re1, we, aluOp, shAmt, src1sel
   
   // will always want instr[7:4] on p0_addr whenever we set re0 to high,
   // unless performing LLB, which is done by Rd = R0 + imm
-  assign p0_addr = (opCode == `LLB) ? 4'h0 : hbyte1;
+  assign p0_addr = (opCode == `LLB) ? 4'h0 : 
+                   (opCode == `LHB) ? hbyte2 :
+                   hbyte1;
   
   // will always want instr[3:0] on p1_addr whenever we set re1 to high
   assign p1_addr = hbyte0;

@@ -36,6 +36,13 @@ Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 
 Top level modules:
 	cpu
 
+} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/sext8_16.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/sext8_16.v
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module sext8_16
+
+Top level modules:
+	sext8_16
+
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/pc.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/pc.v
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
 -- Compiling module PC
@@ -78,12 +85,12 @@ Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 
 Top level modules:
 	IF
 
-} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/rf_single_cycle.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/rf_single_cycle.v
+} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/data_mem.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/data_mem.v
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
--- Compiling module RF
+-- Compiling module DM
 
 Top level modules:
-	RF
+	DM
 
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/dff.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/dff.v
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
@@ -91,5 +98,12 @@ Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 
 
 Top level modules:
 	dff
+
+} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/rf_single_cycle.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/rf_single_cycle.v
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module RF
+
+Top level modules:
+	RF
 
 } {} {}}

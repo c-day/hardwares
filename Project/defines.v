@@ -26,3 +26,12 @@
 `define ALU_SRA 3'b110
 `define ALU_LHB 3'b111
 
+//Define the codes used for branch logic
+`define BNEQ    3'b000
+`define BEQ     3'b001
+`define BGT     3'b010
+`define BLT     3'b011
+`define BGTE    3'b100
+`define BLTE    3'b101
+`define BOVFL   3'b110
+`define BUNCOND 3'b111

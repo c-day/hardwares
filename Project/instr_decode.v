@@ -7,9 +7,11 @@
 *
 * Craig Day
 *******************************************************************************/
-module instr_dec(p0_addr, p1_addr, dst_addr, re0, re1, we, aluOp, shAmt, src1sel, hlt, instr, zr);
+module instr_dec(p0_addr, p1_addr, dst_addr, re0, re1, we, sawBranch, branchOp, aluOp, shAmt, src1sel, hlt, instr, zr);
   input [15:0] instr;
   input zr;
+  output sawBranch;
+  output [3:0] branchOp;
   output [2:0] aluOp;
   output [3:0] shAmt;
   output src1sel, hlt;
@@ -19,12 +21,18 @@ module instr_dec(p0_addr, p1_addr, dst_addr, re0, re1, we, aluOp, shAmt, src1sel
   wire [3:0] opCode, hbyte0, hbyte1, hbyte2;
   wire [7:0] imm;
   
-  //break the instruction into useful parts
+  // break the instruction into useful parts
   assign opCode = instr[15:12];
   assign hbyte2 = instr[11:8];
   assign hbyte1 = instr[7:4];
   assign hbyte0 = instr[3:0];
   assign imm = instr[7:0];
+  
+  // note if this is a branch instruction
+  assign sawBranch = (opCode == `B) ? 1'b1 : 1'b0;
+  
+  // pass along the type of branch we are doing
+  assign branchOp = instr[11:9];
   
 
   /////////////////////////////////////////////////////////////

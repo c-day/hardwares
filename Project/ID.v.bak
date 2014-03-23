@@ -1,5 +1,5 @@
 
-module ID(sawBranch, branchOp, p0, p1, shAmt, aluOp, src1sel, hlt, sextOut, instr, zr, dst, clk);
+module ID(p0, p1, shAmt, aluOp, src1sel, hlt, sextOut, instr, zr, dst, clk);
   input zr, clk;
   input [15:0] dst, instr;
   output [15:0] p0, p1;

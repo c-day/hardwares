@@ -1,6 +1,3 @@
-`ifndef _defines_v_
-`define _defines_v_
-
 //Define the opcodes used in our instruction decoder
 `define ADD  4'b0000
 `define ADDZ 4'b0001
@@ -29,4 +26,15 @@
 `define ALU_SRA 3'b110
 `define ALU_LHB 3'b111
 
-`endif
+//Define the codes used for branch logic
+`define BNEQ    4'b0000
+`define BEQ     4'b0001
+`define BGT     4'b0010
+`define BLT     4'b0011
+`define BGTE    4'b0100
+`define BLTE    4'b0101
+`define BOVFL   4'b0110
+`define BUNCOND 4'b0111
+`define JAL     4'b1000
+`define JR      4'b1001
+`define NORM    4'b1111
