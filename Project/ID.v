@@ -1,14 +1,14 @@
 
-module ID(sawBranch, branchOp, p0, p1, shAmt, aluOp, src1sel, hlt, sextOut, instr, zr, dst, clk);
+module ID(sextOut, sawBranch, branchOp, p0, p1, shAmt, aluOp, src1sel, hlt, instr, zr, dst, clk);
   input zr, clk;
   input [15:0] dst, instr;
   output [15:0] p0, p1;
   output [3:0] shAmt;
   output [2:0] aluOp;
   output src1sel, hlt;
-  output [31:0] sextOut;
   output sawBranch;
   output [2:0] branchOp;
+  output [15:0] sextOut;
   
   wire [3:0] p0_addr, p1_addr, dst_addr;
   wire re0, re1, we;
@@ -17,7 +17,6 @@ module ID(sawBranch, branchOp, p0, p1, shAmt, aluOp, src1sel, hlt, sextOut, inst
   
   RF RF(clk, p0_addr, p1_addr, p0, p1, re0, re1, dst_addr, dst, we, hlt);
   
-  sext8_16 sext8_16(sextOut, instr[7:0]);
-  
+  sext8_16 sext(sextOut, instr[7:0]);
   
 endmodule

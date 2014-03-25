@@ -1,5 +1,5 @@
 
-module EX(dst, zr, addResult, sawBranch, branchOp, sextIn, p0, p1, shAmt, aluOp, imm, sel, pc);
+module EX(dst, V, Z, N, addResult, sextIn, p0, p1, shAmt, aluOp, imm, sel, pc);
   input [15:0] p0, p1;
   input [7:0] imm;
   input [3:0] shAmt;
@@ -8,17 +8,14 @@ module EX(dst, zr, addResult, sawBranch, branchOp, sextIn, p0, p1, shAmt, aluOp,
   input [31:0] sextIn;
   input [15:0] pc;
   output [15:0] dst;
-  output zr;
+  output V, Z, N;
   output [15:0] addResult;
-  inout sawBranch;
-  inout [2:0] branchOp;
   
-  wire [15:0] src0, src1;
-  wire ov;
+  wire [15:0] src1;
+ 
+  SRC_MUX SRC_MUX(src1, p1, sextIn, sel);
   
-  SRC_MUX SRC_MUX(src1, p1, imm, sel);
-  
-  ALU ALU(dst, ov, zr, p0, src1, aluOp, shAmt);
+  ALU ALU(dst, V, Z, N, p0, src1, aluOp, shAmt);
   
   branchAddress BA(addResult, pc, sextIn);
   
