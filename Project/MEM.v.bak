@@ -9,7 +9,7 @@ module MEM(PCSrc, readData, memRead, memWrite, sawBranch, branchOp, clk, writeDa
   
   DM dataMem(.clk(clk),.addr(address),.re(memRead),.we(memWrite),.wrt_data(writeData),.rd_data(readData));
   
-  branchLogic(.PCSrc(PCSrc), .takeBranch(sawBranch), .branchOp(branchOp));
+  branchLogic branchLogic(PCSrc, N, Z, V, takeBranch, branchOp);
   
   
 endmodule
