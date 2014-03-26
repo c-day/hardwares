@@ -6,6 +6,31 @@
 # All tests are perfomed assuming that LLB, SUB, and B EQ work properly
 #################################################################################
 
+#   We assume that BEQ and halt works
+
+T_ADD:                  # test the ADD and SUB operations
+    LLB R5, 0x05        # R5 <= 0x0005
+    LLB R1, 0x05        # R1 <= 0x0005
+    LLB R2, 0x07        # R2 <= 0x0007
+    LLB R3, 0x0C        # R3 <= 0x000C
+    ADD R1, R1, R2      
+    SUB R0, R1, R3
+    B EQ, T_ADD2        # if R1 == R3, test passed
+    HLT                 # test failed
+
+T_ADDZ:                 # test the ADDZ opperation
+    LLB R5, 0x07        # R5 <= 0x0007
+    LLB R1, 0x02        # R1 <= 0x0002
+    LLB R2, 0x01        # R2 <= 0x0001
+    SUB R0, R1, R2      # clear the Z flag
+    LLB R1, 0x72        # R1 <= 0x0072
+    LLB R2, 0x22        # R2 <= 0x0072
+    LLB R3, 0x72        # R3 <= 0x0072
+    ADDZ R1, R1, R2
+    SUB R0, R1, R3
+    B EQ, T_ADDZ2
+    HLT
+
 T_AND:                  # test the AND operation
     LLB R1, 0xFF        # R1 <= 0xFFFF
     AND R1, R1, R0      # R1 <= 0xFFFF & 0x0000
@@ -50,32 +75,25 @@ T_SRA:                  # test arithmatic shift right, SRA
     B EQ, T_ADD         # if R1 == R2, test passed
     HLT                 # test failed
 
-T_ADD:
-    LLB R5, 0x05
-    LLB R1, 0x05
-    LLB R2, 0x07
-    LLB R3, 0x0C
-    ADD R1, R1, R2
-    SUB R0, R1, R3
-    B EQ, T_ADD2        # if R1 == R3, test passed
+T_LHB:
+    LLB R5, 0x09
+    LLB R1, 0x00
+    LLB R2, 0xBC
+    SLL R2, R2, 8
+    LHB R1, 0xBC
+    SUB R0, R1, R2
+    B EQ, DONE          # if R1 == R2, test passed
     HLT                 # test failed
 
+
+# end of basic test
+
+*******************************************************************************
+
+# we now begin edge cases
 T_ADD2:
     LLB R5, 0x06
     #test saturating addition here, not implementing yet
-
-T_ADDZ:
-    LLB R5, 0x07
-    LLB R1, 0x02
-    LLB R2, 0x01
-    SUB R0, R1, R2      # clear the Z flag
-    LLB R1, 0x72
-    LLB R2, 0x22
-    LLB R3, 0x72
-    ADDZ R1, R1, R2
-    SUB R0, R1, R3
-    B EQ, T_ADDZ2
-    HLT
 
 T_ADDZ2:
     LLB R5, 0x08
@@ -86,16 +104,6 @@ T_ADDZ2:
     ADDZ R1, R1, R2     
     SUB R0, R1, R3
     B EQ, T_LHB         # if R1 == R3, test passed
-    HLT                 # test failed
-
-T_LHB:
-    LLB R5, 0x09
-    LLB R1, 0x00
-    LLB R2, 0xBC
-    SLL R2, R2, 8
-    LHB R1, 0xBC
-    SUB R0, R1, R2
-    B EQ, DONE          # if R1 == R2, test passed
     HLT                 # test failed
 
 DONE:
