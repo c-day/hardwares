@@ -26,6 +26,7 @@ module cpu(hlt, pc, clk, rst_n);
   //other connections
   wire PCSrc_MEM_IF;
   wire memRd, memWr;
+  wire [15:0] target_MEM_IF, writeData_WB_ID, aluResult_EX_MEM, sext_ID_EX;
   
   //unpipelined connections
   wire N, Z, V;

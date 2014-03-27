@@ -26,6 +26,7 @@ module cpu(hlt, pc, clk, rst_n);
   //other connections
   wire PCSrc_MEM_IF;
   wire memRd, memWr;
+  wire [15:0] target_MEM_IF, writeData_WB_ID;
   
   //unpipelined connections
   wire N, Z, V;
@@ -49,5 +50,5 @@ module cpu(hlt, pc, clk, rst_n);
   MEM MEM(.PCSrc(PCSrc_MEM_IF), .readData(readData_MEM_WB), .memRead(memRd), .memWrite(memWr), .sawBranch(sawBranch_EX_MEM), .branchOp(branchOp_EX_MEM), .clk(clk), .writeData(p1_ID_EX), .address(aluResult_EX_MEM), .N(N), .Z(Z), .V(V));
   
   //write back stage
-  WB WB(.writeData(writeData_WB_ID), .readData(readData_MEM_WB), .address(aluResult_EX_MEM), memToReg);
+  WB WB(.writeData(writeData_WB_ID), .readData(readData_MEM_WB), .address(aluResult_EX_MEM), .memToReg(memRd));
 endmodule
