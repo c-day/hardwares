@@ -5,12 +5,33 @@ Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 
 Top level modules:
 	SRC_MUX
 
+} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/jumpAddress.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/jumpAddress.v
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module jumpAddress
+
+Top level modules:
+	jumpAddress
+
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/alu.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/alu.v
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
 -- Compiling module ALU
 
 Top level modules:
 	ALU
+
+} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/instr_decode.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/instr_decode.v
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module instr_dec
+
+Top level modules:
+	instr_dec
+
+} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module t_cpu
+
+Top level modules:
+	t_cpu
 
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/defines.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/defines.v
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
@@ -22,19 +43,19 @@ Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 
 Top level modules:
 	MEM
 
+} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/WB.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/WB.v
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module WB
+
+Top level modules:
+	WB
+
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/sext8_16.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/sext8_16.v
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
 -- Compiling module sext8_16
 
 Top level modules:
 	sext8_16
-
-} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/pc.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/pc.v
-Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
--- Compiling module PC
-
-Top level modules:
-	PC
 
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/branchLogic.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/branchLogic.v
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
@@ -57,12 +78,19 @@ Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 
 Top level modules:
 	ID
 
-} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/IF.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/IF.v
+} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/instr_mem.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/instr_mem.v
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
--- Compiling module IF
+-- Compiling module IM
 
 Top level modules:
-	IF
+	IM
+
+} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/data_mem.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/data_mem.v
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module DM
+
+Top level modules:
+	DM
 
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/rf_single_cycle.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/rf_single_cycle.v
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
