@@ -1,5 +1,5 @@
 
-module ID(sextOut, sawBranch, branchOp, p0, p1, shAmt, aluOp, src1sel, hlt, instr, zr, dst, clk);
+module ID(memRd, memWr, sextOut, sawBranch, branchOp, p0, p1, shAmt, aluOp, src1sel, hlt, instr, zr, dst, clk);
   input zr, clk;
   input [15:0] dst, instr;
   output [15:0] p0, p1;
@@ -20,3 +20,4 @@ module ID(sextOut, sawBranch, branchOp, p0, p1, shAmt, aluOp, src1sel, hlt, inst
   sext8_16 sext(sextOut, instr[7:0]);
   
 endmodule
+s
