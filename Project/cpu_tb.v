@@ -4,7 +4,7 @@ module t_cpu();
   reg clk, rst_n;
   
   
-  cpu cpu(hlt, pc, clk, rst_n);
+  cpu CPU(hlt, clk, rst_n);
   
   always 
     #4 clk = ~clk;

@@ -26,7 +26,10 @@ module cpu(hlt, pc, clk, rst_n);
   //other connections
   wire [1:0] PCSrc_MEM_IF;
   wire memRd, memWr;
+<<<<<<< HEAD
   wire [15:0] target_MEM_IF, writeData_WB_ID, aluResult_EX_MEM, jumpAddress_EX_IF;
+=======
+>>>>>>> parent of ff505f6... i think this is ok
   
   //unpipelined connections
   wire N, Z, V;
