@@ -19,6 +19,13 @@ Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 
 Top level modules:
 	instr_dec
 
+} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module t_cpu
+
+Top level modules:
+	t_cpu
+
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/defines.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/defines.v
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
 
@@ -84,13 +91,6 @@ Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 
 
 Top level modules:
 	ID
-
-} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/instr_mem.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/instr_mem.v
-Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
--- Compiling module IM
-
-Top level modules:
-	IM
 
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/IF.v {1 {vlog -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/IF.v
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
