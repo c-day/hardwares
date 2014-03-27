@@ -15,7 +15,7 @@ T_ADD:                  # test the ADD and SUB operations
     LLB R3, 0x0C        # R3 <= 0x000C
     ADD R1, R1, R2      
     SUB R0, R1, R3
-    B EQ, T_ADD2        # if R1 == R3, test passed
+    B EQ, T_ADDZ        # if R1 == R3, test passed
     HLT                 # test failed
 
 T_ADDZ:                 # test the ADDZ opperation
@@ -28,7 +28,7 @@ T_ADDZ:                 # test the ADDZ opperation
     LLB R3, 0x72        # R3 <= 0x0072
     ADDZ R1, R1, R2
     SUB R0, R1, R3
-    B EQ, T_ADDZ2
+    B EQ, T_AND
     HLT
 
 T_AND:                  # test the AND operation
@@ -72,7 +72,7 @@ T_SRA:                  # test arithmatic shift right, SRA
     LLB R2, 0xFF
     SRA R1, R1, 4
     SUB R0, R1, R2      
-    B EQ, T_ADD         # if R1 == R2, test passed
+    B EQ, T_LHB         # if R1 == R2, test passed
     HLT                 # test failed
 
 T_LHB:
@@ -131,7 +131,7 @@ T_OVFL:
     
 # end of basic test
 
-*******************************************************************************
+#*******************************************************************************
 
 # we now begin edge cases
 T_ADD2:
