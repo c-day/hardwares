@@ -11,7 +11,7 @@ module instr_dec(memRd, memWr, p0_addr, p1_addr, dst_addr, re0, re1, we, sawBran
   input [15:0] instr;
   input zr;
   output sawBranch;
-  output [3:0] branchOp;
+  output [2:0] branchOp;
   output [2:0] aluOp;
   output [3:0] shAmt;
   output src1sel, hlt;
