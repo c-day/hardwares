@@ -211,3 +211,6 @@ run -all
 # Rd = dddd
 # Re = eeee
 # Rf = ffff
+# Break key hit 
+# Simulation stop requested.
+quit -sim
