@@ -1,10 +1,10 @@
 `include "defines.v"
-module ALU(dst, ov, zr, src0, src1, aluOp, shAmt);
+module ALU(dst, V, Z, N, src0, src1, aluOp, shAmt);
   input [15:0] src0, src1;
 	input [2:0] aluOp;
 	input [3:0] shAmt;
 	output [15:0] dst;
-	output ov, zr;
+	output V, Z, N;
 	
 	wire [15:0] temp;
 	wire [15:0] saturated;
@@ -21,14 +21,14 @@ module ALU(dst, ov, zr, src0, src1, aluOp, shAmt);
 								 16'd0;
 								 
 	//set the zero flag if all bits are zero
-  assign zr = ~|dst;
+  assign Z = ~|dst;
   
   //check for positive or negative overflow
   assign posOV = ~src0[15] & ~src1[15] & temp[15];
   assign negOV = src0[15] & src1[15] & ~temp[15];
   
   //set our overflow flag
-  assign ov = ({posOV, negOV} == 2'b00) ? 1'b0 :        //no overflow
+  assign V = ({posOV, negOV} == 2'b00) ? 1'b0 :        //no overflow
               ({posOV, negOV} == 2'b01) ? 1'b1 :        //neg overflow
               ({posOV, negOV} == 2'b10) ? 1'b1 :        //pos overflow
               1'b0; 
@@ -43,5 +43,8 @@ module ALU(dst, ov, zr, src0, src1, aluOp, shAmt);
   assign dst = (aluOp == `ALU_ADD) ? saturated :
                (aluOp == `ALU_SUB) ? saturated :
                temp;
+               
+  //set the negative flab
+  assign N = dst[15];
                
 endmodule

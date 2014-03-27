@@ -1,11 +1,10 @@
 
-module IF(instr, pc, hlt, clk, rst_n);
-  input hlt, clk, rst_n;
+module IF(instr, pc, hlt, clk, rst_n, PCSrc, target);
+  input hlt, clk, rst_n, PCSrc;
+  input [15:0] target;
   output [15:0] instr, pc;
   
-  //wire [15:0] pc;
-
-  PC PC(pc, hlt, clk, rst_n);
+  PC PC(pc, hlt, clk, rst_n, PCSrc, target);
 
   IM IM(clk, pc, 1'b1, instr);
 
