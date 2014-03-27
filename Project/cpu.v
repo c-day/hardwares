@@ -24,12 +24,16 @@ module cpu(hlt, pc, clk, rst_n);
   wire [15:0] readData_MEM_WB;
   
   //other connections
-  wire [1:0] PCSrc_MEM_IF;
+  wire PCSrc_MEM_IF;
   wire memRd, memWr;
+<<<<<<< HEAD
 <<<<<<< HEAD
   wire [15:0] target_MEM_IF, writeData_WB_ID, aluResult_EX_MEM, jumpAddress_EX_IF;
 =======
 >>>>>>> parent of ff505f6... i think this is ok
+=======
+  wire [15:0] target_MEM_IF, writeData_WB_ID, aluResult_EX_MEM;
+>>>>>>> parent of 5aa9d4c... well fuck me
   
   //unpipelined connections
   wire N, Z, V;
@@ -41,13 +45,13 @@ module cpu(hlt, pc, clk, rst_n);
   
   
   //instruction fetch stage
-  IF IF(.instr(instr_IF_ID), .pc(pc_IF_ID), .hlt(hlt), .clk(clk), .rst_n(rst_n), .PCSrc(PCSrc_MEM_IF), .target(target_MEM_IF), .jTarget(jumpAddress_EX_IF));
+  IF IF(.instr(instr_IF_ID), .pc(pc_IF_ID), .hlt(hlt), .clk(clk), .rst_n(rst_n), .PCSrc(PCSrc_MEM_IF), .target(target_MEM_IF));
   
   //instruction decode stage
   ID ID(.memRd(memRd), .memWr(memWr), .sextOut(sext_ID_EX), .sawBranch(sawBranch_ID_EX), .branchOp(branchOp_ID_EX), .p0(p0_ID_EX), .p1(p1_ID_EX), .shAmt(shAmt_ID_EX), .aluOp(aluOp_ID_EX), .src1sel(src1sel), .hlt(hlt), .instr(instr_IF_ID), .zr(Z), .dst(writeData_WB_ID), .clk(clk));
   
   //execute stage
-  EX EX(.aluResult(aluResult_EX_MEM), .V(V), .Z(Z), .N(N), .addResult(target_MEM_IF), .jumpTo(), .offset(instr_IF_ID[11:0]), .sextIn(sext_ID_EX), .p0(p0_ID_EX), .p1(p1_ID_EX), .shAmt(shAmt_ID_EX), .aluOp(aluOp_ID_EX), .imm(instr_IF_ID[7:0]), .src1sel(src1sel), .pc(pc_IF_ID));
+  EX EX(.aluResult(aluResult_EX_MEM), .V(V), .Z(Z), .N(N), .addResult(target_MEM_IF), .sextIn(sext_ID_EX), .p0(p0_ID_EX), .p1(p1_ID_EX), .shAmt(shAmt_ID_EX), .aluOp(aluOp_ID_EX), .imm(instr_IF_ID[7:0]), .src1sel(src1sel), .pc(pc_IF_ID));
   
   //memory access stage
   MEM MEM(.PCSrc(PCSrc_MEM_IF), .readData(readData_MEM_WB), .memRead(memRd), .memWrite(memWr), .sawBranch(sawBranch_EX_MEM), .branchOp(branchOp_EX_MEM), .clk(clk), .writeData(p1_ID_EX), .address(aluResult_EX_MEM), .N(N), .Z(Z), .V(V));

@@ -1,13 +1,12 @@
 /*******************************************************************************
 * ECE 552
 * WISC architecture
-* Simple program counter with asynchronous reset and increment by 1
+* Simple program counter with synchronous reset and increment by 1
 *
 * Craig Day
 *******************************************************************************/
 module PC(pc, hlt, clk, rst_n, PCSrc, target);
-  input rst_n, hlt, clk;
-  input [1:0] PCSrc;
+  input rst_n, hlt, clk, PCSrc;
   input [15:0] target;
   output reg [15:0] pc;
   wire [15:0] nextPC;
