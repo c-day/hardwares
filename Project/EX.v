@@ -3,7 +3,7 @@ module EX(aluResult, V, Z, N, addResult, sextIn, p0, p1, shAmt, aluOp, imm, src1
   input [15:0] p0, p1;
   input [7:0] imm;
   input [3:0] shAmt;
-  input [2:0] aluOp;
+  input [3:0] aluOp;
   input src1sel;
   input [15:0] sextIn;
   input [15:0] pc;

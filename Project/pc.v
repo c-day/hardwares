@@ -5,14 +5,16 @@
 *
 * Craig Day
 *******************************************************************************/
-module PC(pc, hlt, clk, rst_n, PCSrc, target);
-  input rst_n, hlt, clk, PCSrc;
-  input [15:0] target;
+module PC(pc, hlt, clk, rst_n, PCSrc, target, takeJump, jAddress);
+  input rst_n, hlt, clk, PCSrc, takeJump;
+  input [15:0] target, jAddress;
   output reg [15:0] pc;
-  wire [15:0] nextPC;
+  wire [15:0] nextPC, temp;
   
   //pc source mux, used for branching
-  assign nextPC = (PCSrc) ? target : pc + 1;
+  //assign temp = (PCSrc == 1'b1) ? target : pc + 1; 
+  
+  assign nextPC = (takeJump == 1'b1) ? jAddress : (PCSrc == 1'b1) ? target : pc + 1;
   
   //at the posedge of clk, reset the pc if rst_n is low, otherwise
   //grab the next value from the hlt mux

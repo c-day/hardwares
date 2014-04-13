@@ -12,14 +12,18 @@
 # Compile of ID.v was successful.
 # Compile of EX.v was successful.
 # Compile of alu.v was successful.
-# Compile of cpu.v was successful.
+# Compile of cpu.v failed with 1 errors.
 # Compile of branchAddress.v was successful.
 # Compile of sext8_16.v was successful.
 # Compile of MEM.v was successful.
 # Compile of data_mem.v was successful.
 # Compile of branchLogic.v was successful.
 # Compile of WB.v was successful.
-# 18 compiles, 1 failed with no errors. 
+# Compile of cpu_tb.v was successful.
+# Compile of dff_16.v was successful.
+# Compile of dff_4.v was successful.
+# Compile of dff_3.v was successful.
+# 22 compiles, 1 failed with 1 error. 
 # Compile of src_mux.v was successful.
 # Compile of defines.v was successful.
 # Compile of dff.v was successful.
@@ -31,14 +35,87 @@
 # Compile of ID.v was successful.
 # Compile of EX.v was successful.
 # Compile of alu.v was successful.
-# Compile of cpu.v was successful.
+# Compile of cpu.v failed with 1 errors.
 # Compile of branchAddress.v was successful.
 # Compile of sext8_16.v was successful.
 # Compile of MEM.v was successful.
 # Compile of data_mem.v was successful.
 # Compile of branchLogic.v was successful.
 # Compile of WB.v was successful.
-# 18 compiles, 0 failed with no errors. 
+# Compile of cpu_tb.v was successful.
+# Compile of dff_16.v was successful.
+# Compile of dff_4.v was successful.
+# Compile of dff_3.v was successful.
+# 22 compiles, 1 failed with 1 error. 
+# Compile of src_mux.v was successful.
+# Compile of defines.v was successful.
+# Compile of dff.v was successful.
+# Compile of instr_decode.v was successful.
+# Compile of instr_mem.v was successful.
+# Compile of pc.v was successful.
+# Compile of rf_single_cycle.v was successful.
+# Compile of IF.v was successful.
+# Compile of ID.v was successful.
+# Compile of EX.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v failed with 1 errors.
+# Compile of branchAddress.v was successful.
+# Compile of sext8_16.v was successful.
+# Compile of MEM.v was successful.
+# Compile of data_mem.v was successful.
+# Compile of branchLogic.v was successful.
+# Compile of WB.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of dff_16.v was successful.
+# Compile of dff_4.v was successful.
+# Compile of dff_3.v was successful.
+# 22 compiles, 1 failed with 1 error. 
+# Compile of src_mux.v was successful.
+# Compile of defines.v was successful.
+# Compile of dff.v was successful.
+# Compile of instr_decode.v was successful.
+# Compile of instr_mem.v was successful.
+# Compile of pc.v was successful.
+# Compile of rf_single_cycle.v was successful.
+# Compile of IF.v was successful.
+# Compile of ID.v was successful.
+# Compile of EX.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v failed with 1 errors.
+# Compile of branchAddress.v was successful.
+# Compile of sext8_16.v was successful.
+# Compile of MEM.v was successful.
+# Compile of data_mem.v was successful.
+# Compile of branchLogic.v was successful.
+# Compile of WB.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of dff_16.v was successful.
+# Compile of dff_4.v was successful.
+# Compile of dff_3.v was successful.
+# 22 compiles, 1 failed with 1 error. 
+# Compile of src_mux.v was successful.
+# Compile of defines.v was successful.
+# Compile of dff.v was successful.
+# Compile of instr_decode.v was successful.
+# Compile of instr_mem.v was successful.
+# Compile of pc.v was successful.
+# Compile of rf_single_cycle.v was successful.
+# Compile of IF.v was successful.
+# Compile of ID.v was successful.
+# Compile of EX.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v failed with 1 errors.
+# Compile of branchAddress.v was successful.
+# Compile of sext8_16.v was successful.
+# Compile of MEM.v was successful.
+# Compile of data_mem.v was successful.
+# Compile of branchLogic.v was successful.
+# Compile of WB.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of dff_16.v was successful.
+# Compile of dff_4.v was successful.
+# Compile of dff_3.v was successful.
+# 22 compiles, 1 failed with 1 error. 
 # Compile of src_mux.v was successful.
 # Compile of defines.v was successful.
 # Compile of dff.v was successful.
@@ -58,53 +135,33 @@
 # Compile of branchLogic.v was successful.
 # Compile of WB.v was successful.
 # Compile of cpu_tb.v was successful.
-# 19 compiles, 0 failed with no errors. 
-vsim -gui work.t_cpu
-# //  ModelSim PE Student Edition 10.2c Jul 18 2013 
-# //
-# //  Copyright 1991-2013 Mentor Graphics Corporation
-# //  All Rights Reserved.
-# //
-# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
-# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
-# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
-# //
-# // NOT FOR CORPORATE OR PRODUCTION USE.
-# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
-# // FOR HIGHER EDUCATION PURPOSES ONLY
-# //
-# vsim -gui work.t_cpu 
-# ** WARNING: ModelSim PE Student Edition license key will expire as of (null).
-#   Please go to http://www.model.com and download the ModelSim PE Student Edition update.
-# Loading work.t_cpu
-# Loading work.cpu
-# Loading work.IF
-# Loading work.PC
-# Loading work.IM
-# Loading work.ID
-# Loading work.instr_dec
-# Loading work.RF
-# Loading work.sext8_16
-# Loading work.EX
-# Loading work.SRC_MUX
-# Loading work.ALU
-# Loading work.branchAddress
-# Loading work.MEM
-# Loading work.DM
-# Loading work.branchLogic
-# Loading work.WB
-# ** Warning: (vsim-3017) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v(7): [TFMPC] - Too few port connections. Expected 4, found 3.
-# 
-#         Region: /t_cpu/CPU
-# ** Error: (vsim-3053) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v(7): Illegal output or inout port connection for "port 'pc'".
-# 
-#         Region: /t_cpu/CPU
-# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v(7): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pc'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(1).
-# 
-#         Region: /t_cpu/CPU
-# ** Warning: (vsim-3722) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v(7): [TFMPC] - Missing connection for port 'rst_n'.
-# 
-# Error loading design
+# Compile of dff_16.v was successful.
+# Compile of dff_4.v was successful.
+# Compile of dff_3.v was successful.
+# 22 compiles, 0 failed with no errors. 
+# Compile of src_mux.v was successful.
+# Compile of defines.v was successful.
+# Compile of dff.v was successful.
+# Compile of instr_decode.v was successful.
+# Compile of instr_mem.v was successful.
+# Compile of pc.v was successful.
+# Compile of rf_single_cycle.v was successful.
+# Compile of IF.v was successful.
+# Compile of ID.v was successful.
+# Compile of EX.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v failed with 1 errors.
+# Compile of branchAddress.v was successful.
+# Compile of sext8_16.v was successful.
+# Compile of MEM.v was successful.
+# Compile of data_mem.v was successful.
+# Compile of branchLogic.v was successful.
+# Compile of WB.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of dff_16.v was successful.
+# Compile of dff_4.v was successful.
+# Compile of dff_3.v was successful.
+# 22 compiles, 1 failed with 1 error. 
 # Compile of src_mux.v was successful.
 # Compile of defines.v was successful.
 # Compile of dff.v was successful.
@@ -124,93 +181,7 @@ vsim -gui work.t_cpu
 # Compile of branchLogic.v was successful.
 # Compile of WB.v was successful.
 # Compile of cpu_tb.v was successful.
-# 19 compiles, 0 failed with no errors. 
-vsim -gui work.t_cpu
-# vsim -gui work.t_cpu 
-# Loading work.t_cpu
-# Loading work.cpu
-# Loading work.IF
-# Loading work.PC
-# Loading work.IM
-# Loading work.ID
-# Loading work.instr_dec
-# Loading work.RF
-# Loading work.sext8_16
-# Loading work.EX
-# Loading work.SRC_MUX
-# Loading work.ALU
-# Loading work.branchAddress
-# Loading work.MEM
-# Loading work.DM
-# Loading work.branchLogic
-# Loading work.WB
-# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v(7): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pc'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(1).
-# 
-#         Region: /t_cpu/cpu
-run -all
-# ** Warning: (vsim-7) Failed to open readmem file "C:/Users/erichoffman/Documents/ECE_Classes/ECE552/EricStuff/Project/Tests/instr.hex" in read mode.
-# 
-# No such file or directory. (errno = ENOENT)    : C:/Users/Craig/Documents/GitHub/hardwares/Project/instr_mem.v(19)
-#    Time: 0 ns  Iteration: 0  Instance: /t_cpu/cpu/IF/IM
-# Break key hit 
-# Break in Module t_cpu at C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v line 10
-# Compile of src_mux.v was successful.
-# Compile of defines.v was successful.
-# Compile of dff.v was successful.
-# Compile of instr_decode.v was successful.
-# Compile of instr_mem.v was successful.
-# Compile of pc.v was successful.
-# Compile of rf_single_cycle.v was successful.
-# Compile of IF.v was successful.
-# Compile of ID.v was successful.
-# Compile of EX.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v was successful.
-# Compile of branchAddress.v was successful.
-# Compile of sext8_16.v was successful.
-# Compile of MEM.v was successful.
-# Compile of data_mem.v was successful.
-# Compile of branchLogic.v was successful.
-# Compile of WB.v was successful.
-# Compile of cpu_tb.v was successful.
-# 19 compiles, 0 failed with no errors. 
-restart
-# Loading work.t_cpu
-# Loading work.cpu
-# Loading work.IF
-# Loading work.PC
-# Loading work.IM
-# Loading work.ID
-# Loading work.instr_dec
-# Loading work.RF
-# Loading work.sext8_16
-# Loading work.EX
-# Loading work.SRC_MUX
-# Loading work.ALU
-# Loading work.branchAddress
-# Loading work.MEM
-# Loading work.DM
-# Loading work.branchLogic
-# Loading work.WB
-# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v(7): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pc'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(1).
-# 
-#         Region: /t_cpu/cpu
-run -all
-# R1 = 0000
-# R2 = ff86
-# R3 = 0078
-# R4 = 0079
-# R5 = 0005
-# R6 = 6666
-# R7 = 7777
-# R8 = 8888
-# R9 = 9999
-# Ra = aaaa
-# Rb = bbbb
-# Rc = cccc
-# Rd = dddd
-# Re = eeee
-# Rf = ffff
-# Break key hit 
-# Simulation stop requested.
-quit -sim
+# Compile of dff_16.v was successful.
+# Compile of dff_4.v was successful.
+# Compile of dff_3.v was successful.
+# 22 compiles, 0 failed with no errors. 

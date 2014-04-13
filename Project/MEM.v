@@ -5,7 +5,10 @@ module MEM(PCSrc, readData, memRead, memWrite, sawBranch, branchOp, clk, writeDa
   input [2:0] branchOp;
   output [15:0] readData;
   output PCSrc;
-  inout [15:0] address;
+  input [15:0] address;
+  wire takeBranch;
+  
+  assign takeBranch = sawBranch;
   
   DM dataMem(.clk(clk),.addr(address),.re(memRead),.we(memWrite),.wrt_data(writeData),.rd_data(readData));
   
