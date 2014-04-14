@@ -29,7 +29,7 @@ module cpu(hlt, clk, rst_n);
   //input hlt, clk, rst_n, PCSrc, takeJump;
   //input [15:0] target, jrValue;
   //output [15:0] instr, pc;
-  IF IF(.instr(instr_IF_FF), .pc(pc_IF_FF), .hlt(hlt), .clk(clk), .rst_n(rst_n), .PCSrc(pcSrc_FF_WB), .target(addRslt_FF_MEM), .takeJump(sawJ_FF_EX), .jrValue(p1_FF_EX));
+  IF IF(.instr(instr_IF_FF), .pc(pc_IF_FF), .hlt(hlt), .clk(clk), .rst_n(rst_n), .PCSrc(pcSrc_FF_WB), .bAddress(addRslt_FF_MEM), .takeJump(sawJ_FF_EX), .jrValue(p1_FF_EX));
   
   ////////////////////////////////////////////////////////// IF_ID flops ////////////////////////////////////////////////////////////////////
   dff_16 ff1(.q(pc_FF_ID), .d(pc_IF_FF), .en(IF_ID_en), .rst_n(rst_n), .clk(clk));

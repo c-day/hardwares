@@ -44,13 +44,6 @@ Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2
 Top level modules:
 	MEM
 
-} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v {1 {vlog -nostats -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v
-Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
--- Compiling module cpu
-
-Top level modules:
-	cpu
-
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/WB.v {1 {vlog -nostats -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/WB.v
 Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
 -- Compiling module WB
@@ -72,26 +65,12 @@ Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2
 Top level modules:
 	sext8_16
 
-} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/pc.v {1 {vlog -nostats -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/pc.v
-Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
--- Compiling module PC
-
-Top level modules:
-	PC
-
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/dff_4.v {1 {vlog -nostats -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/dff_4.v
 Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
 -- Compiling module dff_4
 
 Top level modules:
 	dff_4
-
-} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/branchAddress.v {1 {vlog -nostats -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/branchAddress.v
-Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
--- Compiling module branchAddress
-
-Top level modules:
-	branchAddress
 
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/branchLogic.v {1 {vlog -nostats -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/branchLogic.v
 Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
@@ -100,12 +79,12 @@ Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2
 Top level modules:
 	branchLogic
 
-} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/EX.v {1 {vlog -nostats -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/EX.v
+} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/branchAddress.v {1 {vlog -nostats -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/branchAddress.v
 Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
--- Compiling module EX
+-- Compiling module branchAddress
 
 Top level modules:
-	EX
+	branchAddress
 
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/ID.v {1 {vlog -nostats -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/ID.v
 Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
@@ -114,6 +93,13 @@ Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2
 Top level modules:
 	ID
 
+} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/EX.v {1 {vlog -nostats -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/EX.v
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module EX
+
+Top level modules:
+	EX
+
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/instr_mem.v {1 {vlog -nostats -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/instr_mem.v
 Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
 -- Compiling module IM
@@ -121,19 +107,12 @@ Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2
 Top level modules:
 	IM
 
-} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/IF.v {1 {vlog -nostats -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/IF.v
+} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/dff.v {1 {vlog -nostats -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/dff.v
 Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
--- Compiling module IF
+-- Compiling module dff
 
 Top level modules:
-	IF
-
-} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/data_mem.v {1 {vlog -nostats -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/data_mem.v
-Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
--- Compiling module DM
-
-Top level modules:
-	DM
+	dff
 
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/rf_single_cycle.v {1 {vlog -nostats -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/rf_single_cycle.v
 Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
@@ -142,11 +121,11 @@ Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2
 Top level modules:
 	RF
 
-} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/dff.v {1 {vlog -nostats -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/dff.v
+} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/data_mem.v {1 {vlog -nostats -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/data_mem.v
 Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
--- Compiling module dff
+-- Compiling module DM
 
 Top level modules:
-	dff
+	DM
 
 } {} {}}

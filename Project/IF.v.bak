@@ -6,7 +6,7 @@ module IF(instr, pc, hlt, clk, rst_n, PCSrc, target, takeJump, jrValue);
   
   wire [15:0] jAddress;
   
-  assign jAddress = (pc+1) + instr[11:0];
+  assign jAddress = (instr[15:12] == 4'b1101) ? (pc+1) + instr[11:0] : jrValue;
   
   PC PC(pc, hlt, clk, rst_n, PCSrc, target, takeJump, jAddress);
 

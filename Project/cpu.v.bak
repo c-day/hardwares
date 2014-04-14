@@ -49,8 +49,8 @@ module cpu(hlt, clk, rst_n);
   .p0(p0_ID_FF), .p1(p1_ID_FF), .shAmt(shAmt_ID_FF), .aluOp(aluOp_ID_FF), .src1sel(src1_ID_FF), .hlt(hlt), .instr(instr_FF_ID), .zr(NZV_EX_FF[1]), 
 	.dst(F_DST_ID_ID), .clk(clk), .link(pc_FF_ID));
 
-	assign F_DST_ID_ID = (instr_FF_ID[15:12] == `ALU_LLB) ? sext_ID_FF : 
-	                     (instr_FF_ID[15:12] == `ALU_ADD) ? aluRslt_EX_FF :
+	assign F_DST_ID_ID = (instr_FF_ID[15:12] == `LLB) ? sext_ID_FF : 
+	                     (instr_FF_ID[15:12] == `ADD) ? aluRslt_EX_FF :
                        writeData_WB_ID;
   
   //passthrough signals
