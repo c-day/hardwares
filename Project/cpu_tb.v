@@ -4,7 +4,7 @@ module t_cpu();
   reg clk, rst_n;
   
   
-  cpu cpu(hlt, pc, clk, rst_n);
+  cpu cpu(hlt, clk, rst_n);
   
   always 
     #4 clk = ~clk;
@@ -12,10 +12,10 @@ module t_cpu();
   initial begin
     clk = 1'b0;
     rst_n = 1'b0;
-    #2 rst_n = 1'b1;
+    #4 rst_n = 1'b1;
   end
   
   always @(hlt)
-    if(hlt) $stop;
+    if(hlt) #20 $stop;
       
 endmodule

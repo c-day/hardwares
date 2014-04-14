@@ -1,121 +1,4 @@
-# Reading A:/Modeltech_pe_edu_10.2c/tcl/vsim/pref.tcl 
-# OpenFile C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v 
-# Loading project wisc
-# Compile of src_mux.v was successful.
-# Compile of defines.v was successful.
-# Compile of dff.v was successful.
-# Compile of instr_decode.v was successful.
-# Compile of instr_mem.v was successful.
-# Compile of pc.v was successful.
-# Compile of rf_single_cycle.v was successful.
-# Compile of IF.v was successful.
-# Compile of ID.v was successful.
-# Compile of EX.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v failed with 1 errors.
-# Compile of branchAddress.v was successful.
-# Compile of sext8_16.v was successful.
-# Compile of MEM.v was successful.
-# Compile of data_mem.v was successful.
-# Compile of branchLogic.v was successful.
-# Compile of WB.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of dff_16.v was successful.
-# Compile of dff_4.v was successful.
-# Compile of dff_3.v was successful.
-# 22 compiles, 1 failed with 1 error. 
-# Compile of src_mux.v was successful.
-# Compile of defines.v was successful.
-# Compile of dff.v was successful.
-# Compile of instr_decode.v was successful.
-# Compile of instr_mem.v was successful.
-# Compile of pc.v was successful.
-# Compile of rf_single_cycle.v was successful.
-# Compile of IF.v was successful.
-# Compile of ID.v was successful.
-# Compile of EX.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v failed with 1 errors.
-# Compile of branchAddress.v was successful.
-# Compile of sext8_16.v was successful.
-# Compile of MEM.v was successful.
-# Compile of data_mem.v was successful.
-# Compile of branchLogic.v was successful.
-# Compile of WB.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of dff_16.v was successful.
-# Compile of dff_4.v was successful.
-# Compile of dff_3.v was successful.
-# 22 compiles, 1 failed with 1 error. 
-# Compile of src_mux.v was successful.
-# Compile of defines.v was successful.
-# Compile of dff.v was successful.
-# Compile of instr_decode.v was successful.
-# Compile of instr_mem.v was successful.
-# Compile of pc.v was successful.
-# Compile of rf_single_cycle.v was successful.
-# Compile of IF.v was successful.
-# Compile of ID.v was successful.
-# Compile of EX.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v failed with 1 errors.
-# Compile of branchAddress.v was successful.
-# Compile of sext8_16.v was successful.
-# Compile of MEM.v was successful.
-# Compile of data_mem.v was successful.
-# Compile of branchLogic.v was successful.
-# Compile of WB.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of dff_16.v was successful.
-# Compile of dff_4.v was successful.
-# Compile of dff_3.v was successful.
-# 22 compiles, 1 failed with 1 error. 
-# Compile of src_mux.v was successful.
-# Compile of defines.v was successful.
-# Compile of dff.v was successful.
-# Compile of instr_decode.v was successful.
-# Compile of instr_mem.v was successful.
-# Compile of pc.v was successful.
-# Compile of rf_single_cycle.v was successful.
-# Compile of IF.v was successful.
-# Compile of ID.v was successful.
-# Compile of EX.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v failed with 1 errors.
-# Compile of branchAddress.v was successful.
-# Compile of sext8_16.v was successful.
-# Compile of MEM.v was successful.
-# Compile of data_mem.v was successful.
-# Compile of branchLogic.v was successful.
-# Compile of WB.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of dff_16.v was successful.
-# Compile of dff_4.v was successful.
-# Compile of dff_3.v was successful.
-# 22 compiles, 1 failed with 1 error. 
-# Compile of src_mux.v was successful.
-# Compile of defines.v was successful.
-# Compile of dff.v was successful.
-# Compile of instr_decode.v was successful.
-# Compile of instr_mem.v was successful.
-# Compile of pc.v was successful.
-# Compile of rf_single_cycle.v was successful.
-# Compile of IF.v was successful.
-# Compile of ID.v was successful.
-# Compile of EX.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v failed with 1 errors.
-# Compile of branchAddress.v was successful.
-# Compile of sext8_16.v was successful.
-# Compile of MEM.v was successful.
-# Compile of data_mem.v was successful.
-# Compile of branchLogic.v was successful.
-# Compile of WB.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of dff_16.v was successful.
-# Compile of dff_4.v was successful.
-# Compile of dff_3.v was successful.
-# 22 compiles, 1 failed with 1 error. 
+# Load canceled
 # Compile of src_mux.v was successful.
 # Compile of defines.v was successful.
 # Compile of dff.v was successful.
@@ -139,29 +22,48 @@
 # Compile of dff_4.v was successful.
 # Compile of dff_3.v was successful.
 # 22 compiles, 0 failed with no errors. 
-# Compile of src_mux.v was successful.
-# Compile of defines.v was successful.
-# Compile of dff.v was successful.
-# Compile of instr_decode.v was successful.
-# Compile of instr_mem.v was successful.
-# Compile of pc.v was successful.
-# Compile of rf_single_cycle.v was successful.
-# Compile of IF.v was successful.
-# Compile of ID.v was successful.
-# Compile of EX.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v failed with 1 errors.
-# Compile of branchAddress.v was successful.
-# Compile of sext8_16.v was successful.
-# Compile of MEM.v was successful.
-# Compile of data_mem.v was successful.
-# Compile of branchLogic.v was successful.
-# Compile of WB.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of dff_16.v was successful.
-# Compile of dff_4.v was successful.
-# Compile of dff_3.v was successful.
-# 22 compiles, 1 failed with 1 error. 
+vsim -gui work.t_cpu
+# //  ModelSim PE Student Edition 10.3 Jan  6 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim -gui work.t_cpu 
+# Start time: 16:39:20 on Apr 13,2014
+# Loading work.t_cpu
+# Loading work.cpu
+# Loading work.IF
+# Loading work.PC
+# Loading work.IM
+# Loading work.dff_16
+# Loading work.ID
+# Loading work.instr_dec
+# Loading work.RF
+# Loading work.sext8_16
+# Loading work.dff_4
+# Loading work.dff_3
+# Loading work.dff
+# Loading work.EX
+# Loading work.SRC_MUX
+# Loading work.ALU
+# Loading work.sraFix
+# Loading work.branchAddress
+# Loading work.MEM
+# Loading work.DM
+# Loading work.branchLogic
+# Loading work.WB
+# ** Fatal: (vsim-3365) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v(7): Too many port connections. Expected 3, found 4.
+#    Time: 0 ns  Iteration: 0  Instance: /t_cpu/cpu File: C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v
+# FATAL ERROR while loading design
+# Error loading design
 # Compile of src_mux.v was successful.
 # Compile of defines.v was successful.
 # Compile of dff.v was successful.
@@ -185,3 +87,675 @@
 # Compile of dff_4.v was successful.
 # Compile of dff_3.v was successful.
 # 22 compiles, 0 failed with no errors. 
+vsim -gui work.t_cpu
+# vsim -gui work.t_cpu 
+# Start time: 16:39:53 on Apr 13,2014
+# Loading work.t_cpu
+# Loading work.cpu
+# Loading work.IF
+# Loading work.PC
+# Loading work.IM
+# Loading work.dff_16
+# Loading work.ID
+# Loading work.instr_dec
+# Loading work.RF
+# Loading work.sext8_16
+# Loading work.dff_4
+# Loading work.dff_3
+# Loading work.dff
+# Loading work.EX
+# Loading work.SRC_MUX
+# Loading work.ALU
+# Loading work.sraFix
+# Loading work.branchAddress
+# Loading work.MEM
+# Loading work.DM
+# Loading work.branchLogic
+# Loading work.WB
+# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(26): [PCDPC] - Port size (16) does not match connection size (1) for port 'jrValue'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/IF.v(2).
+# 
+#         Region: /t_cpu/cpu/IF
+# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(42): [PCDPC] - Port size (3) does not match connection size (1) for port 'branchOp'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/ID.v(2).
+# 
+#         Region: /t_cpu/cpu/ID
+# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(42): [PCDPC] - Port size (16) does not match connection size (1) for port 'dst'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/ID.v(2).
+# 
+#         Region: /t_cpu/cpu/ID
+# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(88): [PCDPC] - Port size (3) does not match connection size (4) for port 'q'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/dff_3.v(1).
+# 
+#         Region: /t_cpu/cpu/ff19
+# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(88): [PCDPC] - Port size (3) does not match connection size (4) for port 'd'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/dff_3.v(1).
+# 
+#         Region: /t_cpu/cpu/ff19
+# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(89): [PCDPC] - Port size (3) does not match connection size (4) for port 'q'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/dff_3.v(1).
+# 
+#         Region: /t_cpu/cpu/ff20
+# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(89): [PCDPC] - Port size (3) does not match connection size (4) for port 'd'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/dff_3.v(1).
+# 
+#         Region: /t_cpu/cpu/ff20
+# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(102): [PCDPC] - Port size (3) does not match connection size (4) for port 'branchOp'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/MEM.v(2).
+# 
+#         Region: /t_cpu/cpu/MEM
+# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(115): [PCDPC] - Port size (16) does not match connection size (1) for port 'writeData'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/WB.v(2).
+# 
+#         Region: /t_cpu/cpu/WB
+run -all
+add wave -position insertpoint  \
+sim:/t_cpu/hlt \
+sim:/t_cpu/clk \
+sim:/t_cpu/rst_n
+restart
+# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(26): [PCDPC] - Port size (16) does not match connection size (1) for port 'jrValue'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/IF.v(2).
+# 
+#         Region: /t_cpu/cpu/IF
+# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(42): [PCDPC] - Port size (3) does not match connection size (1) for port 'branchOp'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/ID.v(2).
+# 
+#         Region: /t_cpu/cpu/ID
+# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(42): [PCDPC] - Port size (16) does not match connection size (1) for port 'dst'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/ID.v(2).
+# 
+#         Region: /t_cpu/cpu/ID
+# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(88): [PCDPC] - Port size (3) does not match connection size (4) for port 'q'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/dff_3.v(1).
+# 
+#         Region: /t_cpu/cpu/ff19
+# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(88): [PCDPC] - Port size (3) does not match connection size (4) for port 'd'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/dff_3.v(1).
+# 
+#         Region: /t_cpu/cpu/ff19
+# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(89): [PCDPC] - Port size (3) does not match connection size (4) for port 'q'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/dff_3.v(1).
+# 
+#         Region: /t_cpu/cpu/ff20
+# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(89): [PCDPC] - Port size (3) does not match connection size (4) for port 'd'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/dff_3.v(1).
+# 
+#         Region: /t_cpu/cpu/ff20
+# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(102): [PCDPC] - Port size (3) does not match connection size (4) for port 'branchOp'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/MEM.v(2).
+# 
+#         Region: /t_cpu/cpu/MEM
+# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(115): [PCDPC] - Port size (16) does not match connection size (1) for port 'writeData'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/WB.v(2).
+# 
+#         Region: /t_cpu/cpu/WB
+run -all
+# Error opening C:/Users/Craig/Documents/GitHub/hardwares/Project/[PCDPC] - Port size (3) does not match connection size 
+# Path name 'C:/Users/Craig/Documents/GitHub/hardwares/Project/[PCDPC] - Port size (3) does not match connection size ' doesn't exist.
+# A time value could not be extracted from the current line
+# Compile of src_mux.v was successful.
+# Compile of defines.v was successful.
+# Compile of dff.v was successful.
+# Compile of instr_decode.v was successful.
+# Compile of instr_mem.v was successful.
+# Compile of pc.v was successful.
+# Compile of rf_single_cycle.v was successful.
+# Compile of IF.v was successful.
+# Compile of ID.v was successful.
+# Compile of EX.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of branchAddress.v was successful.
+# Compile of sext8_16.v was successful.
+# Compile of MEM.v was successful.
+# Compile of data_mem.v was successful.
+# Compile of branchLogic.v was successful.
+# Compile of WB.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of dff_16.v was successful.
+# Compile of dff_4.v was successful.
+# Compile of dff_3.v was successful.
+# 22 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_cpu
+# Loading work.cpu
+# Loading work.IF
+# Loading work.PC
+# Loading work.IM
+# Loading work.dff_16
+# Loading work.ID
+# Loading work.instr_dec
+# Loading work.RF
+# Loading work.sext8_16
+# Loading work.dff_4
+# Loading work.dff_3
+# Loading work.dff
+# Loading work.EX
+# Loading work.SRC_MUX
+# Loading work.ALU
+# Loading work.sraFix
+# Loading work.branchAddress
+# Loading work.MEM
+# Loading work.DM
+# Loading work.branchLogic
+# Loading work.WB
+# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(26): [PCDPC] - Port size (16) does not match connection size (1) for port 'jrValue'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/IF.v(2).
+# 
+#         Region: /t_cpu/cpu/IF
+# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(42): [PCDPC] - Port size (3) does not match connection size (1) for port 'branchOp'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/ID.v(2).
+# 
+#         Region: /t_cpu/cpu/ID
+# Compile of src_mux.v was successful.
+# Compile of defines.v was successful.
+# Compile of dff.v was successful.
+# Compile of instr_decode.v was successful.
+# Compile of instr_mem.v was successful.
+# Compile of pc.v was successful.
+# Compile of rf_single_cycle.v was successful.
+# Compile of IF.v was successful.
+# Compile of ID.v was successful.
+# Compile of EX.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of branchAddress.v was successful.
+# Compile of sext8_16.v was successful.
+# Compile of MEM.v was successful.
+# Compile of data_mem.v was successful.
+# Compile of branchLogic.v was successful.
+# Compile of WB.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of dff_16.v was successful.
+# Compile of dff_4.v was successful.
+# Compile of dff_3.v was successful.
+# 22 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_cpu
+# Loading work.cpu
+# Loading work.IF
+# Loading work.PC
+# Loading work.IM
+# Loading work.dff_16
+# Loading work.ID
+# Loading work.instr_dec
+# Loading work.RF
+# Loading work.sext8_16
+# Loading work.dff_4
+# Loading work.dff_3
+# Loading work.dff
+# Loading work.EX
+# Loading work.SRC_MUX
+# Loading work.ALU
+# Loading work.sraFix
+# Loading work.branchAddress
+# Loading work.MEM
+# Loading work.DM
+# Loading work.branchLogic
+# Loading work.WB
+# ** Warning: (vsim-3015) C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu.v(89): [PCDPC] - Port size (3) does not match connection size (1) for port 'd'. The port definition is at: C:/Users/Craig/Documents/GitHub/hardwares/Project/dff_3.v(1).
+# 
+#         Region: /t_cpu/cpu/ff20
+# Compile of src_mux.v was successful.
+# Compile of defines.v was successful.
+# Compile of dff.v was successful.
+# Compile of instr_decode.v was successful.
+# Compile of instr_mem.v was successful.
+# Compile of pc.v was successful.
+# Compile of rf_single_cycle.v was successful.
+# Compile of IF.v was successful.
+# Compile of ID.v was successful.
+# Compile of EX.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of branchAddress.v was successful.
+# Compile of sext8_16.v was successful.
+# Compile of MEM.v was successful.
+# Compile of data_mem.v was successful.
+# Compile of branchLogic.v was successful.
+# Compile of WB.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of dff_16.v was successful.
+# Compile of dff_4.v was successful.
+# Compile of dff_3.v was successful.
+# 22 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_cpu
+# Loading work.cpu
+# Loading work.IF
+# Loading work.PC
+# Loading work.IM
+# Loading work.dff_16
+# Loading work.ID
+# Loading work.instr_dec
+# Loading work.RF
+# Loading work.sext8_16
+# Loading work.dff_4
+# Loading work.dff_3
+# Loading work.dff
+# Loading work.EX
+# Loading work.SRC_MUX
+# Loading work.ALU
+# Loading work.sraFix
+# Loading work.branchAddress
+# Loading work.MEM
+# Loading work.DM
+# Loading work.branchLogic
+# Loading work.WB
+run -all
+add wave -position insertpoint  \
+sim:/t_cpu/cpu/pc_IF_FF
+add wave -position insertpoint  \
+sim:/t_cpu/cpu/instr_IF_FF
+restart
+run
+add wave -position insertpoint  \
+sim:/t_cpu/cpu/IF/PCSrc \
+sim:/t_cpu/cpu/IF/takeJump \
+sim:/t_cpu/cpu/IF/target \
+sim:/t_cpu/cpu/IF/jrValue \
+sim:/t_cpu/cpu/IF/instr \
+sim:/t_cpu/cpu/IF/pc \
+sim:/t_cpu/cpu/IF/jAddress
+restart
+run
+# Compile of src_mux.v was successful.
+# Compile of defines.v was successful.
+# Compile of dff.v was successful.
+# Compile of instr_decode.v was successful.
+# Compile of instr_mem.v was successful.
+# Compile of pc.v was successful.
+# Compile of rf_single_cycle.v was successful.
+# Compile of IF.v was successful.
+# Compile of ID.v was successful.
+# Compile of EX.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of branchAddress.v was successful.
+# Compile of sext8_16.v was successful.
+# Compile of MEM.v was successful.
+# Compile of data_mem.v was successful.
+# Compile of branchLogic.v was successful.
+# Compile of WB.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of dff_16.v was successful.
+# Compile of dff_4.v was successful.
+# Compile of dff_3.v was successful.
+# 22 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_cpu
+# Loading work.cpu
+# Loading work.IF
+# Loading work.PC
+# Loading work.IM
+# Loading work.dff_16
+# Loading work.ID
+# Loading work.instr_dec
+# Loading work.RF
+# Loading work.sext8_16
+# Loading work.dff_4
+# Loading work.dff_3
+# Loading work.dff
+# Loading work.EX
+# Loading work.SRC_MUX
+# Loading work.ALU
+# Loading work.sraFix
+# Loading work.branchAddress
+# Loading work.MEM
+# Loading work.DM
+# Loading work.branchLogic
+# Loading work.WB
+run
+# Compile of src_mux.v was successful.
+# Compile of defines.v was successful.
+# Compile of dff.v was successful.
+# Compile of instr_decode.v was successful.
+# Compile of instr_mem.v was successful.
+# Compile of pc.v was successful.
+# Compile of rf_single_cycle.v was successful.
+# Compile of IF.v was successful.
+# Compile of ID.v was successful.
+# Compile of EX.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of branchAddress.v was successful.
+# Compile of sext8_16.v was successful.
+# Compile of MEM.v was successful.
+# Compile of data_mem.v was successful.
+# Compile of branchLogic.v was successful.
+# Compile of WB.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of dff_16.v was successful.
+# Compile of dff_4.v was successful.
+# Compile of dff_3.v was successful.
+# 22 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_cpu
+# Loading work.cpu
+# Loading work.IF
+# Loading work.PC
+# Loading work.IM
+# Loading work.dff_16
+# Loading work.ID
+# Loading work.instr_dec
+# Loading work.RF
+# Loading work.sext8_16
+# Loading work.dff_4
+# Loading work.dff_3
+# Loading work.dff
+# Loading work.EX
+# Loading work.SRC_MUX
+# Loading work.ALU
+# Loading work.sraFix
+# Loading work.branchAddress
+# Loading work.MEM
+# Loading work.DM
+# Loading work.branchLogic
+# Loading work.WB
+run
+# R1 = 1111
+# R2 = 2222
+# R3 = 3333
+# R4 = 4444
+# R5 = 5555
+# R6 = 6666
+# R7 = 7777
+# R8 = 8888
+# R9 = 9999
+# Ra = aaaa
+# Rb = bbbb
+# Rc = cccc
+# Rd = dddd
+# Re = xxxx
+# Rf = ffff
+add wave -position insertpoint  \
+sim:/t_cpu/cpu/ff1/q
+# Compile of src_mux.v was successful.
+# Compile of defines.v was successful.
+# Compile of dff.v was successful.
+# Compile of instr_decode.v was successful.
+# Compile of instr_mem.v was successful.
+# Compile of pc.v was successful.
+# Compile of rf_single_cycle.v was successful.
+# Compile of IF.v was successful.
+# Compile of ID.v was successful.
+# Compile of EX.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of branchAddress.v was successful.
+# Compile of sext8_16.v was successful.
+# Compile of MEM.v was successful.
+# Compile of data_mem.v was successful.
+# Compile of branchLogic.v was successful.
+# Compile of WB.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of dff_16.v was successful.
+# Compile of dff_4.v was successful.
+# Compile of dff_3.v was successful.
+# 22 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_cpu
+# Loading work.cpu
+# Loading work.IF
+# Loading work.PC
+# Loading work.IM
+# Loading work.dff_16
+# Loading work.ID
+# Loading work.instr_dec
+# Loading work.RF
+# Loading work.sext8_16
+# Loading work.dff_4
+# Loading work.dff_3
+# Loading work.dff
+# Loading work.EX
+# Loading work.SRC_MUX
+# Loading work.ALU
+# Loading work.sraFix
+# Loading work.branchAddress
+# Loading work.MEM
+# Loading work.DM
+# Loading work.branchLogic
+# Loading work.WB
+run
+# R1 = xxxx
+# R2 = xxxx
+# R3 = xxxx
+# R4 = xxxx
+# R5 = 5555
+# R6 = 6666
+# R7 = 7777
+# R8 = 8888
+# R9 = 9999
+# Ra = aaaa
+# Rb = bbbb
+# Rc = cccc
+# Rd = xxxx
+# Re = xxxx
+# Rf = ffff
+# ** Note: $stop    : C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v(19)
+#    Time: 140 ns  Iteration: 2  Instance: /t_cpu
+# Break in Module t_cpu at C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v line 19
+restart
+run -all
+# R1 = xxxx
+# R2 = xxxx
+# R3 = xxxx
+# R4 = xxxx
+# R5 = 5555
+# R6 = 6666
+# R7 = 7777
+# R8 = 8888
+# R9 = 9999
+# Ra = aaaa
+# Rb = bbbb
+# Rc = cccc
+# Rd = xxxx
+# Re = xxxx
+# Rf = ffff
+# ** Note: $stop    : C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v(19)
+#    Time: 140 ns  Iteration: 2  Instance: /t_cpu
+# Break in Module t_cpu at C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v line 19
+add wave -position insertpoint  \
+sim:/t_cpu/cpu/IF/hlt \
+sim:/t_cpu/cpu/IF/clk \
+sim:/t_cpu/cpu/IF/rst_n \
+sim:/t_cpu/cpu/IF/PCSrc \
+sim:/t_cpu/cpu/IF/takeJump \
+sim:/t_cpu/cpu/IF/target \
+sim:/t_cpu/cpu/IF/jrValue \
+sim:/t_cpu/cpu/IF/instr \
+sim:/t_cpu/cpu/IF/pc
+restart
+run -all
+# R1 = xxxx
+# R2 = xxxx
+# R3 = xxxx
+# R4 = xxxx
+# R5 = 5555
+# R6 = 6666
+# R7 = 7777
+# R8 = 8888
+# R9 = 9999
+# Ra = aaaa
+# Rb = bbbb
+# Rc = cccc
+# Rd = xxxx
+# Re = xxxx
+# Rf = ffff
+# ** Note: $stop    : C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v(19)
+#    Time: 140 ns  Iteration: 2  Instance: /t_cpu
+# Break in Module t_cpu at C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v line 19
+add wave -position insertpoint  \
+sim:/t_cpu/cpu/ID/zr \
+sim:/t_cpu/cpu/ID/clk \
+sim:/t_cpu/cpu/ID/dst \
+sim:/t_cpu/cpu/ID/instr \
+sim:/t_cpu/cpu/ID/link \
+sim:/t_cpu/cpu/ID/p0 \
+sim:/t_cpu/cpu/ID/p1 \
+sim:/t_cpu/cpu/ID/shAmt \
+sim:/t_cpu/cpu/ID/aluOp \
+sim:/t_cpu/cpu/ID/src1sel \
+sim:/t_cpu/cpu/ID/hlt \
+sim:/t_cpu/cpu/ID/sawBranch \
+sim:/t_cpu/cpu/ID/memRd \
+sim:/t_cpu/cpu/ID/memWr \
+sim:/t_cpu/cpu/ID/sawJump \
+sim:/t_cpu/cpu/ID/branchOp \
+sim:/t_cpu/cpu/ID/sextOut
+restart
+run -all
+# R1 = xxxx
+# R2 = xxxx
+# R3 = xxxx
+# R4 = xxxx
+# R5 = 5555
+# R6 = 6666
+# R7 = 7777
+# R8 = 8888
+# R9 = 9999
+# Ra = aaaa
+# Rb = bbbb
+# Rc = cccc
+# Rd = xxxx
+# Re = xxxx
+# Rf = ffff
+# ** Note: $stop    : C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v(19)
+#    Time: 140 ns  Iteration: 2  Instance: /t_cpu
+# Break in Module t_cpu at C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v line 19
+# Compile of src_mux.v was successful.
+# Compile of defines.v was successful.
+# Compile of dff.v was successful.
+# Compile of instr_decode.v was successful.
+# Compile of instr_mem.v was successful.
+# Compile of pc.v was successful.
+# Compile of rf_single_cycle.v was successful.
+# Compile of IF.v was successful.
+# Compile of ID.v was successful.
+# Compile of EX.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of branchAddress.v was successful.
+# Compile of sext8_16.v was successful.
+# Compile of MEM.v was successful.
+# Compile of data_mem.v was successful.
+# Compile of branchLogic.v was successful.
+# Compile of WB.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of dff_16.v was successful.
+# Compile of dff_4.v was successful.
+# Compile of dff_3.v was successful.
+# 22 compiles, 0 failed with no errors. 
+restart
+# Loading work.t_cpu
+# Loading work.cpu
+# Loading work.IF
+# Loading work.PC
+# Loading work.IM
+# Loading work.dff_16
+# Loading work.ID
+# Loading work.instr_dec
+# Loading work.RF
+# Loading work.sext8_16
+# Loading work.dff_4
+# Loading work.dff_3
+# Loading work.dff
+# Loading work.EX
+# Loading work.SRC_MUX
+# Loading work.ALU
+# Loading work.sraFix
+# Loading work.branchAddress
+# Loading work.MEM
+# Loading work.DM
+# Loading work.branchLogic
+# Loading work.WB
+run -all
+# R1 = xxxx
+# R2 = xxxx
+# R3 = xxxx
+# R4 = xxxx
+# R5 = 5555
+# R6 = 6666
+# R7 = 7777
+# R8 = 8888
+# R9 = 9999
+# Ra = aaaa
+# Rb = bbbb
+# Rc = cccc
+# Rd = xxxx
+# Re = xxxx
+# Rf = ffff
+# ** Note: $stop    : C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v(19)
+#    Time: 140 ns  Iteration: 2  Instance: /t_cpu
+# Break in Module t_cpu at C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v line 19
+add wave -position insertpoint  \
+sim:/t_cpu/cpu/IF/instr
+add wave -position insertpoint  \
+sim:/t_cpu/cpu/ID/RF/p0_addr \
+sim:/t_cpu/cpu/ID/RF/p1_addr \
+sim:/t_cpu/cpu/ID/RF/re0 \
+sim:/t_cpu/cpu/ID/RF/re1 \
+sim:/t_cpu/cpu/ID/RF/dst_addr \
+sim:/t_cpu/cpu/ID/RF/dst \
+sim:/t_cpu/cpu/ID/RF/we \
+sim:/t_cpu/cpu/ID/RF/p0 \
+sim:/t_cpu/cpu/ID/RF/p1
+restart
+run -all
+# R1 = xxxx
+# R2 = xxxx
+# R3 = xxxx
+# R4 = xxxx
+# R5 = 5555
+# R6 = 6666
+# R7 = 7777
+# R8 = 8888
+# R9 = 9999
+# Ra = aaaa
+# Rb = bbbb
+# Rc = cccc
+# Rd = xxxx
+# Re = xxxx
+# Rf = ffff
+# ** Note: $stop    : C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v(19)
+#    Time: 140 ns  Iteration: 2  Instance: /t_cpu
+# Break in Module t_cpu at C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v line 19
+add wave -position insertpoint  \
+sim:/t_cpu/cpu/WB/memToReg \
+sim:/t_cpu/cpu/WB/readData \
+sim:/t_cpu/cpu/WB/address \
+sim:/t_cpu/cpu/WB/writeData
+restart
+run -all
+# R1 = xxxx
+# R2 = xxxx
+# R3 = xxxx
+# R4 = xxxx
+# R5 = 5555
+# R6 = 6666
+# R7 = 7777
+# R8 = 8888
+# R9 = 9999
+# Ra = aaaa
+# Rb = bbbb
+# Rc = cccc
+# Rd = xxxx
+# Re = xxxx
+# Rf = ffff
+# ** Note: $stop    : C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v(19)
+#    Time: 140 ns  Iteration: 2  Instance: /t_cpu
+# Break in Module t_cpu at C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v line 19
+add wave -position insertpoint  \
+sim:/t_cpu/cpu/MEM/writeData \
+sim:/t_cpu/cpu/MEM/sawBranch \
+sim:/t_cpu/cpu/MEM/memRead \
+sim:/t_cpu/cpu/MEM/memWrite \
+sim:/t_cpu/cpu/MEM/clk \
+sim:/t_cpu/cpu/MEM/N \
+sim:/t_cpu/cpu/MEM/Z \
+sim:/t_cpu/cpu/MEM/V \
+sim:/t_cpu/cpu/MEM/branchOp \
+sim:/t_cpu/cpu/MEM/readData \
+sim:/t_cpu/cpu/MEM/PCSrc \
+sim:/t_cpu/cpu/MEM/address
+restart
+run -all
+# R1 = xxxx
+# R2 = xxxx
+# R3 = xxxx
+# R4 = xxxx
+# R5 = 5555
+# R6 = 6666
+# R7 = 7777
+# R8 = 8888
+# R9 = 9999
+# Ra = aaaa
+# Rb = bbbb
+# Rc = cccc
+# Rd = xxxx
+# Re = xxxx
+# Rf = ffff
+# ** Note: $stop    : C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v(19)
+#    Time: 140 ns  Iteration: 2  Instance: /t_cpu
+# Break in Module t_cpu at C:/Users/Craig/Documents/GitHub/hardwares/Project/cpu_tb.v line 19

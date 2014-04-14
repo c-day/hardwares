@@ -1,3 +1,4 @@
+`include "defines.v"
 module cpu(hlt, clk, rst_n);
   input clk, rst_n;
   output hlt;
@@ -5,25 +6,30 @@ module cpu(hlt, clk, rst_n);
   //flop enable/stall signals
   wire IF_ID_en, ID_EX_en, EX_MEM_en, MEM_WB_en;
   
-  wire [15:0] pc_FF_ID, pc_IF_FF, instr_FF_ID, instr_IF_FF, p0_FF_EX, p0_ID_FF, p1_FF_EX, p1_ID_FF, sext_FF_EX, sext_ID_FF, pc_FF_EX, instr_FF_EX, instr_ID_FF, aluRslt_FF_MEM, aluRslt_EX_FF, 
-              addRslt_FF_MEM, addRslt_EX_FF, p1_FF_MEM, p1_EX_FF, rdData_FF_WB, rdData_MEM_FF,aluRslt_FF_WB, aluRslt_MEM_FF;
+  wire [15:0] pc_FF_ID, pc_ID_FF, pc_IF_FF, instr_FF_ID, instr_IF_FF, p0_FF_EX, p0_ID_FF, p1_FF_EX, p1_ID_FF, sext_FF_EX, sext_ID_FF, pc_FF_EX, instr_FF_EX, instr_ID_FF, aluRslt_FF_MEM, aluRslt_EX_FF, 
+              addRslt_FF_MEM, addRslt_EX_FF, p1_FF_MEM, p1_EX_FF, rdData_FF_WB, rdData_MEM_FF,aluRslt_FF_WB, aluRslt_MEM_FF, writeData_WB_ID, F_DST_ID_ID;
   
   
-  wire [3:0]  shAmt_FF_EX, shAmt_ID_FF, aluOp_FF_EX, aluOp_ID_FF, NZV_FF_MEM, NZV_EX_FF, branchOp_FF_MEM, branch_EX_FF;
+  wire [3:0]  shAmt_FF_EX, shAmt_ID_FF, aluOp_FF_EX, aluOp_ID_FF;
   
   
-  wire [2:0] branchOp_FF_EX, branchOp_ID_FF;
+  wire [2:0] branchOp_FF_EX, branchOp_ID_FF, NZV_FF_MEM, NZV_EX_FF, branchOp_FF_MEM, branch_EX_FF, branchOp_EX_FF;
   
   
   wire src1_FF_EX, src1_ID_FF, sawBr_FF_EX, sawBr_ID_FF, memRd_FF_EX, memRd_ID_FF, memWr_FF_EX, memWr_ID_FF, sawJ_FF_EX, sawJ_ID_FF, memRd_FF_MEM, memRd_EX_FF, memWr_FF_MEM, memWr_EX_FF, sawBr_FF_MEM, sawBr_EX_FF,
        pcSrc_FF_WB, pcSrc_MEM_FF, memRd_FF_WB, memRd_MEM_FF;
+
+	assign IF_ID_en = 1'b1;
+	assign ID_EX_en = 1'b1;
+	assign EX_MEM_en = 1'b1;
+	assign MEM_WB_en = 1'b1;
   
   
   //instruction fetch stage
   //input hlt, clk, rst_n, PCSrc, takeJump;
   //input [15:0] target, jrValue;
   //output [15:0] instr, pc;
-  IF IF(.instr(instr_IF_FF), .pc(pc_IF_FF), .hlt(hlt), .clk(clk), .rst_n(rst_n), .PCSrc(PCSrc_MEM_IF), .target(addRslt_FF_MEM), .takeJump(jmpSrc_ID_IF), .jrValue(p1_ID_EX));
+  IF IF(.instr(instr_IF_FF), .pc(pc_IF_FF), .hlt(hlt), .clk(clk), .rst_n(rst_n), .PCSrc(pcSrc_FF_WB), .target(addRslt_FF_MEM), .takeJump(sawJ_FF_EX), .jrValue(p1_FF_EX));
   
   ////////////////////////////////////////////////////////// IF_ID flops ////////////////////////////////////////////////////////////////////
   dff_16 ff1(.q(pc_FF_ID), .d(pc_IF_FF), .en(IF_ID_en), .rst_n(rst_n), .clk(clk));
@@ -39,8 +45,13 @@ module cpu(hlt, clk, rst_n);
   //output sawBranch, memRd, memWr, sawJump;
   //output [2:0] branchOp;
   //output [15:0] sextOut;
-  ID ID(.sawJump(sawJ_ID_FF), .memRd(memRd_ID_FF), .memWr(memWr_ID_FF), .sextOut(sext_ID_FF), .sawBranch(sawBr_ID_FF), .branchOp(branchOp_ID_EX), 
-  .p0(p0_ID_FF), .p1(p1_ID_FF), .shAmt(shAmt_ID_FF), .aluOp(aluOp_ID_FF), .src1sel(src1_ID_FF), .hlt(hlt), .instr(instr_FF_ID), .zr(Z), .dst(writeData_WB_ID), .clk(clk), .link(pc_FF_ID));
+  ID ID(.sawJump(sawJ_ID_FF), .memRd(memRd_ID_FF), .memWr(memWr_ID_FF), .sextOut(sext_ID_FF), .sawBranch(sawBr_ID_FF), .branchOp(branchOp_FF_EX), 
+  .p0(p0_ID_FF), .p1(p1_ID_FF), .shAmt(shAmt_ID_FF), .aluOp(aluOp_ID_FF), .src1sel(src1_ID_FF), .hlt(hlt), .instr(instr_FF_ID), .zr(NZV_EX_FF[1]), 
+	.dst(F_DST_ID_ID), .clk(clk), .link(pc_FF_ID));
+
+	assign F_DST_ID_ID = (instr_FF_ID[15:12] == `ALU_LLB) ? sext_ID_FF : 
+	                     (instr_FF_ID[15:12] == `ALU_ADD) ? aluRslt_EX_FF :
+                       writeData_WB_ID;
   
   //passthrough signals
   assign pc_FF_ID = pc_ID_FF;
@@ -86,7 +97,7 @@ module cpu(hlt, clk, rst_n);
   dff_16 ff17(.q(addRslt_FF_MEM), .d(addRslt_EX_FF), .en(EX_MEM_en), .rst_n(rst_n), .clk(clk));
   dff_16 ff18(.q(p1_FF_MEM), .d(p1_EX_FF), .en(EX_MEM_en), .rst_n(rst_n), .clk(clk));
   dff_3  ff19(.q(NZV_FF_MEM), .d(NZV_EX_FF), .en(EX_MEM_en), .rst_n(rst_n), .clk(clk));
-  dff_3  ff20(.q(branchOp_FF_MEM), .d(branch_EX_FF), .en(EX_MEM_en), .rst_n(rst_n), .clk(clk));
+  dff_3  ff20(.q(branchOp_FF_MEM), .d(branchOp_EX_FF), .en(EX_MEM_en), .rst_n(rst_n), .clk(clk));
   dff    ff21(.q(memRd_FF_MEM), .d(memRd_EX_FF), .en(EX_MEM_en), .rst_n(rst_n), .clk(clk));
   dff    ff22(.q(memWr_FF_MEM), .d(memWr_EX_FF), .en(EX_MEM_en), .rst_n(rst_n), .clk(clk));
   dff    ff23(.q(sawBr_FF_MEM), .d(sawBr_EX_FF), .en(EX_MEM_en), .rst_n(rst_n), .clk(clk));
@@ -101,6 +112,9 @@ module cpu(hlt, clk, rst_n);
   //input [15:0] address;
   MEM MEM(.PCSrc(pcSrc_MEM_FF), .readData(rdData_MEM_FF), .memRead(memRd_FF_MEM), .memWrite(memWr_FF_MEM), .sawBranch(sawBr_FF_MEM), .branchOp(branchOp_FF_MEM), 
   .clk(clk), .writeData(p1_FF_MEM), .address(aluRslt_FF_MEM), .N(NZV_FF_MEM[2]), .Z(NZV_FF_MEM[1]), .V(NZV_FF_MEM[0]));
+
+	assign aluRslt_MEM_FF = aluRslt_FF_MEM;
+	assign memRd_MEM_FF = memRd_FF_MEM;
   
   //////////////////////////////////////////////////////////  MEM_WB flops ////////////////////////////////////////////////////////////////////////
   dff_16 ff24(.q(rdData_FF_WB), .d(rdData_MEM_FF), .en(MEM_WB_en), .rst_n(rst_n), .clk(clk));
