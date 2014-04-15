@@ -16,6 +16,6 @@ module t_cpu();
   end
   
   always @(hlt)
-    if(hlt) #20 $stop;
+    if(hlt) $stop;
       
 endmodule

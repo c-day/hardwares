@@ -7,26 +7,33 @@
     LLB R13, 0x01
     LLB R1,  0x12
     LLB R2,  0x21
-    
+    LLB R0, 0x00    #Sudo NOP
+    LLB R0, 0x00    #Sudo NOP
+    LLB R0, 0x00    #Sudo NOP
+    LLB R0, 0x00    #Sudo NOP
+    LLB R0, 0x00    #Sudo NOP
+
     # do our first add the W part of RAW
     ADD R3,  R2, R1      # we expect 0x33
-    HLT
     # no we do our R of RAW
-    SW  R3,  R2, 0x1C    # we attempt to/expect to store 0x33
-    LW  R4,  R2, 0x1C    # go get our expect 0x33 from 0x1C mem location
+    LLB R0, 0x00    #Sudo NOP
+    LLB R0, 0x00    #Sudo NOP
+    LLB R0, 0x00    #Sudo NOP
+    LLB R0, 0x00    #Sudo NOP
+    LLB R0, 0x00    #Sudo NOP
+    SW  R3,  R0, 0x1C    # we attempt to/expect to store 0x33
+    LW  R4,  R0, 0x1C    # go get our expect 0x33 from 0x1C mem location
     	LLB R0, 0x00	#Sudo NOP
     	LLB R0, 0x00	#Sudo NOP
-    SUB R0,  R4, R3      # we subtract what we hope to be 0x33-0x33 and set Z=1
+        LLB R0, 0x00    #Sudo NOP
+        LLB R0, 0x00    #Sudo NOP
+        LLB R0, 0x00    #Sudo NOP
+    SUB R5,  R4, R3      # we subtract what we hope to be 0x33-0x33 and set Z=1
     	LLB R0, 0x00	#Sudo NOP
     B NEQ, BAD
 
     # fall through if we pass
     ADD R14, R14, R13   # add one to R14 to know we passed this test
-    LLB R0, 0x00    #Sudo NOP
-    LLB R0, 0x00    #Sudo NOP
-    LLB R0, 0x00    #Sudo NOP
-    LLB R0, 0x00    #Sudo NOP
-    LLB R0, 0x00    #Sudo NOP
     HLT
 
 
