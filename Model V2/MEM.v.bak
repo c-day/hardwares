@@ -13,7 +13,7 @@ module MEM(
   PCSrc
 );
   input [15:0] memAddr, wrData;
-  input [2:0] flags, branchOp;
+  input [2:0] flags;
   input memWr, memRd, clk, sawBr, sawJ;
   output [15:0] rdData;
   output PCSrc;

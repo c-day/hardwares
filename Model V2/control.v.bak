@@ -19,7 +19,6 @@ module control(
 	Z
 );
   input [15:0] instr;
-	input Z;
   output rdEnReg1, rdEnReg2, wrRegEn, memRd, memWr, mem2reg, sawBr, sawJ, aluSrc, hlt;
   output [3:0] rdReg1, rdReg2, wrReg, aluOp, shAmt;
 

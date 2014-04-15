@@ -2,16 +2,17 @@ module cpu(clk, rst_n, hlt);
   input clk, rst_n;
   output hlt;
 
-  wire [2:0] flags_EX_FF, branchOp_EX_FF, branchOp_FF_MEM;
+  wire [2:0] flags_EX_FF, branchOp_EX_FF, branchOp_FF_MEM, flags_FF_MEM;
 
   wire [15:0] FWD_reg1, FWD_reg2;
 
   wire [15:0] pc_IF_FF, pc_FF_ID, instr_IF_FF, instr_FF_ID, instr_ID_FF, instr_FF_EX,
               sext_FF_EX, sext_ID_FF, aluResult_EX_FF, aluResult_FF_MEM, targetAddr_EX_FF,
               targetAddr_FF_MEM, rdData_MEM_FF, rdData_FF_WB, aluResult_MEM_FF, aluResult_FF_WB,
-              reg2_EX_FF, reg2_FF_MEM;
+              wrData_WB_ID, reg1_ID_FF, reg1_FF_EX, reg2_ID_FF, reg2_FF_EX, reg2_EX_FF, reg2_FF_MEM,
+							pc_FF_EX, pc_ID_FF;
 
-  wire [3:0] reg1_ID_FF, reg1_FF_EX, reg2_ID_FF, reg2_FF_EX, wrReg_FF_EX, wrReg_ID_FF,
+  wire [3:0]  wrReg_FF_EX, wrReg_ID_FF,
               wrReg_EX_FF, wrReg_FF_MEM, wrReg_MEM_FF, wrReg_FF_WB, aluOp_ID_FF, aluOp_FF_EX,
               shAmt_ID_FF, shAmt_FF_EX, rdReg1_ID_FF, rdReg1_FF_EX, rdReg2_ID_FF, rdReg2_FF_EX;
 
@@ -22,6 +23,11 @@ module cpu(clk, rst_n, hlt);
         aluSrc_FF_EX, hlt_ID_FF, hlt_FF_EX, memRd_EX_FF, memRd_FF_MEM, memWr_EX_FF, mem2reg_EX_FF,
         sawBr_EX_FF, sawBr_FF_MEM, sawJ_EX_FF, hlt_EX_FF, mem2reg_MEM_FF, mem2reg_FF_WB, hlt_MEM_FF,
         wrRegEn_ID_FF, wrRegEn_FF_EX, wrRegEn_EX_FF, wrRegEn_FF_MEM, wrRegEn_MEM_FF, wrRegEn_FF_WB, PCSrc_MEM_IF;
+
+	assign IF_ID_EN = 1'b1;
+	assign ID_EX_EN = 1'b1;
+	assign EX_MEM_EN = 1'b1;
+	assign MEM_WB_EN = 1'b1;
 
 hazard H(
   .rdReg1_EX(rdReg1_FF_EX),
@@ -81,7 +87,7 @@ ID ID(
 assign pc_ID_FF = pc_FF_ID;
 
 //////////////////////////////////////////////////  ID/EX flops ///////////////////////////////////////////////////////
-dff_15 ff02(.q(pc_FF_EX), .d(pc_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
+dff_16 ff02(.q(pc_FF_EX), .d(pc_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
 dff_16 ff03(.q(reg1_FF_EX), .d(reg1_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
 dff_16 ff04(.q(reg2_FF_EX), .d(reg2_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
 dff_16 ff05(.q(instr_FF_EX), .d(instr_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));

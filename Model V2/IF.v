@@ -19,7 +19,7 @@ module IF(
   assign nextPc = (useAlt == 1'b1) ? altAddress : pc + 1;
   assign sel = {nRst, hlt};
   
-  always @(posedge clk) begin
+  always @(posedge clk, negedge nRst) begin
     case (sel)
       2'b10: pc <= nextPc;
       2'b11: pc <= pc;
