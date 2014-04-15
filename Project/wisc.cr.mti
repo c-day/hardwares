@@ -100,6 +100,13 @@ Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2
 Top level modules:
 	branchLogic
 
+} {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/ID.v {1 {vlog -nostats -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/ID.v
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module ID
+
+Top level modules:
+	ID
+
 } {} {}} C:/Users/Craig/Documents/GitHub/hardwares/Project/EX.v {1 {vlog -nostats -work work C:/Users/Craig/Documents/GitHub/hardwares/Project/EX.v
 Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
 -- Compiling module EX
