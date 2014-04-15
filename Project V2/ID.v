@@ -22,7 +22,8 @@ module ID (
   o_shAmt,
   o_rdReg1,
   o_rdReg2,
-  o_hlt
+  o_hlt,
+  o_wrRegEn
 );
 
   input i_clk, i_nRst, i_wrEn;
@@ -30,7 +31,7 @@ module ID (
   input [15:0] i_wrData, i_instr, i_pc;
   output [15:0] o_port0, o_port1, o_sext, o_instr;
   output [3:0] o_wrReg, o_aluOp, o_shAmt, o_rdReg1, o_rdReg2;
-  output o_mem2reg, o_sawBr, o_sawJ, o_memRd, o_memWr;
+  output o_mem2reg, o_sawBr, o_sawJ, o_memRd, o_memWr, o_wrRegEn;
 
   assign o_sext = {{8{i_instr[7]}}, i_instr[7:0]};
   assign o_instr = i_instr;

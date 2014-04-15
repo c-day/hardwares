@@ -1,5 +1,4 @@
 module hazard(
-  instr,
   rdReg1_EX,
   rdReg2_EX,
   wrReg_EX,
@@ -9,7 +8,6 @@ module hazard(
   reg2hazSel,
 );
 
-  input [15:0] instr;
   input [3:0] rdReg1_EX, rdReg2_EX, wrReg_EX, wrReg_MEM, wrReg_WB;
   output [1:0] reg1hazSel, reg2hazSel;
 
