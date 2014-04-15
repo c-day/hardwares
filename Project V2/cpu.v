@@ -2,13 +2,14 @@ module cpu(clk, rst_n, hlt);
   input clk, rst_n;
   output hlt;
 
-  wire [2:0] flags_EX_FF;
+  wire [2:0] flags_EX_FF, branchOp_EX_FF, branchOp_FF_MEM;
 
   wire [15:0] FWD_reg1, FWD_reg2;
 
   wire [15:0] pc_IF_FF, pc_FF_ID, instr_IF_FF, instr_FF_ID, instr_ID_FF, instr_FF_EX,
               sext_FF_EX, sext_ID_FF, aluResult_EX_FF, aluResult_FF_MEM, targetAddr_EX_FF,
-              targetAddr_FF_MEM, rdData_MEM_FF, rdData_FF_WB, aluResult_MEM_FF, aluResult_FF_WB;
+              targetAddr_FF_MEM, rdData_MEM_FF, rdData_FF_WB, aluResult_MEM_FF, aluResult_FF_WB,
+              reg2_EX_FF, reg2_FF_MEM;
 
   wire [3:0] reg1_ID_FF, reg1_FF_EX, reg2_ID_FF, reg2_FF_EX, wrReg_FF_EX, wrReg_ID_FF,
               wrReg_EX_FF, wrReg_FF_MEM, wrReg_MEM_FF, wrReg_FF_WB, aluOp_ID_FF, aluOp_FF_EX,
@@ -20,7 +21,7 @@ module cpu(clk, rst_n, hlt);
         mem2reg_ID_FF, mem2reg_FF_EX, sawBr_ID_FF, sawBr_FF_EX, sawJ_ID_FF, sawJ_FF_EX, aluSrc_ID_FF
         aluSrc_FF_EX, hlt_ID_FF, hlt_FF_EX, memRd_EX_FF, memRd_FF_MEM, memWr_EX_FF, mem2reg_EX_FF,
         sawBr_EX_FF, sawBr_FF_MEM, sawJ_EX_FF, hlt_EX_FF, mem2reg_MEM_FF, mem2reg_FF_WB, hlt_MEM_FF,
-        wrRegEn_ID_FF, wrRegEn_FF_EX, wrRegEn_EX_FF, wrRegEn_FF_MEM, wrRegEn_MEM_FF, wrRegEn_FF_WB;
+        wrRegEn_ID_FF, wrRegEn_FF_EX, wrRegEn_EX_FF, wrRegEn_FF_MEM, wrRegEn_MEM_FF, wrRegEn_FF_WB, PCSrc_MEM_IF;
 
 hazard H(
   .rdReg1_EX(rdReg1_FF_EX),
@@ -37,8 +38,8 @@ IF IF(
   .clk(clk),
   .hlt(hlt),
   .nRst(rst_n),
-  altAddress, //todo:  where does this come from?
-  useAlt, //todo:  where does this come from?
+  .altAddress(targetAddr_FF_MEM),
+  .useAlt(PCSrc_MEM_IF),
   .pc(pc_IF_FF),
   .instr(instr_IF_FF)
 );
@@ -130,17 +131,21 @@ assign sawBr_EX_FF = sawBr_FF_EX;
 assign sawJ_EX_FF = sawJ_FF_EX;
 assign hlt_EX_FF = hlt_FF_EX;
 assign wrRegEn_EX_FF = wrRegEn_FF_EX;
+assign reg2_EX_FF = reg2_FF_EX;
+assign branchOp_EX_FF = instr_FF_EX[11:9];
 
 ////////////////////////////////////////////////// EX/MEM flops ///////////////////////////////////////////////////////
 dff_16 ff??(.q(aluResult_FF_MEM), .d(aluResult_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
 dff_16 ff??(.q(targetAddr_FF_MEM), .d(targetAddr_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
+dff_16 ff??(.q(reg2_FF_MEM), .d(reg2_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
 dff_4  ff??(.q(wrReg_FF_MEM), .d(wrReg_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
 dff_3  ff??(.q(flags_FF_MEM), .d(flags_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
+dff_3  ff??(.q(branchOp_FF_MEM), .d(branchOp_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
 dff    ff??(.q(memRd_FF_MEM), .d(memRd_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
 dff    ff??(.q(memWr_FF_MEM), .d(memWr_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
 dff    ff??(.q(mem2reg_FF_MEM), .d(mem2reg_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
-dff    ff??(.q(sawBr_FF_MEM), .d(sawBr_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk)); //todo: where does this go?
-dff    ff??(.q(sawJ_FF_MEM), .d(sawJ_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk)); //todo: where does this go?
+dff    ff??(.q(sawBr_FF_MEM), .d(sawBr_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
+dff    ff??(.q(sawJ_FF_MEM), .d(sawJ_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
 dff    ff??(.q(hlt_FF_MEM), .d(hlt_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
 dff    ff??(.q(wrRegEn_FF_MEM), .d(wrRegEn_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
 
@@ -149,18 +154,19 @@ MEM MEM(
   .clk(clk),
   .memAddr(aluResult_FF_MEM),
   .flags(flags_FF_MEM),
-  wrData, //todo: where is this coming from???
+  .wrData(reg2_FF_MEM),
   .memWr(memWr_FF_MEM),
   .memRd(memRd_FF_MEM),
-  branchOp, //todo: what do we want here?
+  .branchOp(branchOp_FF_MEM),
+  .sawBr(sawBr_FF_MEM),
+  .sawJ(sawJ_FF_MEM),
   .rdData(rdData_MEM_FF),
-  PCSrc //todo:  how about this? what does it mean!??!?!
+  .PCSrc(PCSrc_MEM_IF)
 );
 
 ////////////////////////////////////////////// MEM/WB passthrough /////////////////////////////////////////////////////
 assign wrReg_MEM_FF = wrReg_FF_MEM;
 assign aluResult_MEM_FF = aluResult_FF_MEM;
-assign = targetAddr_FF_MEM; //todo:  where does this go?
 assign mem2reg_MEM_FF = mem2reg_FF_MEM;
 assign hlt_MEM_FF = hlt_FF_MEM;
 assign wrRegEn_MEM_FF = wrRegEn_FF_MEM;
