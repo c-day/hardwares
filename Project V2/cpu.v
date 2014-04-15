@@ -45,8 +45,8 @@ IF IF(
 );
 
 //////////////////////////////////////////////////  IF/ID flops ///////////////////////////////////////////////////////
-dff_16 ff??(.q(pc_FF_ID), .d(pc_IF_FF), .en(IF_ID_EN), .rst_n(rst_n), .clk(clk));
-dff_16 ff??(.q(instr_FF_ID), .d(instr_IF_FF), .en(IF_ID_EN), .rst_n(rst_n), .clk(clk));
+dff_16 ff00(.q(pc_FF_ID), .d(pc_IF_FF), .en(IF_ID_EN), .rst_n(rst_n), .clk(clk));
+dff_16 ff01(.q(instr_FF_ID), .d(instr_IF_FF), .en(IF_ID_EN), .rst_n(rst_n), .clk(clk));
 
 ID ID(
   .i_clk(clk),
@@ -80,24 +80,24 @@ ID ID(
 assign pc_ID_FF = pc_FF_ID;
 
 //////////////////////////////////////////////////  ID/EX flops ///////////////////////////////////////////////////////
-dff_15 ff??(.q(pc_FF_EX), .d(pc_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
-dff_16 ff??(.q(reg1_FF_EX), .d(reg1_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
-dff_16 ff??(.q(reg2_FF_EX), .d(reg2_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
-dff_16 ff??(.q(instr_FF_EX), .d(instr_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
-dff_16 ff??(.q(sext_FF_EX), .d(sext_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
-dff_4  ff??(.q(wrReg_FF_EX), .d(wrReg_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
-dff_4  ff??(.q(aluOp_FF_EX), .d(aluOp_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
-dff_4  ff??(.q(shAmt_FF_EX), .d(shAmt_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
-dff_4  ff??(.q(rdReg1_FF_EX), .d(rdReg1_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
-dff_4  ff??(.q(rdReg2_FF_EX), .d(rdReg2_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
-dff    ff??(.q(memRd_FF_EX), .d(memRd_ID_FF), .en(ID_EX_EN). .rst_n(rst_n), .clk(clk));
-dff    ff??(.q(memWr_FF_EX), .d(memWr_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
-dff    ff??(.q(mem2reg_FF_EX), .d(mem2reg_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
-dff    ff??(.q(sawBr_FF_EX), .d(sawBr_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
-dff    ff??(.q(sawJ_FF_EX), .d(sawJ_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
-dff    ff??(.q(aluSrc_FF_EX), .d(aluSrc_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
-dff    ff??(.q(hlt_FF_EX), .d(hlt_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
-dff    ff??(.q(wrRegEn_FF_EX), .d(wrRegEn_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
+dff_15 ff02(.q(pc_FF_EX), .d(pc_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
+dff_16 ff03(.q(reg1_FF_EX), .d(reg1_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
+dff_16 ff04(.q(reg2_FF_EX), .d(reg2_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
+dff_16 ff05(.q(instr_FF_EX), .d(instr_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
+dff_16 ff06(.q(sext_FF_EX), .d(sext_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
+dff_4  ff07(.q(wrReg_FF_EX), .d(wrReg_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
+dff_4  ff08(.q(aluOp_FF_EX), .d(aluOp_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
+dff_4  ff09(.q(shAmt_FF_EX), .d(shAmt_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
+dff_4  ff10(.q(rdReg1_FF_EX), .d(rdReg1_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
+dff_4  ff11(.q(rdReg2_FF_EX), .d(rdReg2_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
+dff    ff12(.q(memRd_FF_EX), .d(memRd_ID_FF), .en(ID_EX_EN). .rst_n(rst_n), .clk(clk));
+dff    ff13(.q(memWr_FF_EX), .d(memWr_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
+dff    ff14(.q(mem2reg_FF_EX), .d(mem2reg_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
+dff    ff15(.q(sawBr_FF_EX), .d(sawBr_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
+dff    ff16(.q(sawJ_FF_EX), .d(sawJ_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
+dff    ff17(.q(aluSrc_FF_EX), .d(aluSrc_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
+dff    ff18(.q(hlt_FF_EX), .d(hlt_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
+dff    ff19(.q(wrRegEn_FF_EX), .d(wrRegEn_ID_FF), .en(ID_EX_EN), .rst_n(rst_n), .clk(clk));
 
 ///////////////////////////////////////////// Data forwarding selection ///////////////////////////////////////////////
 assign FWD_reg1 = (reg1hazSel == 2'b00) ? aluResult_FF_MEM :
@@ -135,19 +135,19 @@ assign reg2_EX_FF = reg2_FF_EX;
 assign branchOp_EX_FF = instr_FF_EX[11:9];
 
 ////////////////////////////////////////////////// EX/MEM flops ///////////////////////////////////////////////////////
-dff_16 ff??(.q(aluResult_FF_MEM), .d(aluResult_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
-dff_16 ff??(.q(targetAddr_FF_MEM), .d(targetAddr_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
-dff_16 ff??(.q(reg2_FF_MEM), .d(reg2_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
-dff_4  ff??(.q(wrReg_FF_MEM), .d(wrReg_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
-dff_3  ff??(.q(flags_FF_MEM), .d(flags_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
-dff_3  ff??(.q(branchOp_FF_MEM), .d(branchOp_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
-dff    ff??(.q(memRd_FF_MEM), .d(memRd_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
-dff    ff??(.q(memWr_FF_MEM), .d(memWr_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
-dff    ff??(.q(mem2reg_FF_MEM), .d(mem2reg_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
-dff    ff??(.q(sawBr_FF_MEM), .d(sawBr_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
-dff    ff??(.q(sawJ_FF_MEM), .d(sawJ_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
-dff    ff??(.q(hlt_FF_MEM), .d(hlt_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
-dff    ff??(.q(wrRegEn_FF_MEM), .d(wrRegEn_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
+dff_16 ff20(.q(aluResult_FF_MEM), .d(aluResult_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
+dff_16 ff21(.q(targetAddr_FF_MEM), .d(targetAddr_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
+dff_16 ff22(.q(reg2_FF_MEM), .d(reg2_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
+dff_4  ff23(.q(wrReg_FF_MEM), .d(wrReg_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
+dff_3  ff24(.q(flags_FF_MEM), .d(flags_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
+dff_3  ff25(.q(branchOp_FF_MEM), .d(branchOp_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
+dff    ff26(.q(memRd_FF_MEM), .d(memRd_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
+dff    ff27(.q(memWr_FF_MEM), .d(memWr_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
+dff    ff28(.q(mem2reg_FF_MEM), .d(mem2reg_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
+dff    ff29(.q(sawBr_FF_MEM), .d(sawBr_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
+dff    ff30(.q(sawJ_FF_MEM), .d(sawJ_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
+dff    ff31(.q(hlt_FF_MEM), .d(hlt_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
+dff    ff32(.q(wrRegEn_FF_MEM), .d(wrRegEn_EX_FF), .en(EX_MEM_EN), .rst_n(rst_n), .clk(clk));
 
 
 MEM MEM(
@@ -172,12 +172,12 @@ assign hlt_MEM_FF = hlt_FF_MEM;
 assign wrRegEn_MEM_FF = wrRegEn_FF_MEM;
 
 ////////////////////////////////////////////////// MEM/WB flops ///////////////////////////////////////////////////////
-dff_16 ff??(.q(rdData_FF_WB), .d(rdData_MEM_FF), .en(MEM_WB_EN), .rst_n(rst_n), .clk(clk));
-dff_16 ff??(.q(aluResult_FF_WB), .d(aluResult_MEM_FF), .en(MEM_WB_EN), .rst_n(rst_n), .clk(clk));
-dff_4  ff??(.q(wrReg_FF_WB), .d(wrReg_MEM_FF), .en(MEM_WB_EN), .rst_n(rst_n), .clk(clk));
-dff    ff??(.q(mem2reg_FF_WB), .d(mem2reg_MEM_FF), .en(MEM_WB_EN), .rst_n(rst_n), .clk(clk));
-dff    ff??(.q(hlt), .d(hlt_MEM_FF), .en(MEM_WB_EN), .rst_n(rst_n), .clk(clk));
-dff    ff??(.q(wrRegEn_FF_WB), .d(wrRegEn_MEM_FF), .en(MEM_WB_EN), .rst_n(rst_n), .clk(clk));
+dff_16 ff33(.q(rdData_FF_WB), .d(rdData_MEM_FF), .en(MEM_WB_EN), .rst_n(rst_n), .clk(clk));
+dff_16 ff34(.q(aluResult_FF_WB), .d(aluResult_MEM_FF), .en(MEM_WB_EN), .rst_n(rst_n), .clk(clk));
+dff_4  ff35(.q(wrReg_FF_WB), .d(wrReg_MEM_FF), .en(MEM_WB_EN), .rst_n(rst_n), .clk(clk));
+dff    ff36(.q(mem2reg_FF_WB), .d(mem2reg_MEM_FF), .en(MEM_WB_EN), .rst_n(rst_n), .clk(clk));
+dff    ff37(.q(hlt), .d(hlt_MEM_FF), .en(MEM_WB_EN), .rst_n(rst_n), .clk(clk));
+dff    ff38(.q(wrRegEn_FF_WB), .d(wrRegEn_MEM_FF), .en(MEM_WB_EN), .rst_n(rst_n), .clk(clk));
 
 WB WB(
   .memData(rdData_FF_WB),
