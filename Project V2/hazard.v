@@ -1,24 +1,24 @@
 module hazard(
-  wrReg_FF_EX,
-  wrReg_FF_MEM,
-  wrReg_FF_WB,
-  rdReg1_ID_FF,
-  rdReg2_ID_FF,
-  EX_reg1_haz,
-  EX_reg2_haz
+  instr,
+  rdReg1_EX,
+  rdReg2_EX,
+  wrReg_EX,
+  wrReg_MEM,
+  wrReg_WB,
+  reg1hazSel,
+  reg2hazSel,
 );
 
-  input [3:0] wrReg_FF_EX, wrReg_FF_MEM, wrReg_FF_WB, rdReg1_ID_FF, rdReg2_ID_FF;
-  output EX_reg1_haz, EX_reg2_haz;
-  
-  assign EX_reg1_haz = (wrReg_FF_EX == rdReg1_ID_FF) ? 1'b1 :
-                       (wrReg_FF_MEM == rdReg1_ID_FF) ? 1'b1 :
-                       (wrReg_FF_WB == rdReg1_ID_FF) ? 1'b1 :
-                       1'b0;
-                       
-  assign EX_reg2_haz = (wrReg_FF_EX == rdReg2_ID_FF) ? 1'b1 :
-                       (wrReg_FF_MEM == rdReg2_ID_FF) ? 1'b1 :
-                       (wrReg_FF_WB == rdReg2_ID_FF) ? 1'b1 :
-                       1'b0;
-  
+  input [15:0] instr;
+  input [3:0] rdReg1_EX, rdReg2_EX, wrReg_EX, wrReg_MEM, wrReg_WB;
+  output [1:0] reg1hazSel, reg2hazSel;
+
+  assign reg1hazSel = (rdReg1_EX == wrReg_MEM) ? 2'b00 :
+                      (rdReg1_EX == wrReg_WB) ? 2'b01 :
+                      2'b11;
+
+  assign reg2hazSel = (rdReg2_EX == wrReg_MEM) ? 2'b00 :
+                      (rdReg2_EX == wrReg_WB) ? 2'b01 :
+                      2'b11;
+
 endmodule

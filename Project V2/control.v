@@ -1,6 +1,6 @@
 `include "defines.v"
 module control(
-  instr, 
+  instr,
   rdEnReg1,
   rdEnReg2,
   wrRegEn,
@@ -10,60 +10,63 @@ module control(
   memRd,
   memWr,
   aluOp,
-  shAmt, 
+  shAmt,
   mem2reg,
   sawBr,
-  sawJ, 
-  aluSrc
+  sawJ,
+  aluSrc,
+  hlt
 );
   input [15:0] instr;
-  output rdEnReg1, rdEnReg2, wrRegEn, memRd, memWr, mem2reg, sawBr, sawJ, aluSrc;
+  output rdEnReg1, rdEnReg2, wrRegEn, memRd, memWr, mem2reg, sawBr, sawJ, aluSrc, hlt;
   output [3:0] rdReg1, rdReg2, wrReg, aluOp, shAmt;
-  
+
   wire opCode = instr[15:12];
-  
+
+  assign hlt = (opCode == `HLT) ? 1'b1 : 1'b0;
+
   assign rdEnReg1 = (opCode == `HLT) ? 1'b0 :
                     (opCode == `LLB) ? 1'b0 :
                     (opCode == `B  ) ? 1'b0 :
                     (opCode == `JAL) ? 1'b0 :
                     1'b1;
-                    
+
   assign rdEnReg2 = (opCode == `ADD) ? 1'b1 :
                     (opCode == `ADDZ) ? 1'b1 :
                     (opCode == `SUB) ? 1'b1 :
                     (opCode == `AND) ? 1'b1 :
                     (opCode == `NOR) ? 1'b1 :
                     1'b0;
-                    
+
   assign wrRegEn = (opCode == `HLT) ? 1'b0 :
                    (opCode == `SW ) ? 1'b0 :
                    (opCode == `B  ) ? 1'b0 :
                    (opCode == `JR ) ? 1'b0 :
                    1'b1;
-                   
+
   assign memRd = (opCode == `LW) ? 1'b1 : 1'b0;
-  
+
   assign memWr = (opCode == `SW) ? 1'b1 : 1'b0;
-  
+
   assign mem2Reg = memRd;
-  
+
   assign sawBr = (opCode == `B) ? 1'b1 : 1'b0;
-  
+
   assign sawJ = (opCode == `JAL) ? 1'b1 :
                 (opCode == `JR ) ? 1'b1 :
                 1'b0;
-                
-  assign rdReg1 = (opCode == `LHB) ? instr[11:8] : 
+
+  assign rdReg1 = (opCode == `LHB) ? instr[11:8] :
                   (opCode == `SW ) ? instr[11:8] :
-                  instr[7:4]; 
-  
+                  instr[7:4];
+
   assign rdReg2 = instr[3:0];
-  
+
   assign wrReg = (opCode == `JAL) ? 4'hF :
                  instr[11:8];
-                 
+
   assign aluSrc = reEnReg2;
-  
+
   assign aluOp = (opCode == `ADD) ? `ALU_ADD :
                  (opCode == `ADDZ & Z == 1'b1) ? `ALU_ADD :
                  (opCode == `SUB) ? `ALU_SUB :
@@ -74,7 +77,7 @@ module control(
                  (opCode == `NOR) ? `ALU_NOR :
                  (opCode == `LHB) ? `ALU_LHB :
                  `ALU_NOP;
-                 
+
   assign shAmt = instr[3:0];
-  
+
 endmodule
