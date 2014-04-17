@@ -1,0 +1,124 @@
+{C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/defines.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/defines.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+
+} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/MEM.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/MEM.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module MEM
+
+Top level modules:
+	MEM
+
+} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/IF.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/IF.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module IF
+
+Top level modules:
+	IF
+
+} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/cpu.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/cpu.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module cpu
+
+Top level modules:
+	cpu
+
+} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/data_mem.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/data_mem.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module DM
+
+Top level modules:
+	DM
+
+} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/rf_pipelined.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/rf_pipelined.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module rf
+
+Top level modules:
+	rf
+
+} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/hazard.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/hazard.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module hazard
+
+Top level modules:
+	hazard
+
+} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff_3.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff_3.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module dff_3
+
+Top level modules:
+	dff_3
+
+} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff_4.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff_4.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module dff_4
+
+Top level modules:
+	dff_4
+
+} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/cpu_tb.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/cpu_tb.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module t_cpu
+
+Top level modules:
+	t_cpu
+
+} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/instr_mem.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/instr_mem.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module IM
+
+Top level modules:
+	IM
+
+} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff_16.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff_16.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module dff_16
+
+Top level modules:
+	dff_16
+
+} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module dff
+
+Top level modules:
+	dff
+
+} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/WB.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/WB.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module WB
+
+Top level modules:
+	WB
+
+} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/control.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/control.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module control
+
+Top level modules:
+	control
+
+} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/alu.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/alu.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module ALU
+-- Compiling module sraFix
+
+Top level modules:
+	ALU
+
+} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/ID.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/ID.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module ID
+
+Top level modules:
+	ID
+
+} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/EX.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/EX.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module EX
+
+Top level modules:
+	EX
+
+} {} {}}

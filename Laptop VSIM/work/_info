@@ -1,0 +1,379 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/admin/Documents/GitHub/hardwares/Model V2
+vALU
+Z0 !s110 1397746173
+!i10b 1
+!s100 T0R2l4RD@n;g]:Q2UIYhQ2
+I?S<jj>g4h;:CLlJk^FkU12
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+Z2 dC:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM
+Z3 w1397592696
+Z4 8C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/alu.v
+Z5 FC:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/alu.v
+L0 2
+Z6 OP;L;10.3;59
+r1
+!s85 0
+31
+Z7 !s108 1397746173.134000
+Z8 !s107 defines.v|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/alu.v|
+Z9 !s90 -reportprogress|300|-nostats|-work|work|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/alu.v|
+!s101 -O0
+Z10 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@a@l@u
+vcontrol
+R0
+!i10b 1
+!s100 Q<6j>F=WiFElQE]KTWO823
+Ig^0@annVcogQJUP:DM3KU2
+R1
+R2
+Z11 w1397744716
+8C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/control.v
+FC:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/control.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1397746173.197000
+!s107 defines.v|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/control.v|
+!s90 -reportprogress|300|-nostats|-work|work|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/control.v|
+!s101 -O0
+R10
+vcpu
+R0
+!i10b 1
+!s100 4WUKC4I;9J6=N;6gGze`c3
+IfMmL7cUXZc4JF2JD8]YV21
+R1
+R2
+w1397746031
+8C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/cpu.v
+FC:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/cpu.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1397746173.243000
+!s107 defines.v|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/cpu.v|
+!s90 -reportprogress|300|-nostats|-work|work|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/cpu.v|
+!s101 -O0
+R10
+vdff
+R0
+!i10b 1
+!s100 =Yg=Nc3eaj>2HejS0AQF73
+IHJJT`X;=SI`9hJ<Oz>5:X1
+R1
+R2
+R3
+8C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff.v
+FC:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1397746173.446000
+!s107 C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff.v|
+!s90 -reportprogress|300|-nostats|-work|work|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff.v|
+!s101 -O0
+R10
+vdff_16
+R0
+!i10b 1
+!s100 k?_nVgiZB;InCi8NA<ilU1
+IY1nMc9_AB=2847Eol;H7@2
+R1
+R2
+R3
+8C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff_16.v
+FC:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff_16.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1397746173.618000
+!s107 C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff_16.v|
+!s90 -reportprogress|300|-nostats|-work|work|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff_16.v|
+!s101 -O0
+R10
+vdff_3
+R0
+!i10b 1
+!s100 mLTknUblOoh:O_TPZee7Y3
+I6HNHKzbM3j3AJLU2K?kJf2
+R1
+R2
+R3
+8C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff_3.v
+FC:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff_3.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1397746173.509000
+!s107 C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff_3.v|
+!s90 -reportprogress|300|-nostats|-work|work|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff_3.v|
+!s101 -O0
+R10
+vdff_4
+R0
+!i10b 1
+!s100 L9HMc@EUciMI]aAG56T]71
+I`]eS[@;;f9_gd70Zj<MZi2
+R1
+R2
+R3
+8C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff_4.v
+FC:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff_4.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1397746173.555000
+!s107 C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff_4.v|
+!s90 -reportprogress|300|-nostats|-work|work|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/dff_4.v|
+!s101 -O0
+R10
+vDM
+R0
+!i10b 1
+!s100 ^YMESYGHljRchFCZ:TL6@0
+IABKm2WU?DcF464oed7eAk2
+R1
+R2
+R3
+8C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/data_mem.v
+FC:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/data_mem.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1397746173.353000
+!s107 C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/data_mem.v|
+!s90 -reportprogress|300|-nostats|-work|work|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/data_mem.v|
+!s101 -O0
+R10
+n@d@m
+vEX
+R0
+!i10b 1
+!s100 W9dN0d=im>XN4hWT>cmnn1
+I2L6FMdaX^>cd49;;e6ZB30
+R1
+R2
+R11
+8C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/EX.v
+FC:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/EX.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1397746173.665000
+!s107 defines.v|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/EX.v|
+!s90 -reportprogress|300|-nostats|-work|work|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/EX.v|
+!s101 -O0
+R10
+n@e@x
+vhazard
+R0
+!i10b 1
+!s100 2f>98Z`1XA1?dKe?Y:P`M2
+IUWoe<_iN;C3Y3E;>M>BT;1
+R1
+R2
+R11
+8C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/hazard.v
+FC:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/hazard.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1397746173.711000
+!s107 defines.v|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/hazard.v|
+!s90 -reportprogress|300|-nostats|-work|work|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/hazard.v|
+!s101 -O0
+R10
+vID
+R0
+!i10b 1
+!s100 zOCCZH]S_AnS;6cfFoXMJ0
+I=b[gAiO7G:0NVQFHL8?mJ1
+R1
+R2
+R11
+8C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/ID.v
+FC:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/ID.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1397746173.774000
+!s107 defines.v|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/ID.v|
+!s90 -reportprogress|300|-nostats|-work|work|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/ID.v|
+!s101 -O0
+R10
+n@i@d
+vIF
+R0
+!i10b 1
+!s100 dNgVZ2lK9bk<WLJUQ92JR1
+IID3hY5zkkQV97BQ;PTYQ92
+R1
+R2
+w1397595513
+8C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/IF.v
+FC:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/IF.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1397746173.821000
+!s107 C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/IF.v|
+!s90 -reportprogress|300|-nostats|-work|work|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/IF.v|
+!s101 -O0
+R10
+n@i@f
+vIM
+R0
+!i10b 1
+!s100 l7n9C9U>TgZnSzYQ88FCf2
+ITHLA=^S=A96TU;d3DKEBU3
+R1
+R2
+w1397594718
+8C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/instr_mem.v
+FC:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/instr_mem.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1397746173.867000
+!s107 C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/instr_mem.v|
+!s90 -reportprogress|300|-nostats|-work|work|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/instr_mem.v|
+!s101 -O0
+R10
+n@i@m
+vMEM
+R0
+!i10b 1
+!s100 DlEBdZTFTmbPcQ=DG7^zB3
+IlULTmNlR:fAE0Z_;1Z:Xg3
+R1
+R2
+w1397592994
+8C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/MEM.v
+FC:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/MEM.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1397746173.930000
+!s107 defines.v|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/MEM.v|
+!s90 -reportprogress|300|-nostats|-work|work|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/MEM.v|
+!s101 -O0
+R10
+n@m@e@m
+vrf
+R0
+!i10b 1
+!s100 goo=5HkjeC8D316AdbWEn0
+IoeTF;h4egKL9J`:S^UgEY1
+R1
+R2
+w1397746150
+8C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/rf_pipelined.v
+FC:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/rf_pipelined.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1397746173.977000
+!s107 C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/rf_pipelined.v|
+!s90 -reportprogress|300|-nostats|-work|work|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/rf_pipelined.v|
+!s101 -O0
+R10
+vsraFix
+R0
+!i10b 1
+!s100 >8Am4XL5oTa;dj:W4DfJD2
+IiH4K2=k][MnYgz;fSbRf50
+R1
+R2
+R3
+R4
+R5
+L0 80
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+R10
+nsra@fix
+vt_cpu
+R0
+!i10b 1
+!s100 0Qg;h3oFZEUe:8mQR5neL1
+IXe6m6h0;eQjD^BW=7bg6z2
+R1
+R2
+w1397593797
+8C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/cpu_tb.v
+FC:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/cpu_tb.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1397746173.306000
+!s107 C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/cpu_tb.v|
+!s90 -reportprogress|300|-nostats|-work|work|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/cpu_tb.v|
+!s101 -O0
+R10
+vWB
+R0
+!i10b 1
+!s100 aVY>>Uk:dGh0OjgE]moeY2
+IeodN<abU2N]la;<MPzeNZ3
+R1
+R2
+R11
+8C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/WB.v
+FC:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/WB.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1397746173.072000
+!s107 C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/WB.v|
+!s90 -reportprogress|300|-nostats|-work|work|C:/Users/admin/Documents/GitHub/hardwares/Laptop VSIM/WB.v|
+!s101 -O0
+R10
+n@w@b
