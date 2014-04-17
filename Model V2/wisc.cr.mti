@@ -33,6 +33,13 @@ Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2
 Top level modules:
 	dff_4
 
+} {} {}} {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/EX.v} {1 {vlog -nostats -work work {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/EX.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module EX
+
+Top level modules:
+	EX
+
 } {} {}} {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/ID.v} {1 {vlog -nostats -work work {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/ID.v}
 Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
 -- Compiling module ID
@@ -68,6 +75,13 @@ Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2
 Top level modules:
 	dff
 
+} {} {}} {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/control.v} {1 {vlog -nostats -work work {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/control.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module control
+
+Top level modules:
+	control
+
 } {} {}} {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/rf_pipelined.v} {1 {vlog -nostats -work work {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/rf_pipelined.v}
 Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
 -- Compiling module rf
@@ -97,14 +111,14 @@ Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2
 Top level modules:
 	t_cpu
 
-} {} {}} {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/defines.v} {1 {vlog -nostats -work work {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/defines.v}
-Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
-
 } {} {}} {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/dff_16.v} {1 {vlog -nostats -work work {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/dff_16.v}
 Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
 -- Compiling module dff_16
 
 Top level modules:
 	dff_16
+
+} {} {}} {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/defines.v} {1 {vlog -nostats -work work {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/defines.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
 
 } {} {}}

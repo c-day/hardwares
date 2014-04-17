@@ -121,6 +121,7 @@ T_GTE:  #Test the greater part of GTE
 
 T_GTE2: #Test equal part of GTE
     ADD R14, R14, R13   # add one to the accumulator    Current Val: 13
+    LLB R9, 0x55
     SUB R0, R9, R9
     B GTE, T_LTE
     HLT
