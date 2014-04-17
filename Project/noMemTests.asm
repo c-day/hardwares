@@ -244,15 +244,15 @@ T_LW:
     ADD R14, R14, R13   # add one to the accumulator    Current Val: 31
     LLB R3, 0x05
     LLB R2, 0x26
-    LW  R1, R2, -2      # load 0x05(hoepfully) into 0x26 - 2 (0x24)
-    SUB R0, R1, R3
+    LW  R10, R2, -2      # load 0x05(hoepfully) into 0x26 - 2 (0x24)
+    SUB R11, R10, R3
     B EQ, T_ADDZ2
     HLT
 
 ###############################################################################
     
 T_ADDZ2:                # this addz should do addition
-    ADD R14, R14, R13   # add one to the accumulator    Current Val: ?
+    ADD R14, R14, R13   # add one to the accumulator    Current Val: 32
     LLB R5, 0x08
     SUB R0, R0, R0      # set the Z flag
     LLB R1, 0x52
@@ -270,17 +270,17 @@ T_ADDZ2:                # this addz should do addition
 # test JAL and JR last
     
 T_JAL:
-    ADD R14, R14, R13   # add one to the accumulator    Current Val: ?
+    ADD R14, R14, R13   # add one to the accumulator    Current Val: 33
     JAL T_JUMP          # jump to "a function" and set return value
     
 DONE:
-    ADD R14, R14, R13   # add one to the accumulator    Current Val: ?
+    ADD R14, R14, R13   # add one to the accumulator    Current Val: 35
     LLB R5, 0xAA
     LHB R5, 0xAA        # set R5 = 0xAAAA to signify all tests passed
     HLT
 
 T_JUMP: 
-    ADD R14, R14, R13   # add one to the accumulator    Current Val: ?
+    ADD R14, R14, R13   # add one to the accumulator    Current Val: 34
     LLB R11, 0xAD
     LHB R11, 0xDE       # put something in a register so we know we made it here
     JR  R15             # return to one after the jal ie done

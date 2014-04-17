@@ -1,124 +1,110 @@
-{C:/Users/admin/Documents/GitHub/hardwares/Model V2/EX.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Model V2/EX.v}
-Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
--- Compiling module EX
-
-Top level modules:
-	EX
-
-} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Model V2/ID.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Model V2/ID.v}
-Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
--- Compiling module ID
-
-Top level modules:
-	ID
-
-} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Model V2/defines.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Model V2/defines.v}
-Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
-
-} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Model V2/IF.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Model V2/IF.v}
-Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
--- Compiling module IF
-
-Top level modules:
-	IF
-
-} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Model V2/MEM.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Model V2/MEM.v}
+{C:/Users/Craig/Documents/GitHub/hardwares/Model V2/MEM.v} {1 {vlog -nostats -work work {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/MEM.v}
 Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
 -- Compiling module MEM
 
 Top level modules:
 	MEM
 
-} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Model V2/cpu.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Model V2/cpu.v}
+} {} {}} {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/cpu.v} {1 {vlog -nostats -work work {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/cpu.v}
 Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
 -- Compiling module cpu
 
 Top level modules:
 	cpu
 
-} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Model V2/data_mem.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Model V2/data_mem.v}
-Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
--- Compiling module DM
-
-Top level modules:
-	DM
-
-} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Model V2/rf_pipelined.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Model V2/rf_pipelined.v}
-Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
--- Compiling module rf
-
-Top level modules:
-	rf
-
-} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Model V2/hazard.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Model V2/hazard.v}
-Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
--- Compiling module hazard
-
-Top level modules:
-	hazard
-
-} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Model V2/dff_3.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Model V2/dff_3.v}
-Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
--- Compiling module dff_3
-
-Top level modules:
-	dff_3
-
-} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Model V2/dff_4.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Model V2/dff_4.v}
-Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
--- Compiling module dff_4
-
-Top level modules:
-	dff_4
-
-} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Model V2/cpu_tb.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Model V2/cpu_tb.v}
-Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
--- Compiling module t_cpu
-
-Top level modules:
-	t_cpu
-
-} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Model V2/instr_mem.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Model V2/instr_mem.v}
-Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
--- Compiling module IM
-
-Top level modules:
-	IM
-
-} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Model V2/dff_16.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Model V2/dff_16.v}
-Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
--- Compiling module dff_16
-
-Top level modules:
-	dff_16
-
-} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Model V2/dff.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Model V2/dff.v}
-Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
--- Compiling module dff
-
-Top level modules:
-	dff
-
-} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Model V2/WB.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Model V2/WB.v}
+} {} {}} {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/WB.v} {1 {vlog -nostats -work work {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/WB.v}
 Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
 -- Compiling module WB
 
 Top level modules:
 	WB
 
-} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Model V2/control.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Model V2/control.v}
+} {} {}} {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/dff_3.v} {1 {vlog -nostats -work work {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/dff_3.v}
 Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
--- Compiling module control
+-- Compiling module dff_3
 
 Top level modules:
-	control
+	dff_3
 
-} {} {}} {C:/Users/admin/Documents/GitHub/hardwares/Model V2/alu.v} {1 {vlog -nostats -work work {C:/Users/admin/Documents/GitHub/hardwares/Model V2/alu.v}
+} {} {}} {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/dff_4.v} {1 {vlog -nostats -work work {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/dff_4.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module dff_4
+
+Top level modules:
+	dff_4
+
+} {} {}} {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/ID.v} {1 {vlog -nostats -work work {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/ID.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module ID
+
+Top level modules:
+	ID
+
+} {} {}} {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/instr_mem.v} {1 {vlog -nostats -work work {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/instr_mem.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module IM
+
+Top level modules:
+	IM
+
+} {} {}} {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/IF.v} {1 {vlog -nostats -work work {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/IF.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module IF
+
+Top level modules:
+	IF
+
+} {} {}} {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/data_mem.v} {1 {vlog -nostats -work work {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/data_mem.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module DM
+
+Top level modules:
+	DM
+
+} {} {}} {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/dff.v} {1 {vlog -nostats -work work {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/dff.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module dff
+
+Top level modules:
+	dff
+
+} {} {}} {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/rf_pipelined.v} {1 {vlog -nostats -work work {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/rf_pipelined.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module rf
+
+Top level modules:
+	rf
+
+} {} {}} {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/hazard.v} {1 {vlog -nostats -work work {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/hazard.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module hazard
+
+Top level modules:
+	hazard
+
+} {} {}} {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/alu.v} {1 {vlog -nostats -work work {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/alu.v}
 Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
 -- Compiling module ALU
 -- Compiling module sraFix
 
 Top level modules:
 	ALU
+
+} {} {}} {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/cpu_tb.v} {1 {vlog -nostats -work work {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/cpu_tb.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module t_cpu
+
+Top level modules:
+	t_cpu
+
+} {} {}} {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/defines.v} {1 {vlog -nostats -work work {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/defines.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+
+} {} {}} {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/dff_16.v} {1 {vlog -nostats -work work {C:/Users/Craig/Documents/GitHub/hardwares/Model V2/dff_16.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module dff_16
+
+Top level modules:
+	dff_16
 
 } {} {}}

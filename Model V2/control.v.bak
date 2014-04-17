@@ -19,15 +19,15 @@ module control(
 	Z
 );
   input [15:0] instr;
+	input Z;
   output rdEnReg1, rdEnReg2, wrRegEn, memRd, memWr, mem2reg, sawBr, sawJ, aluSrc, hlt;
   output [3:0] rdReg1, rdReg2, wrReg, aluOp, shAmt;
 
-  wire opCode = instr[15:12];
+  wire [3:0] opCode = instr[15:12];
 
-  assign hlt = (opCode == `HLT) ? 1'b1 : 1'b0;
+	assign hlt = (opCode == `HLT) ? 1'b1 : 1'b0;
 
   assign rdEnReg1 = (opCode == `HLT) ? 1'b0 :
-                    (opCode == `LLB) ? 1'b0 :
                     (opCode == `B  ) ? 1'b0 :
                     (opCode == `JAL) ? 1'b0 :
                     1'b1;
@@ -37,6 +37,7 @@ module control(
                     (opCode == `SUB) ? 1'b1 :
                     (opCode == `AND) ? 1'b1 :
                     (opCode == `NOR) ? 1'b1 :
+										(opCode == `JR ) ? 1'b1 :
                     1'b0;
 
   assign wrRegEn = (opCode == `HLT) ? 1'b0 :
@@ -58,15 +59,20 @@ module control(
                 1'b0;
 
   assign rdReg1 = (opCode == `LHB) ? instr[11:8] :
-                  (opCode == `SW ) ? instr[11:8] :
-                  instr[7:4];
+                  (opCode == `LLB) ? 4'h0 :
+									(opCode == `JR ) ? 4'hF :
+									instr[7:4];
 
-  assign rdReg2 = instr[3:0];
+  assign rdReg2 = (opCode == `SW) ? instr[11:8] : 
+									(opCode == `JR) ? 4'h0 :
+									instr[3:0];
 
   assign wrReg = (opCode == `JAL) ? 4'hF :
                  instr[11:8];
 
-  assign aluSrc = rdEnReg2;
+  assign aluSrc = (opCode == `LLB) ? 1'b0 : 
+                  (opCode == `SW ) ? 1'b0 :
+                  rdEnReg2;
 
   assign aluOp = (opCode == `ADD) ? `ALU_ADD :
                  (opCode == `ADDZ & Z == 1'b1) ? `ALU_ADD :
@@ -77,6 +83,9 @@ module control(
                  (opCode == `AND) ? `ALU_AND :
                  (opCode == `NOR) ? `ALU_NOR :
                  (opCode == `LHB) ? `ALU_LHB :
+                 (opCode == `LLB) ? `ALU_ADD :
+                 (opCode == `LW ) ? `ALU_ADD :
+								 (opCode == `SW ) ? `ALU_ADD :
                  `ALU_NOP;
 
   assign shAmt = instr[3:0];
